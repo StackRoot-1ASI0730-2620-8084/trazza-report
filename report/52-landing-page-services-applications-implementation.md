@@ -389,7 +389,7 @@ Al cierre del Sprint 3, la Web Application quedó integrada con los Web Services
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
-Los Web Services se documentaron con OpenAPI y se publican de forma interactiva con Scalar. Las rutas siguen el prefijo `/api/v1`, usan nombres en kebab-case y devuelven errores con el formato RFC 9457 `ProblemDetails`, localizados en español o inglés según el encabezado `Accept-Language`. Salvo el registro, el inicio de sesión, la renovación del token y el health check, todos los endpoints requieren el encabezado `Authorization: Bearer <token>`. El catálogo completo está en `docs/endpoints.md` del repositorio `trazza-platform`.
+Los Web Services se documentaron con OpenAPI y se publican de forma interactiva con Scalar. Las rutas siguen el prefijo `/api/v1`, usan nombres en kebab-case y devuelven errores con el formato RFC 9457 `ProblemDetails`, localizados en español o inglés según el encabezado `Accept-Language`. Salvo el registro, el inicio de sesión, la renovación del token y el health check, todos los endpoints requieren el encabezado `Authorization: Bearer <token>`. La especificación publicada expone 83 operaciones agrupadas en 18 tags. El catálogo completo está en `docs/endpoints.md` del repositorio `trazza-platform`.
 
 **Documentación interactiva (Scalar):** [https://d3mwl1okiudzcg.cloudfront.net/scalar/v1](https://d3mwl1okiudzcg.cloudfront.net/scalar/v1)
 
@@ -400,15 +400,15 @@ Los Web Services se documentaron con OpenAPI y se publican de forma interactiva 
 | `/api/v1/authentication/sign-up` · `sign-in` · `refresh` · `sign-out` | POST | Registro, inicio de sesión con JWT, renovación y revocación del refresh token. | Scalar · tag Authentication |
 | `/api/v1/users/me` · `/identity` · `/roles` · `/merchant-profile` | GET, PUT, POST | Perfil del usuario autenticado, identidad cifrada, activación de rol y perfil de comerciante. | Scalar · tag Users |
 | `/api/v1/users/me/identity-verifications` | GET, POST | Verificación de identidad contra el proveedor RENIEC simulado. | Scalar · tag Users |
-| `/api/v1/vehicles` · `/drivers` · `/saved-addresses` | GET, POST, PUT, DELETE | Flota del transportista y direcciones guardadas del comerciante. | Scalar · tags Vehicles, Drivers, Saved Addresses |
-| `/api/v1/return-routes` (`/mine`, `/search`, `/{id}/suggested-shipments`, `/{id}/cancel`) | GET, POST | Publicación, búsqueda, sugerencias de envíos y cancelación de rutas de retorno. | Scalar · tag Return Routes |
-| `/api/v1/shipment-requests` (`/open`, `/mine`, `/search`, `/{id}/suggested-routes`, `/{id}/cancel`) | GET, POST | Publicación, búsqueda, sugerencias de rutas y cancelación de solicitudes de envío. | Scalar · tag Shipment Requests |
-| `/api/v1/match-proposals` (`/{id}/accept`, `/reject`, `/cancel`, `/messages`) | GET, POST | Propuestas de match, su respuesta y los mensajes entre las partes. Aceptar una propuesta crea el viaje. | Scalar · tag Match Proposals |
+| `/api/v1/vehicles` · `/drivers` · `/saved-addresses` | GET, POST, PUT, DELETE | Flota del transportista y direcciones guardadas del comerciante. | Scalar · tags Vehicles, Drivers, SavedAddresses |
+| `/api/v1/return-routes` (`/mine`, `/search`, `/{id}/suggested-shipments`, `/{id}/cancel`) | GET, POST | Publicación, búsqueda, sugerencias de envíos y cancelación de rutas de retorno. | Scalar · tag Return routes |
+| `/api/v1/shipment-requests` (`/open`, `/mine`, `/search`, `/{id}/suggested-routes`, `/{id}/cancel`) | GET, POST | Publicación, búsqueda, sugerencias de rutas y cancelación de solicitudes de envío. | Scalar · tag Shipment requests |
+| `/api/v1/match-proposals` (`/{id}/accept`, `/reject`, `/cancel`, `/messages`) | GET, POST | Propuestas de match, su respuesta y los mensajes entre las partes. Aceptar una propuesta crea el viaje. | Scalar · tags Match proposals, Messages |
 | `/api/v1/trips` (`/{id}/driver`, `/pick-up`, `/deliver`, `/confirm`, `/cancel`, `/status-history`) | GET, PUT, POST | Ciclo de vida del viaje, desde la asignación del conductor hasta la confirmación de la entrega. | Scalar · tag Trips |
 | `/api/v1/trips/{id}/tracking-points` · `/deviation-alerts` · `/incidents` | GET, POST | Puntos GPS, alertas de desvío con reconocimiento e incidencias con evidencias. | Scalar · tag Trips |
-| `/api/v1/iot-devices` | GET | Listado de dispositivos IoT disponibles. | Scalar · tag IoT Devices |
+| `/api/v1/iot-devices` | GET | Listado de dispositivos IoT disponibles. | Scalar · tag IotDevices |
 | `/api/v1/plans` · `/subscriptions` (`/{id}/renew`, `/{id}/cancel`) | GET, POST | Catálogo de planes y suscripción del transportista con pago simulado. | Scalar · tags Plans, Subscriptions |
-| `/api/v1/freight-settlements` · `/cancellation-compensations` | GET, POST | Liquidación del flete por viaje y compensaciones por cancelación (confirmar, condonar o disputar). | Scalar · tags Freight Settlements, Cancellation Compensations |
+| `/api/v1/freight-settlements` · `/cancellation-compensations` | GET, POST | Liquidación del flete por viaje y compensaciones por cancelación (confirmar, condonar o disputar). | Scalar · tags FreightSettlements, CancellationCompensations |
 | `/api/v1/ratings` (`/received`, `/given`, `/summary/{userId}`) | GET, POST | Calificaciones mutuas y resumen de reputación. | Scalar · tag Ratings |
 | `/api/v1/loyalty/points` · `/loyalty/redemptions` | GET, POST | Saldo y canje de puntos de fidelidad. | Scalar · tag Loyalty |
 | `/api/v1/health` | GET | Estado de la API y de la conexión con la base de datos. | Scalar · tag Health |
