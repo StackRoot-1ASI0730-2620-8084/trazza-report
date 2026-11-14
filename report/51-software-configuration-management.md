@@ -46,20 +46,22 @@ A continuación se presentan los productos de software que utiliza el equipo, ag
 | JetBrains WebStorm | IDE para el desarrollo del Landing Page (HTML5, CSS3, JavaScript) y de la Frontend Web Application (Vue). | Desktop | [https://www.jetbrains.com/webstorm/download/](https://www.jetbrains.com/webstorm/download/) |
 | Visual Studio Code | Editor alternativo para el Landing Page, la Web Application y los archivos Markdown del informe. | Desktop | [https://code.visualstudio.com/download](https://code.visualstudio.com/download) |
 | Node.js (LTS) + npm | Entorno de ejecución y gestor de paquetes para construir la Web Application con Vite. | Desktop | [https://nodejs.org/en/download](https://nodejs.org/en/download) |
-| Vue 3 + Vite | Framework y herramienta de construcción de la Frontend Web Application. | Librería | [https://vuejs.org](https://vuejs.org) |
-| PrimeVue | Biblioteca de componentes de UI para la Web Application, con tema basado en Material Design. | Librería | [https://primevue.org](https://primevue.org) |
-| Vue Router · Pinia · Vue I18n | Navegación entre vistas, manejo de estado por bounded context e internacionalización (en_US por defecto, es_419). | Librería | [https://router.vuejs.org](https://router.vuejs.org) · [https://pinia.vuejs.org](https://pinia.vuejs.org) · [https://vue-i18n.intlify.dev](https://vue-i18n.intlify.dev) |
-| Axios | Cliente HTTP para consumir el Fake API (Sprint 2) y luego la RESTful API. | Librería | [https://axios-http.com](https://axios-http.com) |
-| json-server | Fake API basado en un archivo `db.json`, utilizado mientras se implementan los Web Services en ASP.NET Core. | Librería | [https://github.com/typicode/json-server](https://github.com/typicode/json-server) |
-| JetBrains Rider | IDE para el desarrollo de la RESTful API en C# con ASP.NET Core y Entity Framework Core. | Desktop | [https://www.jetbrains.com/rider/download/](https://www.jetbrains.com/rider/download/) |
-| .NET SDK | SDK para compilar y ejecutar los Web Services en ASP.NET Core. | Desktop | [https://dotnet.microsoft.com/en-us/download](https://dotnet.microsoft.com/en-us/download) |
-| MySQL Server + MySQL Workbench | Motor de base de datos relacional y herramienta de administración y consultas. | Desktop | [https://dev.mysql.com/downloads/](https://dev.mysql.com/downloads/) |
+| Vue 3 + Vite | Framework y herramienta de construcción de la Frontend Web Application. | Biblioteca | [https://vuejs.org](https://vuejs.org) |
+| PrimeVue | Biblioteca de componentes de UI para la Web Application, con tema basado en Material Design. | Biblioteca | [https://primevue.org](https://primevue.org) |
+| Vue Router · Pinia / Vue Reactivity · Vue I18n | Navegación entre vistas, manejo de estado reactivo por bounded context e internacionalización (`en_US` por defecto, `es_419`). | Biblioteca | [https://router.vuejs.org](https://router.vuejs.org) · [https://vuejs.org](https://vuejs.org) · [https://vue-i18n.intlify.dev](https://vue-i18n.intlify.dev) |
+| Leaflet | Biblioteca open-source de mapas interactivos para selección de coordenadas, visualización de corredores y monitoreo GPS en vivo. | Biblioteca | [https://leafletjs.com](https://leafletjs.com) |
+| Axios | Cliente HTTP con interceptores JWT para consumir el Fake API (Sprint 2) y la RESTful API en producción (Sprint 3). | Biblioteca | [https://axios-http.com](https://axios-http.com) |
+| json-server | Fake API basado en un archivo `db.json`, utilizado durante el Sprint 2 antes de la integración con los Web Services en ASP.NET Core. | Biblioteca | [https://github.com/typicode/json-server](https://github.com/typicode/json-server) |
+| JetBrains Rider | IDE para el desarrollo de la RESTful API en C# 14 con ASP.NET Core (.NET 10) y Entity Framework Core. | Desktop | [https://www.jetbrains.com/rider/download/](https://www.jetbrains.com/rider/download/) |
+| .NET 10 SDK | SDK para compilar y ejecutar los Web Services en ASP.NET Core (`Trazza.Platform`). | Desktop | [https://dotnet.microsoft.com/en-us/download](https://dotnet.microsoft.com/en-us/download) |
+| Cortex.Mediator · Scalar.AspNetCore · BCrypt.Net-Next | Mediador in-process con comportamientos de pipeline CQRS, documentación interactiva OpenAPI y cifrado de contraseñas. | Biblioteca | [https://www.nuget.org](https://www.nuget.org) |
+| MySQL Server 8 + MySQL Workbench | Motor de base de datos relacional (`trazza_database`) y herramienta de administración y consultas. | Desktop | [https://dev.mysql.com/downloads/](https://dev.mysql.com/downloads/) |
 
 #### Software Testing
 
 | Producto | Propósito en el proyecto | Tipo | Ruta |
 | :--- | :--- | :--- | :--- |
-| Swagger UI (OpenAPI Specification) | Documentación y prueba manual de los endpoints de la RESTful API. | Librería | [https://swagger.io/tools/swagger-ui/](https://swagger.io/tools/swagger-ui/) |
+| Scalar / Swagger UI (OpenAPI Specification) | Documentación interactiva y prueba de los endpoints de la RESTful API en `/scalar/v1` y `/openapi/v1.json`. | Biblioteca | [https://scalar.com](https://scalar.com) · [https://swagger.io/tools/swagger-ui/](https://swagger.io/tools/swagger-ui/) |
 | Chrome DevTools | Pruebas de responsive design (Desktop 1280 px / Mobile 390 px), revisión de atributos ARIA y depuración de llamadas HTTP. | Desktop | [https://developer.chrome.com/docs/devtools](https://developer.chrome.com/docs/devtools) |
 | Lighthouse | Auditoría de accesibilidad, rendimiento y SEO del Landing Page y la Web Application. | Desktop | [https://developer.chrome.com/docs/lighthouse](https://developer.chrome.com/docs/lighthouse) |
 
@@ -68,16 +70,16 @@ A continuación se presentan los productos de software que utiliza el equipo, ag
 | Producto | Propósito en el proyecto | Tipo | Ruta |
 | :--- | :--- | :--- | :--- |
 | AWS Amplify Hosting | Publicación continua del Landing Page y de la Frontend Web Application a partir de la rama `main` de cada repositorio. | SaaS (Cloud) | [https://aws.amazon.com/amplify/hosting/](https://aws.amazon.com/amplify/hosting/) |
-| Render (Web Service) | Publicación temporal del Fake API (json-server) consumido por la primera versión de la Web Application. | SaaS (Cloud) | [https://render.com](https://render.com) |
-| AWS EC2 · AWS RDS for MySQL | Infraestructura planificada para la RESTful API y su base de datos a partir del Sprint 3. | SaaS (Cloud) | [https://aws.amazon.com](https://aws.amazon.com) |
+| AWS EC2 · Amazon CloudFront | Ejecución en contenedor Docker de la RESTful API (`Trazza.Platform`) en AWS EC2 y distribución HTTPS mediante Amazon CloudFront. | SaaS (Cloud) | [https://aws.amazon.com/ec2/](https://aws.amazon.com/ec2/) · [https://aws.amazon.com/cloudfront/](https://aws.amazon.com/cloudfront/) |
+| Amazon RDS for MySQL | Instancia administrada de base de datos relacional MySQL 8 (`trazza_database`) consumida por los Web Services en producción. | SaaS (Cloud) | [https://aws.amazon.com/rds/mysql/](https://aws.amazon.com/rds/mysql/) |
 
 #### Software Documentation
 
 | Producto | Propósito en el proyecto | Tipo | Ruta |
 | :--- | :--- | :--- | :--- |
-| GitHub (Trazza-report) | Redacción y control de versiones del Project Report en Markdown. | SaaS | [https://github.com/StackRoot-1ASI0730-2620-8084/Trazza-report](https://github.com/StackRoot-1ASI0730-2620-8084/Trazza-report) |
-| Microsoft Stream | Publicación de los videos de exposición, entrevistas y navegación por Sprint. | SaaS | [https://www.microsoft.com/microsoft-365/microsoft-stream](https://www.microsoft.com/microsoft-365/microsoft-stream) |
-| OpenAPI (Swagger) | Documentación de los Web Services desde el propio proyecto ASP.NET Core. | Especificación | [https://swagger.io/specification/](https://swagger.io/specification/) |
+| GitHub (trazza-report) | Redacción y control de versiones del Project Report en Markdown. | SaaS | [https://github.com/StackRoot-1ASI0730-2620-8084/trazza-report](https://github.com/StackRoot-1ASI0730-2620-8084/trazza-report) |
+| Microsoft Stream · YouTube | Publicación de los videos de exposición, entrevistas de validación, navegación por Sprint, *Video About-the-Product* y *Video About-the-Team*. | SaaS | [https://www.microsoft.com/microsoft-365/microsoft-stream](https://www.microsoft.com/microsoft-365/microsoft-stream) · [https://www.youtube.com](https://www.youtube.com) |
+| OpenAPI 3.1 + Scalar | Documentación interactiva de los Web Services generada desde el proyecto ASP.NET Core. | Especificación | [https://swagger.io/specification/](https://swagger.io/specification/) |
 
 ### 5.1.2. Source Code Management
 
@@ -85,10 +87,10 @@ El equipo utiliza GitHub como plataforma y sistema de control de versiones. Todo
 
 | Producto | Repositorio | Contenido |
 | :--- | :--- | :--- |
-| Project Report | [https://github.com/StackRoot-1ASI0730-2620-8084/Trazza-report](https://github.com/StackRoot-1ASI0730-2620-8084/Trazza-report) | Informe en Markdown, imágenes y diagramas como código (`.puml`). |
-| Landing Page | [https://github.com/StackRoot-1ASI0730-2620-8084/Trazza-LandingPage](https://github.com/StackRoot-1ASI0730-2620-8084/Trazza-LandingPage) | Sitio estático en HTML5, CSS3 y JavaScript con i18n (EN / ES). |
-| Frontend Web Application | [https://github.com/StackRoot-1ASI0730-2620-8084/Trazza-WebAplication](https://github.com/StackRoot-1ASI0730-2620-8084/Trazza-WebAplication) | Aplicación Vue 3 + PrimeVue organizada por bounded context y Fake API en `server/db.json`. |
-| Web Services (RESTful API) | `https://github.com/StackRoot-1ASI0730-2620-8084/Trazza-API` (se crea en el Sprint 3) | Proyecto ASP.NET Core + Entity Framework Core y sus pruebas unitarias y de integración/aceptación. |
+| Project Report | [https://github.com/StackRoot-1ASI0730-2620-8084/trazza-report](https://github.com/StackRoot-1ASI0730-2620-8084/trazza-report) | Informe en Markdown, imágenes y diagramas como código (`.puml` y `.dsl`). |
+| Landing Page | [https://github.com/StackRoot-1ASI0730-2620-8084/trazza-website](https://github.com/StackRoot-1ASI0730-2620-8084/trazza-website) | Sitio estático en HTML5, CSS3 y JavaScript con i18n (EN / ES) y enlaces directos a la Web Application. |
+| Frontend Web Application | [https://github.com/StackRoot-1ASI0730-2620-8084/trazza-webapp](https://github.com/StackRoot-1ASI0730-2620-8084/trazza-webapp) | Aplicación Vue 3 + PrimeVue + Leaflet organizada por bounded context (`iam`, `matchmaking`, `execution`, `billing`, `reputation`, `shared`). |
+| Web Services (RESTful API) | [https://github.com/StackRoot-1ASI0730-2620-8084/trazza-platform](https://github.com/StackRoot-1ASI0730-2620-8084/trazza-platform) | Proyecto ASP.NET Core (.NET 10, C# 14) + Entity Framework Core (MySQL 8), arquitectura DDD/CQRS, documentación OpenAPI/Scalar y herramientas de simulación GPS. |
 
 #### GitFlow Workflow
 
@@ -125,8 +127,10 @@ Mientras la Web Application y la RESTful API estén en desarrollo inicial se usa
 | :--- | :--- | :--- | :--- |
 | Landing Page | `v1.0.0` | AV1 – Sprint 1 | Primera versión del Landing Page desplegada en AWS Amplify. |
 | Landing Page | `v1.1.0` | TB1 – Sprint 2 | Inglés como idioma por defecto, selector EN / ES funcional, rediseño según el mock-up actualizado y fotografías reales en las secciones para transportistas y comerciantes. |
-| Frontend Web Application | `v0.1.0` | TB1 – Sprint 2 | Primera versión desplegada: Sign up / Sign in, dashboards por rol, rutas de retorno, solicitudes de flete, vehículos e historial de envíos sobre el Fake API. |
-| RESTful API | `v0.1.0` | AV2 – Sprint 3 | Primera versión de los Web Services documentados con OpenAPI. |
+| Landing Page | `v1.2.0` | AV2 – Sprint 3 | Actualización de precios de planes y vinculación de todos los CTAs y botones de inicio de sesión / registro por rol hacia la URL en producción de la Frontend Web Application. |
+| Frontend Web Application | `v1.0.0` | TB1 – Sprint 2 | Primera versión desplegada: Sign up / Sign in, dashboards por rol, rutas de retorno, solicitudes de flete, vehículos e historial de envíos sobre el Fake API. |
+| Frontend Web Application | `v2.0.0` | AV2 – Sprint 3 | Segunda versión integrada con los RESTful Web Services reales (`Trazza.Platform`): autenticación JWT con refresh token, verificación KYC (RENIEC), mapas interactivos con Leaflet, sugerencias espaciales por corredor, chat de negociación, GPS en vivo, alertas de desvío, incidencias, planes y suscripciones, liquidaciones de flete, compensaciones por lucro cesante, calificaciones y puntos de fidelidad. |
+| RESTful Web Services (`Trazza.Platform`) | `v1.0.0` | AV2 – Sprint 3 | Primera versión completa de los Web Services en ASP.NET Core (.NET 10, C# 14) y Entity Framework Core sobre MySQL 8 (AWS RDS), con los cinco Bounded Contexts y Shared Kernel, CQRS con Cortex.Mediator, respuestas RFC 9457 `ProblemDetails`, i18n (`en` / `es`) y documentación OpenAPI interactiva en Scalar (`/scalar/v1`). |
 
 #### Conventional Commits
 
@@ -152,10 +156,13 @@ Los mensajes de commit siguen la especificación Conventional Commits 1.0.0, con
 
 Ejemplos tomados del historial del proyecto:
 
-* `feat: make the EN | ES language switch translate the site` (Trazza-LandingPage)
-* `feat: add real photos to the carriers and merchants sections` (Trazza-LandingPage)
-* `docs(chapter4): add web application mock up & userflows images` (Trazza-report)
-* `docs(chapter4): update web application ux ui design` (Trazza-report)
+* `feat: make the EN | ES language switch translate the site` (`trazza-website`)
+* `feat: link landing CTAs to web app` (`trazza-website`)
+* `feat(iam): authenticate against platform api with jwt` (`trazza-webapp`)
+* `feat(reputation): add rating and loyalty points translations` (`trazza-webapp`)
+* `feat(infrastructure): implement IAM infrastructure services and persistence` (`trazza-platform`)
+* `feat: implement execution controllers, resources, and context facades` (`trazza-platform`)
+* `docs(chapter4): update web application ux ui design` (`trazza-report`)
 
 ### 5.1.3. Source Code Style Guide & Conventions
 
@@ -194,7 +201,7 @@ Referencia: [Vue Style Guide](https://vuejs.org/style-guide/) (reglas de priorid
 
 * Componentes en PascalCase y con nombres de más de una palabra (`ReturnRouteForm.vue`, `ShipmentHistoryTable.vue`).
 * Composition API con `<script setup>` y props declaradas con tipo.
-* Estructura de carpetas por bounded context: `src/iam`, `src/profiles-fleet`, `src/freight-publishing`, `src/matching`, `src/trip-tracking`, `src/reputation`, `src/subscriptions`, y dentro de cada uno `domain/model`, `application`, `infrastructure` y `presentation`.
+* Estructura de carpetas por bounded context: `src/iam`, `src/matchmaking`, `src/execution`, `src/billing`, `src/reputation`, `src/shared`, y dentro de cada uno `domain/model`, `application`, `infrastructure` y `presentation`.
 * Componentes de PrimeVue para la UI; textos de la interfaz siempre a través de `$t('key')` (Vue I18n).
 
 **C# y ASP.NET Core**
@@ -203,8 +210,8 @@ Referencias: [C# Coding Conventions](https://learn.microsoft.com/en-us/dotnet/cs
 
 * PascalCase para clases, métodos y propiedades públicas (`ReturnRoute`, `GetByCarrierIdAsync`); camelCase para variables locales y parámetros; prefijo `_` para campos privados y prefijo `I` para interfaces (`IReturnRouteRepository`).
 * Una clase por archivo, sufijo `Async` en métodos asíncronos y uso de inyección de dependencias.
-* Organización por bounded context con capas `Domain`, `Application`, `Infrastructure` e `Interfaces` (controllers REST en plural, por ejemplo `/api/v1/return-routes`).
-* Endpoints documentados con OpenAPI mediante Swagger.
+* Organización por bounded context (`Iam`, `Matchmaking`, `Execution`, `Billing`, `Reputation`, `Shared`) con capas `Domain`, `Application`, `Infrastructure` e `Interfaces` (controllers REST en plural y kebab-case, por ejemplo `/api/v1/return-routes`).
+* Endpoints documentados con OpenAPI 3.1 y expuestos de forma interactiva mediante Scalar (`/scalar/v1`).
 
 **Gherkin**
 
@@ -216,28 +223,28 @@ Referencia: [Gherkin Conventions for Readable Specifications](https://specflow.o
 
 ### 5.1.4. Software Deployment Configuration
 
-La solución Trazza se compone de tres productos que se despliegan de forma independiente. La siguiente tabla resume la configuración vigente al Sprint 2.
+La solución Trazza se compone de tres productos digitales desplegados de forma independiente en Amazon Web Services (AWS). La siguiente tabla resume la configuración vigente en producción al cierre del Sprint 3.
 
 | Producto | Repositorio / rama | Tecnología | Servicio de despliegue | URL pública |
 | :--- | :--- | :--- | :--- | :--- |
-| Landing Page | `Trazza-LandingPage` / `main` | HTML5, CSS3, JavaScript | AWS Amplify Hosting | [https://main.d3opwp5g5g1mc8.amplifyapp.com](https://main.d3opwp5g5g1mc8.amplifyapp.com) |
-| Frontend Web Application | `Trazza-WebAplication` / `main` | Vue 3, Vite, PrimeVue, Pinia, Vue Router, Vue I18n | AWS Amplify Hosting | `[URL de Amplify de la Web Application]` |
-| Fake API (temporal) | `Trazza-WebAplication` / `main` (carpeta `server`) | json-server | Render (Web Service) | `[URL de Render del Fake API]` |
-| RESTful API (Sprint 3) | `Trazza-API` / `main` | ASP.NET Core, C#, EF Core | AWS EC2 | Pendiente |
-| Base de datos (Sprint 3) | — | MySQL | AWS RDS for MySQL | Pendiente |
+| Landing Page (`v1.2.0`) | `trazza-website` / `main` | HTML5, CSS3, JavaScript | AWS Amplify Hosting | [https://main.d3opwp5g5g1mc8.amplifyapp.com](https://main.d3opwp5g5g1mc8.amplifyapp.com) |
+| Frontend Web Application (`v2.0.0`) | `trazza-webapp` / `main` | Vue 3, Vite, PrimeVue, Leaflet, Vue Router, Vue I18n | AWS Amplify Hosting | [https://main.d32sst26l9v5eu.amplifyapp.com](https://main.d32sst26l9v5eu.amplifyapp.com) |
+| RESTful Web Services (`v1.0.0`) | `trazza-platform` / `main` | ASP.NET Core (.NET 10), C# 14, EF Core, Cortex.Mediator | AWS EC2 (Docker) + Amazon CloudFront | [https://d3mwl1okiudzcg.cloudfront.net/api/v1](https://d3mwl1okiudzcg.cloudfront.net/api/v1) |
+| Documentación OpenAPI / Scalar | `trazza-platform` / `main` | Microsoft.AspNetCore.OpenApi + Scalar.AspNetCore | AWS EC2 + Amazon CloudFront | [https://d3mwl1okiudzcg.cloudfront.net/scalar/v1](https://d3mwl1okiudzcg.cloudfront.net/scalar/v1) |
+| Base de datos relacional | — | MySQL 8 (`trazza_database`) | Amazon RDS for MySQL | Instancia privada vinculada a AWS EC2 |
 
 #### Landing Page (AWS Amplify Hosting)
 
 1. Ingresar a la consola de AWS Amplify y seleccionar **Create new app → GitHub**.
-2. Autorizar a AWS Amplify en la organización `StackRoot-1ASI0730-2620-8084` y seleccionar el repositorio `Trazza-LandingPage` y la rama `main`.
+2. Autorizar a AWS Amplify en la organización `StackRoot-1ASI0730-2620-8084` y seleccionar el repositorio `trazza-website` y la rama `main`.
 3. Al ser un sitio estático, no se configura comando de build y el directorio de salida es la raíz del repositorio (`/`).
-4. Guardar y desplegar. Amplify publica el sitio en un dominio `*.amplifyapp.com` con HTTPS.
-5. Cada merge en `main` dispara automáticamente un nuevo despliegue (despliegue continuo).
+4. Guardar y desplegar. Amplify publica el sitio en `https://main.d3opwp5g5g1mc8.amplifyapp.com` con HTTPS.
+5. Cada merge en `main` dispara automáticamente un nuevo despliegue continuo.
 
 #### Frontend Web Application (AWS Amplify Hosting)
 
-1. En AWS Amplify, crear una nueva app conectada al repositorio `Trazza-WebAplication`, rama `main`.
-2. Configurar el build en `amplify.yml`:
+1. En AWS Amplify, crear una nueva aplicación conectada al repositorio `trazza-webapp`, rama `main`.
+2. Configurar el archivo de construcción `amplify.yml`:
 
 ```yaml
 version: 1
@@ -258,24 +265,18 @@ frontend:
       - node_modules/**/*
 ```
 
-3. Agregar la variable de entorno `VITE_API_BASE_URL` con la URL pública del Fake API (en el Sprint 3 se reemplazará por la URL de la RESTful API).
-4. Agregar la regla Rewrites and redirects para que Vue Router funcione al recargar cualquier ruta:
+3. Configurar en `.env.production` y en las variables de entorno de AWS Amplify la URL pública de los RESTful Web Services (`VITE_TRAZZA_PLATFORM_API_URL="https://d3mwl1okiudzcg.cloudfront.net/api/v1"`) junto con las rutas de cada bounded context (`/authentication`, `/users`, `/vehicles`, `/drivers`, `/saved-addresses`, `/return-routes`, `/shipment-requests`, `/match-proposals`, `/trips`, `/iot-devices`, `/plans`, `/subscriptions`, `/freight-settlements`, `/cancellation-compensations`, `/ratings`, `/loyalty`).
+4. Agregar la regla *Rewrites and redirects* para que Vue Router resuelva cualquier ruta de cliente al recargar:
 
 | Source address | Target address | Type |
 | :--- | :--- | :--- |
 | `</^[^.]+$\|\.(?!(css\|gif\|ico\|jpg\|js\|png\|txt\|svg\|woff\|woff2\|ttf\|map\|json\|webp)$)([^.]+$)/>` | `/index.html` | `200 (Rewrite)` |
 
-5. Guardar y desplegar. Cada merge en `main` genera un nuevo build y despliegue.
+5. Guardar y desplegar en `https://main.d32sst26l9v5eu.amplifyapp.com`. Cada merge en `main` genera automáticamente un nuevo build y despliegue.
 
-#### Fake API (Render)
+#### RESTful Web Services y Base de Datos (AWS EC2 + Amazon RDS + Amazon CloudFront)
 
-1. Crear un **Web Service** en Render conectado al repositorio `Trazza-WebAplication`.
-2. Configurar Root Directory `server`, Build Command `npm install` y Start Command `npx json-server db.json --host 0.0.0.0 --port $PORT`.
-3. Copiar la URL pública generada y registrarla como `VITE_API_BASE_URL` en AWS Amplify.
-
-#### RESTful API y base de datos (planificado para el Sprint 3)
-
-1. Aprovisionar una instancia de AWS RDS for MySQL y restringir su Security Group para aceptar conexiones solo desde la instancia EC2 de la API.
-2. Publicar el proyecto ASP.NET Core en modo `Release` (`dotnet publish -c Release`) y ejecutarlo en una instancia AWS EC2 detrás de Nginx como proxy inverso.
-3. Configurar como variables de entorno `ASPNETCORE_ENVIRONMENT=Production`, la cadena de conexión a MySQL y la clave para la generación de tokens JWT, sin exponer credenciales en el repositorio.
-4. Habilitar Swagger UI en `/swagger` como evidencia de la documentación OpenAPI.
+1. Aprovisionar una instancia de **Amazon RDS for MySQL 8** con el esquema `trazza_database` (enfoque *database-first*) y configurar su Security Group para permitir tráfico en el puerto `3306` desde la instancia EC2 de la API.
+2. Construir la imagen Docker multi-stage de `Trazza.Platform` definida en el `Dockerfile` del repositorio `trazza-platform` (`mcr.microsoft.com/dotnet/sdk:10.0` para `dotnet publish -c Release` y `mcr.microsoft.com/dotnet/aspnet:10.0` como imagen de ejecución en el puerto `8080`).
+3. Ejecutar el contenedor en la instancia **AWS EC2** inyectando mediante variables de entorno (`DATABASE_URL`, `DATABASE_USER`, `DATABASE_PASSWORD`, `DATABASE_SCHEMA`, `TokenSettings__Secret`, `PersonalData__EncryptionKey`, `PersonalData__HashKey`, `Cors__AllowedOrigins__0`) las credenciales de producción, sin almacenar ningún secreto en el repositorio.
+4. Configurar una distribución de **Amazon CloudFront** (`https://d3mwl1okiudzcg.cloudfront.net`) frente a la instancia EC2 para proveer terminación TLS/HTTPS, permitir el consumo seguro desde la Web Application en AWS Amplify y exponer públicamente los endpoints REST (`/api/v1/*`), la especificación OpenAPI (`/openapi/v1.json`) y el portal interactivo Scalar (`/scalar/v1`).
