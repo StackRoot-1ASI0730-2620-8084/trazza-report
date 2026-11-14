@@ -87,6 +87,54 @@ En esta sección se define, por cada segmento objetivo, cómo se realizarán las
 
 ### 5.3.2. Registro de Entrevistas. 
 
+En esta sección se registran las entrevistas de validación realizadas con usuarios de cada segmento objetivo, siguiendo el guion de la sección 5.3.1. Cada entrevistado recorrió el Landing Page y la Web Application desplegada (sección 5.2.3.7) mientras pensaba en voz alta.
+
+**Segmento 1: Transportistas de carga terrestre (Carrier)**
+
+| # | Nombres y Apellidos | Edad | Distrito | Screenshot | URL del video (Microsoft Stream) | Inicio | Duración |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | [Pendiente] | [Pendiente] | [Pendiente] | [Pendiente: captura] | [Pendiente: URL] | [Pendiente] | [Pendiente] |
+| 2 | [Pendiente] | [Pendiente] | [Pendiente] | [Pendiente: captura] | [Pendiente: URL] | [Pendiente] | [Pendiente] |
+| 3 | [Pendiente] | [Pendiente] | [Pendiente] | [Pendiente: captura] | [Pendiente: URL] | [Pendiente] | [Pendiente] |
+
+**Segmento 2: Pequeños y medianos emprendedores (Merchant)**
+
+| # | Nombres y Apellidos | Edad | Distrito | Screenshot | URL del video (Microsoft Stream) | Inicio | Duración |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | [Pendiente] | [Pendiente] | [Pendiente] | [Pendiente: captura] | [Pendiente: URL] | [Pendiente] | [Pendiente] |
+| 2 | [Pendiente] | [Pendiente] | [Pendiente] | [Pendiente: captura] | [Pendiente: URL] | [Pendiente] | [Pendiente] |
+| 3 | [Pendiente] | [Pendiente] | [Pendiente] | [Pendiente: captura] | [Pendiente: URL] | [Pendiente] | [Pendiente] |
+
+**Resúmenes de Entrevistas**
+
+*Resumen de entrevista 1 (Segmento 1):* [Pendiente: perfil del entrevistado, respuestas a las 8 preguntas, dónde dudó o se equivocó y qué valoró.]
+
+*Resumen de entrevista 2 (Segmento 1):* [Pendiente]
+
+*Resumen de entrevista 3 (Segmento 1):* [Pendiente]
+
+*Resumen de entrevista 1 (Segmento 2):* [Pendiente]
+
+*Resumen de entrevista 2 (Segmento 2):* [Pendiente]
+
+*Resumen de entrevista 3 (Segmento 2):* [Pendiente]
+
+**Resultados por flujo**
+
+| Segmento | Flujo | Entrevistados que lo completaron sin ayuda | Principales dudas o errores | Cambio propuesto |
+| :--- | :--- | :---: | :--- | :--- |
+| Carrier | Registro e inicio de sesión | [Pendiente] / 3 | [Pendiente] | [Pendiente] |
+| Carrier | Publicar ruta de retorno | [Pendiente] / 3 | [Pendiente] | [Pendiente] |
+| Carrier | Cargas sugeridas y oferta | [Pendiente] / 3 | [Pendiente] | [Pendiente] |
+| Carrier | Viaje: recojo y entrega | [Pendiente] / 3 | [Pendiente] | [Pendiente] |
+| Merchant | Registro con RUC | [Pendiente] / 3 | [Pendiente] | [Pendiente] |
+| Merchant | Solicitar flete | [Pendiente] / 3 | [Pendiente] | [Pendiente] |
+| Merchant | Elegir transportista y confirmar match | [Pendiente] / 3 | [Pendiente] | [Pendiente] |
+| Merchant | Seguimiento y confirmación de entrega | [Pendiente] / 3 | [Pendiente] | [Pendiente] |
+
+**Conclusiones del registro:** [Pendiente: hallazgos comunes a ambos segmentos y cambios que se llevan al Product Backlog.]
+
+
 
 
 ### 5.3.3. Evaluaciones según heurísticas
@@ -348,3 +396,27 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 3. **Ajustes de documentación (severidad 1):** corregir datos inconsistentes (#13).
 4. No se detectaron problemas de severidad 4. Los flujos principales (publicar ruta, ofertar, confirmar match, seguir y entregar) se pueden completar con el diseño actual.
 5. **Siguiente paso recomendado:** repetir la evaluación sobre la primera versión funcional (Angular) con 5 usuarios reales de cada segmento, tal como sugieren las recomendaciones del informe (más pruebas de usabilidad y A/B testing del flujo de Matchmaking).
+
+---
+
+## SEGUIMIENTO SOBRE LA VERSIÓN DESPLEGADA (SPRINT 3)
+
+La evaluación anterior se hizo sobre los diseños de la sección 4.4. Al cierre del Sprint 3 se revisó cada problema contra el código de `trazza-webapp` y los endpoints de `trazza-platform`. Los estados **Resuelto**, **Parcial** y **Persiste** se respaldan en el código indicado. **Por verificar** indica que el problema debe comprobarse usando la aplicación desplegada.
+
+| # | Problema | Estado | Evidencia |
+|---|---|:---:|---|
+| 1 | Idioma por defecto en inglés | Persiste | `src/i18n.js` define `locale: 'en'` y `fallbackLocale: 'en'`. Los textos en español existen en `locales/es.json`, pero no se cargan por defecto. |
+| 2 | Etiquetas del sidebar distintas a las pantallas | Resuelto | Las opciones del menú en `locales/es.json` (`option.*`) usan los nombres de las vistas: "Mis rutas de retorno", "Cargas sugeridas", "Viaje activo", "Seguimiento de envíos", entre otras. |
+| 3 | "Subastas de Carga" y "Liquidaciones y Pagos" | Resuelto | No existe la etiqueta "Subastas". "Liquidaciones" corresponde ahora a una función real: `GET /api/v1/freight-settlements` y la vista de liquidaciones. |
+| 4 | No se puede retirar una oferta ni cancelar un match | Parcial | Se pueden cancelar rutas, solicitudes y viajes (`/return-routes/{id}/cancel`, `/shipment-requests/{id}/cancel`, `/trips/{id}/cancel`). La API expone `/match-proposals/{id}/cancel`, pero la Web App todavía no lo llama. |
+| 5 | El mapa es el único medio para entender ruta y desvío | Por verificar | La línea de tiempo del envío muestra eventos en texto ("Alerta de desvío ({distance} km)", "De vuelta en la ruta planificada"). Falta comprobar que toda la información del mapa tenga equivalente en texto. |
+| 6 | El seguimiento depende del navegador del transportista | Por verificar | El seguimiento recibe puntos por `POST /trips/{id}/tracking-points` y se probó con el simulador GPS de `trazza-platform`. Falta comprobar cómo se comparte la ubicación desde el celular en ruta. |
+| 7 | Terminología Carrier / Merchant mezclada | Por verificar | En español los roles se muestran como "Transportista" y "Emprendedor" (`roles.*`). Falta revisar que no queden términos en inglés en las vistas. |
+| 8 | Selector de modo frente al rol del registro | Por verificar | La API permite activar un segundo rol (`POST /users/me/roles`) y existe el texto `menu.switch-to`. Falta comprobar el comportamiento del selector en la aplicación. |
+| 9 | "Delivered" no distingue entrega marcada y confirmada | Resuelto | La API separa `POST /trips/{id}/deliver` y `POST /trips/{id}/confirm`. La línea de tiempo muestra "Marcado como entregado" y "Recepción confirmada por el emprendedor". |
+| 10 | Ofertas cerradas sin aviso a otros transportistas | Por verificar | Falta comprobar qué ve un transportista cuya propuesta queda cerrada tras un match. |
+| 11 | Recuperación de errores en DNI / RUC | Por verificar | La API devuelve errores `ProblemDetails` localizados. Falta comprobar cómo los muestra el formulario de registro. |
+| 12 | Sin ayuda ni onboarding | Persiste | No se encontró una vista de ayuda, tutorial ni onboarding en `trazza-webapp/src`. |
+| 13 | Datos inconsistentes en el diseño | No aplica | Se refería a la documentación del diseño, no a la aplicación. |
+
+**Resumen del seguimiento:** 3 resueltos, 1 parcial, 2 persisten, 6 por verificar y 1 que no aplica. Para el siguiente release quedan con prioridad alta el idioma por defecto (#1) y el retiro de ofertas desde la Web App (#4).
