@@ -268,16 +268,16 @@ En el Sprint Planning 3 el equipo definió el objetivo del Sprint y seleccionó 
 | Sprint # | Sprint 3 |
 | :--- | :--- |
 | **Sprint Planning Background** | |
-| Date | [Pendiente: fecha del Sprint Planning 3] |
-| Time | [Pendiente: hora] |
-| Location | [Pendiente: lugar o plataforma de la reunión] |
+| Date | 13/11/2026 |
+| Time | 11:00 p.m. |
+| Location | Reunión virtual vía Google Meet |
 | Prepared By | Peñaranda Caldas, Gabriel Augusto |
-| Attendees (to planning meeting) | [Pendiente: confirmar asistentes] |
-| Sprint 2 Review Summary | [Pendiente: resumen del Sprint 2 Review redactado por el equipo] |
-| Sprint 2 Retrospective Summary | [Pendiente: resumen de la Sprint 2 Retrospective redactado por el equipo] |
+| Attendees (to planning meeting) | Checalla Apaza, Emanuel Renato / Lozano Quispe, Fabricio Jofred / Medina Merma, Ingrid Melani / Peñaranda Caldas, Gabriel Augusto / Vite Celis, Rodrigo Matias |
+| Sprint 2 Review Summary | En el Sprint 2 se publicó la primera versión de la Web Application en AWS Amplify, con las vistas principales de los cinco bounded contexts conectadas a una API simulada con json-server. También se publicó una nueva versión del Landing Page traducida al inglés y al español, con fotos reales y botones enlazados a la Web App. Como pendiente quedó reemplazar la API simulada por Web Services reales con base de datos. |
+| Sprint 2 Retrospective Summary | El reparto del trabajo por bounded context permitió avanzar en paralelo y el uso de ramas `feature/*` con Pull Requests ordenó la integración del informe. Como mejora, el equipo acordó definir primero los contratos de la API para evitar diferencias entre el frontend y el backend, y trabajar todos los repositorios con GitFlow y Pull Requests en lugar de subir cambios directamente a `main`. |
 | **Sprint Goal & User Stories** | |
 | Sprint 3 Goal | **Nuestro enfoque está en** implementar y desplegar los Web Services de Trazza para los cinco bounded contexts e integrar la Web Application con ellos, reemplazando la API simulada del Sprint 2. **Creemos que esto entrega** un flujo real de punta a punta, desde la publicación de una ruta o solicitud hasta la entrega, la liquidación y la calificación, **a** transportistas independientes y comerciantes MYPE de Lima. **Esto se confirmará cuando** un usuario pueda registrarse, publicar, emparejarse, seguir un viaje y calificar en la Web Application desplegada, con los datos guardados en la base de datos a través de la API documentada con OpenAPI. |
-| Sprint 3 Velocity | [Pendiente: velocity acordada por el equipo] |
+| Sprint 3 Velocity | 65 Story Points |
 | Sum of Story Points | 65 Story Points (US06: 5, US07: 5, US14: 5, US18: 5, US22: 5, US26: 8, US28: 8, US29: 8, US30: 8, US31: 8) |
 
 #### 5.2.3.2. Aspect Leaders and Collaborators
