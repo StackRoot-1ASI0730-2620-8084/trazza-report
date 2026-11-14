@@ -3597,7 +3597,7 @@ La solución Trazza se compone de tres productos digitales desplegados de forma 
 
 | Producto | Repositorio / rama | Tecnología | Servicio de despliegue | URL pública |
 | :--- | :--- | :--- | :--- | :--- |
-| Landing Page (`v1.2.0`) | `trazza-website` / `main` | HTML5, CSS3, JavaScript | AWS Amplify Hosting | [https://main.d3opwp5g5g1mc8.amplifyapp.com](https://main.d3opwp5g5g1mc8.amplifyapp.com) |
+| Landing Page (`v1.2.0`) | `trazza-website` / `main` | HTML5, CSS3, JavaScript | AWS Amplify Hosting | [https://main.d2c543oob0ogxp.amplifyapp.com](https://main.d2c543oob0ogxp.amplifyapp.com) |
 | Frontend Web Application (`v2.0.0`) | `trazza-webapp` / `main` | Vue 3, Vite, PrimeVue, Leaflet, Vue Router, Vue I18n | AWS Amplify Hosting | [https://main.d32sst26l9v5eu.amplifyapp.com](https://main.d32sst26l9v5eu.amplifyapp.com) |
 | RESTful Web Services (`v1.0.0`) | `trazza-platform` / `main` | ASP.NET Core (.NET 10), C# 14, EF Core, Cortex.Mediator | AWS EC2 (Docker) + Amazon CloudFront | [https://d3mwl1okiudzcg.cloudfront.net/api/v1](https://d3mwl1okiudzcg.cloudfront.net/api/v1) |
 | Documentación OpenAPI / Scalar | `trazza-platform` / `main` | Microsoft.AspNetCore.OpenApi + Scalar.AspNetCore | AWS EC2 + Amazon CloudFront | [https://d3mwl1okiudzcg.cloudfront.net/scalar/v1](https://d3mwl1okiudzcg.cloudfront.net/scalar/v1) |
@@ -3608,7 +3608,7 @@ La solución Trazza se compone de tres productos digitales desplegados de forma 
 1. Ingresar a la consola de AWS Amplify y seleccionar **Create new app → GitHub**.
 2. Autorizar a AWS Amplify en la organización `StackRoot-1ASI0730-2620-8084` y seleccionar el repositorio `trazza-website` y la rama `main`.
 3. Al ser un sitio estático, no se configura comando de build y el directorio de salida es la raíz del repositorio (`/`).
-4. Guardar y desplegar. Amplify publica el sitio en `https://main.d3opwp5g5g1mc8.amplifyapp.com` con HTTPS.
+4. Guardar y desplegar. Amplify publica el sitio en `https://main.d2c543oob0ogxp.amplifyapp.com` con HTTPS.
 5. Cada merge en `main` dispara automáticamente un nuevo despliegue continuo.
 
 #### Frontend Web Application (AWS Amplify Hosting)
@@ -3744,7 +3744,7 @@ El alcance del Sprint 1 se limitó al Landing Page, que es un sitio estático. P
  
 En el Sprint 1 se creó la aplicación en AWS Amplify Hosting y se conectó con la rama `main` del repositorio `Trazza-LandingPage`, siguiendo los pasos descritos en la sección 5.1.4. Al ser un sitio estático, no requiere comando de build. Desde entonces, cada cambio integrado en `main` se publica automáticamente.
  
-**URL del Landing Page:** [https://main.d3opwp5g5g1mc8.amplifyapp.com](https://main.d3opwp5g5g1mc8.amplifyapp.com)
+**URL del Landing Page:** [https://main.d2c543oob0ogxp.amplifyapp.com](https://main.d2c543oob0ogxp.amplifyapp.com)
  
 <div align="center">
   <img src="../assets/images/trazzalandingpagedesplegada.jpeg" alt="Landing Page v1 deployed on AWS Amplify" width="800">
@@ -3879,7 +3879,7 @@ En el Sprint 2 se publicó la Web Application en AWS Amplify Hosting. La API sim
 
 | Software Component | Deployment Platform | Repository / Branch | Deployment URL | Status |
 | :--- | :--- | :--- | :--- | :--- |
-| Landing Page v2 | AWS Amplify Hosting | trazza-website / main | [Pendiente: confirmar URL vigente del Landing Page] | Deployed |
+| Landing Page v2 | AWS Amplify Hosting | trazza-website / main | https://main.d2c543oob0ogxp.amplifyapp.com | Deployed |
 | Web Application v1 | AWS Amplify Hosting | trazza-webapp / main | https://main.d1h7l9z3r6ucz4.amplifyapp.com | Deployed (reemplazada en el Sprint 3) |
 | Fake API (json-server) | Amazon EC2 + DuckDNS | trazza-webapp / main (`server/`) | https://trazza-api.duckdns.org/api/v1 | Deployed (retirada en el Sprint 3) |
 
@@ -4080,7 +4080,14 @@ En el Sprint 3 se desplegaron los Web Services y se publicó una nueva versión 
 | :--- | :--- | :--- | :--- | :--- |
 | Web Services (Trazza Platform v1.0.0) | Amazon CloudFront + Amazon EC2 + Amazon RDS (MySQL 8) | trazza-platform / main | https://d3mwl1okiudzcg.cloudfront.net/api/v1 | Deployed |
 | Web Application | AWS Amplify Hosting | trazza-webapp / main | https://main.d32sst26l9v5eu.amplifyapp.com | Deployed |
-| Landing Page | AWS Amplify Hosting | trazza-website / main | [Pendiente: confirmar URL vigente del Landing Page] | Deployed |
+| Landing Page | AWS Amplify Hosting | trazza-website / main | https://main.d2c543oob0ogxp.amplifyapp.com | Deployed |
+
+Para revisar la Web Application desplegada se crearon dos cuentas de prueba, una por cada rol:
+
+| Rol | Correo | Contraseña |
+| :--- | :--- | :--- |
+| Transportista (Carrier) | test+carrier@example.com | Tz0845049bc45f |
+| Emprendedor (Merchant) | test+merchant@example.com | Tz0845049bc45f |
 
 El endpoint `GET /api/v1/health` de la API desplegada responde `{"status":"healthy","database":"connected"}`, lo que confirma la conexión con la base de datos.
 
