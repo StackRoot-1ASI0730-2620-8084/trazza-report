@@ -1,6 +1,6 @@
 ## 5.2. Landing Page, Services & Applications Implementation
  
-En esta sección se explica y evidencia el proceso de implementación, pruebas, documentación y despliegue del Landing Page, los Web Services y la Frontend Web Application de Trazza, organizado por Sprint. En el Sprint 1 el equipo implementó y desplegó la primera versión del Landing Page. En el Sprint 2 se publicó una nueva versión del Landing Page y se planificó la primera versión de la Web Application a partir de los diseños de la sección 4.4.
+En esta sección se explica y evidencia el proceso de implementación, pruebas, documentación y despliegue del Landing Page, los Web Services y la Frontend Web Application de Trazza, organizado por Sprint. En el Sprint 1 el equipo implementó y desplegó la primera versión del Landing Page. En el Sprint 2 se publicó una nueva versión del Landing Page y la primera versión de la Web Application, construida a partir de los diseños de la sección 4.4 sobre una API simulada. En el Sprint 3 se implementaron y desplegaron los Web Services en ASP.NET Core y se integró la Web Application con ellos.
  
 ### 5.2.1. Sprint 1
  
@@ -149,100 +149,109 @@ En esta sección se presentan los líderes y colaboradores responsables de los p
 
 #### 5.2.2.3. Sprint Backlog 2
 
-En esta sección se detallan las User Stories y las tareas seleccionadas para el Sprint 2, incluyendo su estimación, responsable y estado.
+El objetivo del Sprint 2 fue desplegar la primera versión del frontend de la Web Application. Las tareas se agruparon por bounded context y se trabajaron en el repositorio `trazza-webapp`. En paralelo se publicó una nueva versión del Landing Page en `trazza-website`.
 
-**URL público del Board:** [Agregar URL del Board](URL)
+**URL público del Board:** [Pendiente: URL del Board del Sprint 2](URL)
 
 | Sprint # | Sprint 2 | | | | | | |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **User Story** | | **Work-Item / Task** | | | | | |
 | **Id** | **Title** | **Id** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
-| | | | | | | | |
-| | | | | | | |
-| | | | | | | |
-| | | | | | | |
-| | | | | | | |
+| US04, US05 | Landing Page: propuesta por segmento | T01 | Traducción y rediseño del Landing Page | Traducir el sitio al inglés, actualizar el diseño y activar el selector de idioma EN / ES. | [Pendiente] | Vite Celis, Rodrigo Matias | Done |
+| US04, US05 | Landing Page: propuesta por segmento | T02 | Fotos reales y limpieza de estilos | Reemplazar imágenes de carriers y merchants por fotos reales y depurar el CSS y el i18n. | [Pendiente] | Lozano Quispe, Fabricio Jofred | Done |
+| US03 | Inicio de Sesión de Usuario | T03 | Enlace del Landing Page a la Web App | Conectar los botones de inicio de sesión del Landing Page con la Web Application desplegada. | [Pendiente] | Vite Celis, Rodrigo Matias | Done |
+| US01, US02, US03 | Registro e inicio de sesión | T04 | Base del frontend e IAM | Crear el proyecto Vue + Vite con shared kernel, layout, router, i18n y las vistas de registro, inicio de sesión, perfil y vehículos. | [Pendiente] | Vite Celis, Rodrigo Matias | Done |
+| US08 a US13 | Matchmaking & Routing | T05 | Vistas de rutas, solicitudes y ofertas | Implementar publicación de rutas de retorno, solicitudes de flete, sugerencias de carga, búsqueda de transportistas y ofertas. | [Pendiente] | Vite Celis, Rodrigo Matias | Done |
+| US15 a US17, US24 | Service Execution & Monitoring | T06 | Vistas de viaje activo y seguimiento | Implementar viaje activo, seguimiento del envío e historiales de viajes y envíos. | [Pendiente] | Vite Celis, Rodrigo Matias | Done |
+| — | Payment & Billing: planes de suscripción | T07 | Bounded context de Billing | Implementar value objects, agregados, API, store, rutas y la vista de planes y facturación. | [Pendiente] | Lozano Quispe, Fabricio Jofred | Done |
+| — | Constraint: API simulada | T08 | Fake API con json-server | Exponer los recursos del frontend con `json-server` y apuntar `.env.production` al endpoint publicado. | [Pendiente] | Peñaranda Caldas, Gabriel Augusto | Done |
+| — | Constraint: despliegue | T09 | Despliegue del frontend en AWS Amplify | Publicar la rama `main` de `trazza-webapp` en AWS Amplify Hosting. | [Pendiente] | [Pendiente] | Done |
 
 #### 5.2.2.4. Development Evidence for Sprint Review
 
-En esta sección se presentan las evidencias de desarrollo correspondientes al Sprint 2. La siguiente tabla registra los principales commits realizados en los repositorios del proyecto.
+En el Sprint 2 se creó el repositorio `trazza-webapp` con la primera versión del frontend, se añadió el bounded context de Billing y se publicó una nueva versión del Landing Page. La siguiente tabla muestra los commits principales.
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
+| StackRoot-1ASI0730-2620-8084/trazza-website | main | 36e7cb1 | feat: translate landing page from Spanish to English | - | 2026-10-04 |
+| StackRoot-1ASI0730-2620-8084/trazza-website | main | a128fa9 | feat: update landing page design | - | 2026-10-05 |
+| StackRoot-1ASI0730-2620-8084/trazza-website | main | a5f1c06 | feat: make the EN \| ES language switch translate the site | - | 2026-10-05 |
+| StackRoot-1ASI0730-2620-8084/trazza-website | main | bafb49f | feat: add real photos to the carriers and merchants sections | - | 2026-10-05 |
+| StackRoot-1ASI0730-2620-8084/trazza-website | main | 7af16ae | docs: update i18n | - | 2026-10-06 |
+| StackRoot-1ASI0730-2620-8084/trazza-website | main | 5ba8733 | feat: link sign in buttons to the web app | - | 2026-10-06 |
+| StackRoot-1ASI0730-2620-8084/trazza-webapp | main | be8aed3 | Initial commit | - | 2026-10-05 |
+| StackRoot-1ASI0730-2620-8084/trazza-webapp | feature/payment-billing | 286a341 | feat(billing): add subscription-plan value object | - | 2026-10-05 |
+| StackRoot-1ASI0730-2620-8084/trazza-webapp | feature/payment-billing | 23362b8 | feat(billing): add payment-transaction aggregate | - | 2026-10-05 |
+| StackRoot-1ASI0730-2620-8084/trazza-webapp | feature/payment-billing | 53caadd | feat(billing): add billing-api | - | 2026-10-05 |
+| StackRoot-1ASI0730-2620-8084/trazza-webapp | feature/payment-billing | a0fd02f | feat(billing): add billing store | - | 2026-10-05 |
+| StackRoot-1ASI0730-2620-8084/trazza-webapp | feature/payment-billing | 05c209a | feat(billing): add plan-billing view | - | 2026-10-05 |
+| StackRoot-1ASI0730-2620-8084/trazza-webapp | feature/payment-billing | e0167dc | feat(billing): add billing-routes | - | 2026-10-05 |
+| StackRoot-1ASI0730-2620-8084/trazza-webapp | main | 0ad54fa | chore: update API URL to EC2 DuckDNS endpoint | - | 2026-10-05 |
+| StackRoot-1ASI0730-2620-8084/trazza-report | feature/52-landing-page-services-applications-implementation | fad3731 | docs: add 5.2.1 Sprint 1 to chapter 5 | - | 2026-10-05 |
+| StackRoot-1ASI0730-2620-8084/trazza-report | develop | 1fad080 | docs: add part of sprint 2 documentation | - | 2026-10-05 |
 
 #### 5.2.2.5. Execution Evidence for Sprint Review
 
-En esta sección se presentan las evidencias de ejecución de las funcionalidades implementadas durante el Sprint 2.
+Al cierre del Sprint 2, la Web Application quedó publicada con sus vistas principales por bounded context. En este Sprint las vistas consumían una API simulada con `json-server`, que se reemplazó por los Web Services reales en el Sprint 3.
 
 | Evidence | Description | Related User Story | Status |
 | :--- | :--- | :--- | :--- |
-| | | | |
-| | | | |
-| | | | |
-| | | | |
+| Registro e inicio de sesión | Vistas `sign-up` y `sign-in` con elección de rol Carrier / Merchant. | US01, US02, US03 | Done |
+| Perfil y vehículos | Vistas `profile`, `vehicle-list` y `vehicle-form`. | US23 | Done |
+| Rutas de retorno y sugerencias | Vistas `return-route-form`, `return-route-list`, `load-suggestions` y `load-detail`. | US08, US10, US12, US13 | Done |
+| Solicitudes de flete y ofertas | Vistas `freight-request-form`, `freight-request-list`, `find-carriers`, `offer-list` y `offer-detail`. | US09, US11, US13 | Done |
+| Viaje y seguimiento | Vistas `active-trip`, `shipment-tracking`, `trip-history` y `shipment-history`. | US15, US16, US17, US24 | Done |
+| Planes y calificaciones | Vistas `plan-billing` y `rating-list`. | US19, US20 | Done |
+| Landing Page v2 | Sitio traducido EN / ES con fotos reales y botones enlazados a la Web App. | US04, US05, US25 | Done |
 
 <div align="center">
 
-  <!-- Agregar aquí las imágenes correspondientes a la ejecución del Sprint 2 -->
-
+  <!-- Pendiente: capturas de la Web Application del Sprint 2 en assets/images/chapter5/ -->
 
 </div>
 
-**Video de navegación del Sprint 2:** [Agregar video](URL)
+**Video de navegación del Sprint 2:** [Pendiente: URL del video del Sprint 2](URL)
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
-En esta sección se presentan las evidencias de documentación de los servicios implementados durante el Sprint 2.
+En el Sprint 2 el frontend consumió una API simulada con `json-server` (carpeta `server/` del repositorio `trazza-webapp`, con `db.json` y `routes.json`). Las rutas `/api/v1/*` se redirigían a los recursos de `db.json`, de modo que el frontend usara desde el inicio el mismo prefijo que tendrían los Web Services reales. Al ser una API simulada, en este Sprint no se documentaron endpoints con OpenAPI. Los Web Services reales y su documentación se presentan en la sección 5.2.3.6.
 
 | Endpoint / Service | Method | Description | Documentation Evidence |
 | :--- | :---: | :--- | :--- |
-| | | | |
-| | | | |
-| | | | |
-| | | | |
-
-<div align="center">
-
-  <!-- Agregar aquí evidencias de Swagger / OpenAPI / Web Services -->
-
-
-</div>
+| `/api/v1/*` (json-server) | GET, POST, PUT, PATCH, DELETE | Recursos simulados de los bounded contexts, servidos desde `server/db.json`. | `server/routes.json` en `trazza-webapp` (commit `be8aed3`) |
 
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
-En esta sección se presentan las evidencias relacionadas con el despliegue del software desarrollado durante el Sprint 2.
+En el Sprint 2 se publicó la Web Application en AWS Amplify Hosting. La API simulada se apuntó a un endpoint en EC2 con DuckDNS (commit `0ad54fa`). El Landing Page siguió publicándose desde AWS Amplify y sus botones de inicio de sesión se enlazaron a la Web App.
 
 | Software Component | Deployment Platform | Repository / Branch | Deployment URL | Status |
 | :--- | :--- | :--- | :--- | :--- |
-| | | | | |
-| | | | | |
-| | | | | |
-
-**URL de despliegue:** [Agregar URL](URL)
+| Landing Page v2 | AWS Amplify Hosting | trazza-website / main | [Pendiente: confirmar URL vigente del Landing Page] | Deployed |
+| Web Application v1 | AWS Amplify Hosting | trazza-webapp / main | https://main.d1h7l9z3r6ucz4.amplifyapp.com | Deployed (reemplazada en el Sprint 3) |
+| Fake API (json-server) | Amazon EC2 + DuckDNS | trazza-webapp / main (`server/`) | https://trazza-api.duckdns.org/api/v1 | Deployed (retirada en el Sprint 3) |
 
 <div align="center">
 
-  <!-- Agregar aquí las imágenes correspondientes al despliegue -->
-
-  <img src="../assets/images/chapter5/" alt="Sprint 2 - Software Deployment Evidence" width="800">
+  <!-- Pendiente: captura del despliegue del Sprint 2 en AWS Amplify, en assets/images/chapter5/ -->
 
 </div>
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint
 
-En esta sección se presentan las evidencias de colaboración del equipo durante el Sprint 2, considerando las contribuciones realizadas por cada integrante en los repositorios del proyecto.
+En el Sprint 2 el equipo trabajó en tres repositorios. En `trazza-webapp` el bounded context de Billing se trabajó en la rama `feature/payment-billing` y se integró a `main` mediante el Pull Request #1. En `trazza-website` los cambios se hicieron directamente en `main`. En `trazza-report` cada sección se trabajó en su rama `feature/*` y se integró a `develop` mediante Pull Requests.
 
 | Team Member | GitHub Username | Repository | Commits | Pull Requests | Main Contribution |
 | :--- | :--- | :--- | :---: | :---: | :--- |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
+| Checalla Apaza, Emanuel Renato | Emanuelca135 | trazza-website, trazza-webapp | 2 | 0 | Ajustes del `index.html` del Landing Page y licencia de la Web App. |
+| Lozano Quispe, Fabricio Jofred | FabricioZz15 | trazza-webapp, trazza-website, trazza-report | 31 | 7 | Bounded context de Billing, estilos e i18n del Landing Page, capítulos 4 y 5 del informe. |
+| Medina Merma, Ingrid Melani | grini913 | trazza-report | 12 | 0 | Diagramas C4, diagramas de clases y diseño de base de datos. |
+| Peñaranda Caldas, Gabriel Augusto | gapc2024 | trazza-webapp, trazza-report | 17 | 0 | Endpoint de la API simulada, Product Backlog, Impact Map y correcciones de los capítulos 1 a 3. |
+| Vite Celis, Rodrigo Matias | rodriznnn | trazza-webapp, trazza-website, trazza-report | 12 | 0 | Base del frontend con todas sus vistas, rediseño EN / ES del Landing Page y mock-ups del capítulo 4. |
 
-Los gráficos de Contributors muestran las contribuciones realizadas por cada integrante durante el Sprint 2.
+Los conteos consideran commits sin merges con fecha entre el 19 de septiembre y el 6 de octubre de 2026. Los Pull Requests de `trazza-report` (#7 a #12) y de `trazza-webapp` (#1) figuran a nombre de quien los abrió.
+
+<div align="center">
+
+  <!-- Pendiente: capturas de GitHub Insights (Contributors) de trazza-webapp y trazza-website en el Sprint 2 -->
+
+</div>
