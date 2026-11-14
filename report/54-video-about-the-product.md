@@ -2,7 +2,7 @@
 
 En esta sección se presenta el video About-the-Product de Trazza. El video muestra el problema que resuelve el producto, la propuesta de valor para cada segmento objetivo y un recorrido por la Web Application desplegada, desde la publicación de una ruta de retorno hasta la entrega y la calificación.
 
-**Video About-the-Product:** [Pendiente: upc-pre-202620-1asi0730-8084-StackRoot-about-the-product.mp4](URL)
+**Video About-the-Product:** [upc-pre-202620-1asi0730-8084-StackRoot-about-the-product.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210836_upc_edu_pe/IQD1-IK_epZGTZKrEFRst6qDAU6rktjplwp50qp62ap0yL8?e=8TN8xq&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 <div align="center">
 
@@ -13,7 +13,7 @@ En esta sección se presenta el video About-the-Product de Trazza. El video mues
 | Campo | Detalle |
 | :--- | :--- |
 | Duración | [Pendiente] |
-| Plataforma de publicación | [Pendiente: Microsoft Stream o YouTube] |
+| Plataforma de publicación | Microsoft Stream |
 | Fecha de publicación | [Pendiente] |
 | Participantes | [Pendiente] |
 
