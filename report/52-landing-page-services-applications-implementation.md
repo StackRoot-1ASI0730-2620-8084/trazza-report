@@ -421,11 +421,11 @@ Los Web Services se documentaron con OpenAPI y se publican de forma interactiva 
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
-En el Sprint 3 se desplegaron los Web Services y se publicó una nueva versión de la Web Application. La API se ejecuta sobre Kestrel detrás de una distribución de Amazon CloudFront y usa una base de datos MySQL 8 en Amazon RDS. Sus credenciales y el secreto del token se leen de variables de entorno. La Web Application se publica en AWS Amplify Hosting y lee la URL de la API desde la variable `VITE_TRAZZA_PLATFORM_API_URL` de `.env.production`. El Landing Page se actualizó para que sus botones de registro e inicio de sesión lleven a la nueva Web App.
+En el Sprint 3 se desplegaron los Web Services y se publicó una nueva versión de la Web Application. La API se ejecuta sobre Kestrel en Amazon EC2, detrás de una distribución de Amazon CloudFront, y usa una base de datos MySQL 8 en Amazon RDS. Sus credenciales y el secreto del token se leen de variables de entorno. La Web Application se publica en AWS Amplify Hosting y lee la URL de la API desde la variable `VITE_TRAZZA_PLATFORM_API_URL` de `.env.production`. El Landing Page se actualizó para que sus botones de registro e inicio de sesión lleven a la nueva Web App.
 
 | Software Component | Deployment Platform | Repository / Branch | Deployment URL | Status |
 | :--- | :--- | :--- | :--- | :--- |
-| Web Services (Trazza Platform v1.0.0) | Amazon CloudFront + [Pendiente: servicio de cómputo] + Amazon RDS (MySQL 8) | trazza-platform / main | https://d3mwl1okiudzcg.cloudfront.net/api/v1 | Deployed |
+| Web Services (Trazza Platform v1.0.0) | Amazon CloudFront + Amazon EC2 + Amazon RDS (MySQL 8) | trazza-platform / main | https://d3mwl1okiudzcg.cloudfront.net/api/v1 | Deployed |
 | Web Application | AWS Amplify Hosting | trazza-webapp / main | https://main.d32sst26l9v5eu.amplifyapp.com | Deployed |
 | Landing Page | AWS Amplify Hosting | trazza-website / main | [Pendiente: confirmar URL vigente del Landing Page] | Deployed |
 
