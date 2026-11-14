@@ -3749,6 +3749,7 @@ En el Sprint 1 se creó la aplicación en AWS Amplify Hosting y se conectó con 
 <div align="center">
   <img src="../assets/images/trazzalandingpagedesplegada.jpeg" alt="Landing Page v1 deployed on AWS Amplify" width="800">
 </div>
+
 #### 5.2.1.8. Team Collaboration Insights during Sprint
  
 En el Sprint 1 el equipo trabajó en dos repositorios. En `Trazza-LandingPage` se registraron 2 commits: Medina Merma, Ingrid Melani (estructura inicial) y Peñaranda Caldas, Gabriel Augusto (primera versión completa), ambos directamente en `main`. En `Trazza-report` cada sección del informe se trabajó en su rama `feature/*` y se integró a `develop` mediante Pull Requests, con commits de los cinco integrantes.
