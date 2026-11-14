@@ -227,7 +227,7 @@ La solución Trazza se compone de tres productos digitales desplegados de forma 
 
 | Producto | Repositorio / rama | Tecnología | Servicio de despliegue | URL pública |
 | :--- | :--- | :--- | :--- | :--- |
-| Landing Page (`v1.2.0`) | `trazza-website` / `main` | HTML5, CSS3, JavaScript | AWS Amplify Hosting | [https://main.d3opwp5g5g1mc8.amplifyapp.com](https://main.d3opwp5g5g1mc8.amplifyapp.com) |
+| Landing Page (`v1.2.0`) | `trazza-website` / `main` | HTML5, CSS3, JavaScript | AWS Amplify Hosting | [https://main.d2c543oob0ogxp.amplifyapp.com](https://main.d2c543oob0ogxp.amplifyapp.com) |
 | Frontend Web Application (`v2.0.0`) | `trazza-webapp` / `main` | Vue 3, Vite, PrimeVue, Leaflet, Vue Router, Vue I18n | AWS Amplify Hosting | [https://main.d32sst26l9v5eu.amplifyapp.com](https://main.d32sst26l9v5eu.amplifyapp.com) |
 | RESTful Web Services (`v1.0.0`) | `trazza-platform` / `main` | ASP.NET Core (.NET 10), C# 14, EF Core, Cortex.Mediator | AWS EC2 (Docker) + Amazon CloudFront | [https://d3mwl1okiudzcg.cloudfront.net/api/v1](https://d3mwl1okiudzcg.cloudfront.net/api/v1) |
 | Documentación OpenAPI / Scalar | `trazza-platform` / `main` | Microsoft.AspNetCore.OpenApi + Scalar.AspNetCore | AWS EC2 + Amazon CloudFront | [https://d3mwl1okiudzcg.cloudfront.net/scalar/v1](https://d3mwl1okiudzcg.cloudfront.net/scalar/v1) |
@@ -238,7 +238,7 @@ La solución Trazza se compone de tres productos digitales desplegados de forma 
 1. Ingresar a la consola de AWS Amplify y seleccionar **Create new app → GitHub**.
 2. Autorizar a AWS Amplify en la organización `StackRoot-1ASI0730-2620-8084` y seleccionar el repositorio `trazza-website` y la rama `main`.
 3. Al ser un sitio estático, no se configura comando de build y el directorio de salida es la raíz del repositorio (`/`).
-4. Guardar y desplegar. Amplify publica el sitio en `https://main.d3opwp5g5g1mc8.amplifyapp.com` con HTTPS.
+4. Guardar y desplegar. Amplify publica el sitio en `https://main.d2c543oob0ogxp.amplifyapp.com` con HTTPS.
 5. Cada merge en `main` dispara automáticamente un nuevo despliegue continuo.
 
 #### Frontend Web Application (AWS Amplify Hosting)
