@@ -202,177 +202,142 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 
 | # | Problema | Heurística / Principio violada(o) | Severidad |
 |---|---|---|:---:|
-| 1 | El idioma por defecto de la interfaz es inglés, aunque el público objetivo son transportistas y MYPEs de Lima | Usability: Coincidencia entre el sistema y el mundo real · Inclusive Design: Offer choice | 3 |
-| 2 | Las etiquetas del sidebar definidas en la IA no coinciden con los nombres de las pantallas diseñadas | Information Architecture: Is it findable? · Usability: Consistencia y estándares | 3 |
-| 3 | "Subastas de Carga" y "Liquidaciones y Pagos" prometen funciones que Trazza no ofrece (pujas y pagos) | Usability: Coincidencia entre el sistema y el mundo real · Information Architecture: Is it credible? | 3 |
-| 4 | No hay forma de retirar una oferta enviada ni de cancelar un match ya confirmado | Usability: Libertad y control del usuario | 3 |
-| 5 | El mapa es el único medio para entender ruta, desvío y ubicación del vehículo | Inclusive Design: Provide comparable experiences | 3 |
-| 6 | El seguimiento de ubicación depende del navegador del celular del transportista en ruta | Inclusive Design: Consider situation · Usability: Visibilidad del estado del sistema | 3 |
-| 7 | Terminología mezclada: Carrier/Merchant frente a Transportista/Emprendedor | Usability: Consistencia y estándares · Information Architecture: Is it usable? | 2 |
-| 8 | El selector "Modo Transportista / Modo Emprendedor" choca con el rol fijado en el registro | Usability: Visibilidad del estado del sistema · Information Architecture: Is it usable? | 2 |
-| 9 | El estado "Delivered" no distingue entre entrega marcada por el transportista y entrega confirmada por el emprendedor | Usability: Visibilidad del estado del sistema | 2 |
-| 10 | Al confirmar un match, las demás ofertas "se cierran" sin informar a esos transportistas | Usability: Visibilidad del estado del sistema | 2 |
-| 11 | La recuperación de errores en el registro de DNI/RUC no está definida | Usability: Ayudar a reconocer, diagnosticar y recuperarse de errores | 2 |
-| 12 | No existe ayuda ni onboarding para usuarios con bajo nivel de digitalización | Usability: Ayuda y documentación · Inclusive Design: Add value | 2 |
-| 13 | Datos inconsistentes entre secciones del diseño (ancho de pantalla, IDs de envío) | Usability: Consistencia y estándares | 1 |
+| 1 | Las etiquetas del sidebar definidas en la IA no coinciden con los nombres de las pantallas diseñadas | Information Architecture: Is it findable? · Usability: Consistencia y estándares | 3 |
+| 2 | "Subastas de Carga" y "Liquidaciones y Pagos" prometen funciones que Trazza no ofrece (pujas y pagos) | Usability: Coincidencia entre el sistema y el mundo real · Information Architecture: Is it credible? | 3 |
+| 3 | No hay forma de retirar una oferta enviada ni de cancelar un match ya confirmado | Usability: Libertad y control del usuario | 3 |
+| 4 | El mapa es el único medio para entender ruta, desvío y ubicación del vehículo | Inclusive Design: Provide comparable experiences | 3 |
+| 5 | El seguimiento de ubicación depende del navegador del celular del transportista en ruta | Inclusive Design: Consider situation · Usability: Visibilidad del estado del sistema | 3 |
+| 6 | Terminología mezclada: Carrier/Merchant frente a Transportista/Emprendedor | Usability: Consistencia y estándares · Information Architecture: Is it usable? | 2 |
+| 7 | El selector "Modo Transportista / Modo Emprendedor" choca con el rol fijado en el registro | Usability: Visibilidad del estado del sistema · Information Architecture: Is it usable? | 2 |
+| 8 | El estado "Delivered" no distingue entre entrega marcada por el transportista y entrega confirmada por el emprendedor | Usability: Visibilidad del estado del sistema | 2 |
+| 9 | Al confirmar un match, las demás ofertas "se cierran" sin informar a esos transportistas | Usability: Visibilidad del estado del sistema | 2 |
+| 10 | La recuperación de errores en el registro de DNI/RUC no está definida | Usability: Ayudar a reconocer, diagnosticar y recuperarse de errores | 2 |
+| 11 | No existe ayuda ni onboarding para usuarios con bajo nivel de digitalización | Usability: Ayuda y documentación · Inclusive Design: Add value | 2 |
+| 12 | Datos inconsistentes entre secciones del diseño (ancho de pantalla, IDs de envío) | Usability: Consistencia y estándares | 1 |
 
-**Distribución por severidad:** nivel 4 = 0 · nivel 3 = 6 · nivel 2 = 6 · nivel 1 = 1.
+**Distribución por severidad:** nivel 4 = 0 · nivel 3 = 5 · nivel 2 = 6 · nivel 1 = 1.
 
 ---
 
 ## DESCRIPCIÓN DE PROBLEMAS
 
-### PROBLEMA #1: El idioma por defecto de la interfaz es inglés
-**Severidad:** 3
-**Heurística violada:** Usabilidad – Coincidencia entre el sistema y el mundo real · Inclusive Design – Offer choice
-
-**Problema:** Según la sección 4.4.3, el idioma por defecto es inglés, con soporte para español mediante un selector EN | ES. Los botones y estados principales están en inglés: "Publish return route", "Confirm pickup", "Offers", "Counteroffer", "Delivered". Las personas del proyecto son un transportista independiente (Juan David Ramos) y una emprendedora MYPE (Valeria Torres) de Lima, con nivel de digitalización bajo o medio. Cada vez que alguien abra la app tendrá que buscar el selector de idioma antes de poder trabajar con confianza. Si no lo encuentra, puede equivocarse al confirmar acciones irreversibles como "Confirm delivery".
-
-`[Captura de pantalla: topbar con selector EN | ES y pantalla Active Trip en inglés]`
-
-**Recomendación:** Establecer español (Perú) como idioma por defecto y dejar inglés como opción. Detectar el idioma del navegador y recordar la preferencia en el perfil. Mantener solo en inglés los términos del Ubiquitous Language que el usuario ya conoce, con su equivalente en español visible.
-
----
-
-### PROBLEMA #2: Las etiquetas del sidebar de la IA no coinciden con las pantallas diseñadas
+### PROBLEMA #1: Las etiquetas del sidebar de la IA no coinciden con las pantallas diseñadas
 **Severidad:** 3
 **Heurística violada:** Information Architecture – Is it findable? · Usabilidad – Consistencia y estándares
 
-**Problema:** La sección 4.2.2 define el sidebar con "Panel de Control", "Rutas y Retornos", "Subastas de Carga", "Telemetría en Vivo", "Liquidaciones y Pagos" y "Métricas de Flota". Los wireframes de la sección 4.4.1 y los wireflows de la sección 4.4.2 usan otras pantallas y nombres: *Load Suggestions*, *Offers*, *Find Carriers*, *Active Trip*, *Shipment Tracking*, *Trip History*, *My Vehicles* y *Plan & Billing*. No hay una correspondencia clara entre ambos sistemas. Por ejemplo, el usuario no sabría si "Find Carriers" está bajo "Subastas de Carga" o bajo "Rutas y Retornos". Además, "Métricas de Flota" y "Liquidaciones y Pagos" no aparecen en ningún User Goal.
+**Problema:** El sidebar de la sección 4.2.2 usa nombres como "Subastas de Carga" o "Telemetría en Vivo", mientras las pantallas diseñadas se llaman *Load Suggestions*, *Offers* o *Active Trip*. Por eso el usuario no sabe en qué opción del menú encontrar cada pantalla.
 
-`[Captura de pantalla: sidebar del mock-up junto a la tabla de etiquetas de 4.2.2]`
-
-**Recomendación:** Unificar en un solo sistema de etiquetas, con una tabla "módulo de IA → pantalla → user story" validada con los mock-ups finales. Eliminar del sidebar los módulos sin pantalla diseñada, o diseñarlos. Hacer un card sorting o tree testing corto con 5 usuarios para confirmar los nombres.
+**Recomendación:** Unificar los nombres del menú con los de las pantallas y validarlos con 5 usuarios.
 
 ---
 
-### PROBLEMA #3: "Subastas de Carga" y "Liquidaciones y Pagos" prometen funciones que Trazza no ofrece
+### PROBLEMA #2: "Subastas de Carga" y "Liquidaciones y Pagos" prometen funciones que Trazza no ofrece
 **Severidad:** 3
 **Heurística violada:** Usabilidad – Coincidencia entre el sistema y el mundo real · Information Architecture – Is it credible?
 
-**Problema:** La sección 1.2.1 aclara que Trazza **no** actúa como pasarela de pagos y que la negociación financiera ocurre fuera del sistema. El modelo de interacción diseñado es oferta → contraoferta → confirmación de match, no una puja. Sin embargo, "Subastas de Carga" sugiere pujas competitivas, y "Liquidaciones y Pagos" sugiere cobros dentro de la plataforma. Un transportista que busca dónde cobrar puede abrir ese módulo, pensar que Trazza retiene o procesa dinero y desconfiar, o esperar una función que no existe. Esto afecta la credibilidad en un sector donde, según el Task Matrix, el transportista teme la informalidad del pago.
+**Problema:** Trazza no hace subastas ni procesa pagos, pero esos nombres sugieren pujas y cobros dentro de la plataforma. Esto puede generar desconfianza o expectativas falsas en el transportista.
 
-`[Captura de pantalla: ítems "Subastas de Carga" y "Liquidaciones y Pagos" del sidebar]`
-
-**Recomendación:** Renombrar según lo que el sistema realmente hace: "Cargas disponibles" (o "Sugerencias de carga"), "Ofertas" y "Acuerdos registrados". Mostrar en ese módulo el texto fijo "Trazza no procesa pagos entre transportista y emprendedor", igual al que ya aparece en Plan & Billing.
+**Recomendación:** Renombrar los módulos según lo que hacen, por ejemplo "Cargas disponibles" y "Ofertas".
 
 ---
 
-### PROBLEMA #4: No hay forma de retirar una oferta enviada ni de cancelar un match confirmado
+### PROBLEMA #3: No hay forma de retirar una oferta enviada ni de cancelar un match confirmado
 **Severidad:** 3
 **Heurística violada:** Usabilidad – Libertad y control del usuario
 
-**Problema:** Los wireflows 4.4.2 describen estados como "Offer sent" (el transportista acepta una carga y queda esperando) y "Match confirmed" (las demás ofertas se cierran). No se muestra ninguna acción para **retirar la oferta**, **cancelar el match** ni reportar que el transportista ya no puede cumplir. En el sector logístico los imprevistos son frecuentes (avería, tráfico, cambio de horario), y el flujo solo contempla incidencias después de la entrega. Si el usuario se equivoca o su situación cambia, la única salida sería contactar fuera de la plataforma, que es justamente lo que Trazza quiere evitar.
+**Problema:** Una vez enviada una oferta o confirmado un match, el diseño no ofrece ninguna acción para retirarla o cancelarlo. Si surge un imprevisto, el usuario tiene que resolverlo fuera de la plataforma.
 
-`[Captura de pantalla: Load Detail – offer sent y Offers – match confirmed]`
-
-**Recomendación:** Añadir "Withdraw offer" (retirar oferta) mientras el emprendedor no haya confirmado, y "Cancel match" con selección de motivo y confirmación antes de que inicie el recojo. Informar a la contraparte automáticamente y reabrir la solicitud para que el emprendedor recupere las ofertas cerradas.
+**Recomendación:** Añadir "Retirar oferta" y "Cancelar match" con motivo y aviso automático a la contraparte.
 
 ---
 
-### PROBLEMA #5: El mapa es el único medio para entender ruta, desvío y ubicación del vehículo
+### PROBLEMA #4: El mapa es el único medio para entender ruta, desvío y ubicación del vehículo
 **Severidad:** 3
 **Heurística violada:** Inclusive Design – Provide comparable experiences
 
-**Problema:** En Active Trip, el mapa "ocupa la mayor parte de la pantalla", y en Shipment Tracking el desvío se muestra con una línea punteada y la posición del vehículo sobre el mapa. La alerta de desvío sí combina ícono, texto y color, lo cual es un buen punto. Pero el diseño no describe una alternativa textual de la ruta ni de la posición actual (por ejemplo, "Vehículo a 3.2 km del destino, 12 min"). Un usuario con lector de pantalla, con baja visión o con conexión lenta que no logra cargar el mapa no tendría una experiencia equivalente.
+**Problema:** La ruta, el desvío y la posición del vehículo solo se ven sobre el mapa. Un usuario con lector de pantalla, baja visión o mala conexión no tiene una alternativa en texto.
 
-`[Captura de pantalla: Shipment Tracking con mapa y panel lateral]`
-
-**Recomendación:** Incluir en el panel lateral un resumen en texto con dirección del próximo punto, distancia, hora estimada y desvío actual, con `aria-live="polite"` para anunciar cambios. Dar al mapa una descripción accesible y un estado de carga o error con mensaje claro.
+**Recomendación:** Mostrar junto al mapa un resumen en texto con distancia, hora estimada y desvío actual.
 
 ---
 
-### PROBLEMA #6: El seguimiento de ubicación depende del navegador del celular del transportista en ruta
+### PROBLEMA #5: El seguimiento de ubicación depende del navegador del celular del transportista en ruta
 **Severidad:** 3
 **Heurística violada:** Inclusive Design – Consider situation · Usabilidad – Visibilidad del estado del sistema
 
-**Problema:** El wireflow de UG2 indica que, al presionar "Confirm pickup", "el navegador del celular comienza a enviar la ubicación del vehículo". Las restricciones del proyecto exigen conexión ininterrumpida y ubicación activada. Un transportista que conduce suele bloquear la pantalla, cambiar de aplicación o pasar por zonas sin cobertura, y en esos casos un navegador web puede dejar de enviar la ubicación. El diseño no muestra ningún indicador que diga si la ubicación **se está compartiendo ahora mismo**, ni qué pasa si se corta. El emprendedor vería un vehículo "congelado" y podría interpretarlo como un desvío o un incidente.
+**Problema:** Si el transportista bloquea la pantalla o pierde cobertura, el navegador puede dejar de enviar su ubicación sin avisar. El emprendedor vería el vehículo detenido y podría pensar que hay un problema.
 
-`[Captura de pantalla: Active Trip – in transit]`
-
-**Recomendación:** Mostrar un indicador permanente "Compartiendo ubicación / Sin señal desde hh:mm" tanto al transportista como al emprendedor. Pedir permisos de ubicación y explicar su motivo antes de iniciar el viaje. Diseñar un estado "Última ubicación conocida" y avisar al transportista cuando se pierda la señal. A mediano plazo, evaluar una PWA o app con seguimiento en segundo plano.
+**Recomendación:** Mostrar un indicador "Compartiendo ubicación / Sin señal desde hh:mm" a ambos usuarios.
 
 ---
 
-### PROBLEMA #7: Terminología mezclada entre Carrier/Merchant y Transportista/Emprendedor
+### PROBLEMA #6: Terminología mezclada entre Carrier/Merchant y Transportista/Emprendedor
 **Severidad:** 2
 **Heurística violada:** Usabilidad – Consistencia y estándares · Information Architecture – Is it usable?
 
-**Problema:** La sección 4.2.2 indica que los términos en inglés (Carrier, Merchant, Shipment, Match) se reservan para el diseño técnico interno. Sin embargo, los wireframes y mock-ups usan esos términos de cara al usuario: el registro pide elegir "Carrier" o "Merchant", y los CTAs dicen "I'm a Carrier" / "I'm a Merchant", mientras la Landing Page dice "Soy Transportista / Soy Emprendedor". Un transportista que pasa de la Landing al registro encuentra una palabra distinta para el mismo rol.
+**Problema:** La Landing Page dice "Soy Transportista / Soy Emprendedor", pero el registro pide elegir "Carrier" o "Merchant". El usuario encuentra dos nombres distintos para el mismo rol.
 
-`[Captura de pantalla: Sign up – selección de rol, junto a los CTAs de la Landing Page]`
-
-**Recomendación:** Usar solo los nombres de rol que el usuario entiende ("Transportista", "Emprendedor") en toda la interfaz, y dejar Carrier/Merchant para código y documentación técnica. Añadir un glosario de etiquetas en el Style Guide.
+**Recomendación:** Usar solo "Transportista" y "Emprendedor" en toda la interfaz.
 
 ---
 
-### PROBLEMA #8: El selector "Modo Transportista / Modo Emprendedor" choca con el rol fijado en el registro
+### PROBLEMA #7: El selector "Modo Transportista / Modo Emprendedor" choca con el rol fijado en el registro
 **Severidad:** 2
 **Heurística violada:** Usabilidad – Visibilidad del estado del sistema · Information Architecture – Is it usable?
 
-**Problema:** La sección 4.2.1 propone un selector de modo en la barra superior para alternar entre vistas, mientras que el registro (4.4.1) obliga a elegir un rol una sola vez y exige DNI para Carrier o RUC para Merchant. El diseño no aclara si una misma cuenta puede tener ambos roles, ni cómo se verifica el segundo. Si el selector existe, el usuario puede no saber en qué modo está o por qué ve un sidebar distinto al de la última vez. Si no existe, la IA documentada y los wireframes se contradicen.
+**Problema:** El registro obliga a elegir un solo rol, pero la arquitectura de información propone un selector para cambiar de modo. No queda claro si una cuenta puede tener los dos roles ni en qué modo está el usuario.
 
-`[Captura de pantalla: topbar con selector de modo y pantalla de Sign up con selección de rol]`
-
-**Recomendación:** Decidir un único modelo: (a) un rol por cuenta y sin selector, o (b) cuentas con doble rol, con selector que muestre siempre el modo activo con texto e ícono y un flujo para agregar el segundo perfil con su DNI/RUC.
+**Recomendación:** Definir un solo modelo de roles y, si hay selector, mostrar siempre el modo activo.
 
 ---
 
-### PROBLEMA #9: El estado "Delivered" no distingue entre entrega marcada y entrega confirmada
+### PROBLEMA #8: El estado "Delivered" no distingue entre entrega marcada y entrega confirmada
 **Severidad:** 2
 **Heurística violada:** Usabilidad – Visibilidad del estado del sistema
 
-**Problema:** En UG2 el transportista presiona "Confirm delivery" y el viaje pasa a "Delivered". En UG4 el emprendedor recibe después un diálogo para confirmar que la mercadería llegó completa, o reportar una incidencia dentro de 48 horas. El mismo estado "Delivered" parece cubrir los dos momentos. Un transportista podría creer que cerró el servicio mientras el emprendedor aún no lo valida, o que ya no hay posibilidad de incidencias. El stepper tiene cuatro estados (Matched → Picked up → In transit → Delivered) y ninguno refleja la confirmación del emprendedor.
+**Problema:** El mismo estado "Delivered" se usa cuando el transportista marca la entrega y cuando el emprendedor la confirma. El transportista puede creer que el servicio terminó cuando aún falta la confirmación.
 
-`[Captura de pantalla: Active Trip y diálogo Confirm Delivery del emprendedor]`
-
-**Recomendación:** Separar los estados: "Entregado (pendiente de confirmación)" y "Entrega confirmada" (o "En revisión" si hay incidencia). Mostrar la ventana de 48 horas restante en la vista de ambos usuarios.
+**Recomendación:** Separar los estados en "Entregado (pendiente de confirmación)" y "Entrega confirmada".
 
 ---
 
-### PROBLEMA #10: Las ofertas cerradas tras un match no se comunican a los otros transportistas
+### PROBLEMA #9: Las ofertas cerradas tras un match no se comunican a los otros transportistas
 **Severidad:** 2
 **Heurística violada:** Usabilidad – Visibilidad del estado del sistema
 
-**Problema:** En la vista Offers, al confirmar un match "las demás ofertas se cierran". La documentación no indica que esos transportistas reciban una notificación ni un estado visible ("Cerrada: el emprendedor eligió otra oferta"). Esos usuarios quedarían esperando una respuesta que no llegará, y podrían rechazar otras cargas mientras tanto.
+**Problema:** Al confirmarse un match, las demás ofertas se cierran sin avisar a esos transportistas. Ellos quedan esperando una respuesta que no llegará.
 
-`[Captura de pantalla: Offers – match confirmed]`
-
-**Recomendación:** Enviar una notificación y mostrar un chip de estado "Cerrada" con el motivo, y sugerir otras cargas compatibles desde la misma pantalla.
+**Recomendación:** Notificarles y mostrar el estado "Cerrada" con su motivo.
 
 ---
 
-### PROBLEMA #11: La recuperación de errores en el registro de DNI/RUC no está definida
+### PROBLEMA #10: La recuperación de errores en el registro de DNI/RUC no está definida
 **Severidad:** 2
 **Heurística violada:** Usabilidad – Ayudar a los usuarios a reconocer, diagnosticar y recuperarse de los errores
 
-**Problema:** El único unhappy path del registro es "correo ya registrado". Sin embargo, la user story US26 incluye validación de identidad del transportista. El diseño no muestra qué ocurre si el DNI/RUC es inválido, si la validación falla o si el servicio tarda. Tampoco hay indicaciones sobre el formato esperado (8 dígitos para DNI, 11 para RUC). Es una tarea de primer contacto, y un fallo sin guía puede hacer que el usuario abandone la plataforma.
+**Problema:** El diseño no muestra qué pasa si el DNI o RUC es inválido o si la verificación falla. Un error sin guía en el primer contacto puede hacer que el usuario abandone el registro.
 
-`[Captura de pantalla: Sign up – unhappy path]`
-
-**Recomendación:** Mostrar el formato esperado como texto de ayuda en el campo, validar en línea y diseñar los estados "DNI/RUC inválido", "En verificación" y "No se pudo verificar, reintentar", con un mensaje que explique el siguiente paso.
+**Recomendación:** Indicar el formato esperado y diseñar los mensajes de error con el siguiente paso a seguir.
 
 ---
 
-### PROBLEMA #12: No existe ayuda ni onboarding para usuarios con bajo nivel de digitalización
+### PROBLEMA #11: No existe ayuda ni onboarding para usuarios con bajo nivel de digitalización
 **Severidad:** 2
 **Heurística violada:** Usabilidad – Ayuda y documentación · Inclusive Design – Add value
 
-**Problema:** Las entrevistas y personas del proyecto describen usuarios que hoy coordinan por WhatsApp y contactos informales. El diseño no incluye tutorial de primer uso, ayuda contextual ni un canal de soporte visible en el topbar o el sidebar. Conceptos como "desvío máximo", "contraoferta" o "match" no se explican en pantalla. Un primer uso sin guía puede generar errores o abandono, especialmente en el formulario de publicar ruta.
+**Problema:** No hay tutorial, ayuda ni canal de soporte visible, y términos como "desvío máximo" o "contraoferta" no se explican. Para usuarios acostumbrados a coordinar por WhatsApp, el primer uso puede ser confuso.
 
-`[Captura de pantalla: Publish Return Route y topbar]`
-
-**Recomendación:** Añadir un onboarding breve de 3 pasos por rol, tooltips en términos clave (por ejemplo, "Desvío máximo: kilómetros extra que aceptas recorrer"), un ítem "Ayuda" fijo y un enlace de contacto (por ejemplo, WhatsApp de soporte), coherente con los hábitos de comunicación actuales.
+**Recomendación:** Añadir un onboarding breve por rol, tooltips en los términos clave y un enlace de ayuda.
 
 ---
 
-### PROBLEMA #13: Datos inconsistentes entre secciones del diseño
+### PROBLEMA #12: Datos inconsistentes entre secciones del diseño
 **Severidad:** 1
 **Heurística violada:** Usabilidad – Consistencia y estándares
 
-**Problema:** La sección 4.2.5 describe pantallas de escritorio de 1440 px y el ejemplo de breadcrumb "Inicio > Envíos Activos > En Ruta GPS #TRZ-9104", pero el resto del informe (4.4) usa 1280 px y envíos con formato "SH-3310". Es un problema menor que no afecta al usuario final, pero genera confusión en el equipo de desarrollo y al construir el Design System.
+**Problema:** La sección 4.2.5 usa pantallas de 1440 px e IDs como "#TRZ-9104", mientras la sección 4.4 usa 1280 px e IDs como "SH-3310". No afecta al usuario final, pero confunde al equipo de desarrollo.
 
-**Recomendación:** Unificar el breakpoint de escritorio y el formato de identificadores en el Style Guide, y actualizar los ejemplos de la IA.
+**Recomendación:** Unificar el ancho de escritorio y el formato de los identificadores en el Style Guide.
 
 ---
 
@@ -391,32 +356,31 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 
 ## CONCLUSIONES DE LA EVALUACIÓN
 
-1. **Prioridad alta (severidad 3, antes del siguiente release):** idioma por defecto (#1), alineación de la IA con las pantallas (#2, #3), cancelación y retiro de ofertas (#4), alternativas al mapa (#5) y señalización del seguimiento de ubicación (#6).
-2. **Prioridad baja (severidad 2):** unificar terminología (#7), definir el modelo de roles (#8), refinar los estados de entrega y oferta (#9, #10), completar errores del registro (#11) y añadir ayuda (#12).
-3. **Ajustes de documentación (severidad 1):** corregir datos inconsistentes (#13).
+1. **Prioridad alta (severidad 3, antes del siguiente release):** alineación de la IA con las pantallas (#1, #2), cancelación y retiro de ofertas (#3), alternativas al mapa (#4) y señalización del seguimiento de ubicación (#5).
+2. **Prioridad baja (severidad 2):** unificar terminología (#6), definir el modelo de roles (#7), refinar los estados de entrega y oferta (#8, #9), completar errores del registro (#10) y añadir ayuda (#11).
+3. **Ajustes de documentación (severidad 1):** corregir datos inconsistentes (#12).
 4. No se detectaron problemas de severidad 4. Los flujos principales (publicar ruta, ofertar, confirmar match, seguir y entregar) se pueden completar con el diseño actual.
-5. **Siguiente paso recomendado:** repetir la evaluación sobre la primera versión funcional (Angular) con 5 usuarios reales de cada segmento, tal como sugieren las recomendaciones del informe (más pruebas de usabilidad y A/B testing del flujo de Matchmaking).
+5. **Siguiente paso recomendado:** repetir la evaluación sobre la versión desplegada con 5 usuarios reales de cada segmento, con más pruebas de usabilidad y A/B testing del flujo de Matchmaking.
 
 ---
 
 ## SEGUIMIENTO SOBRE LA VERSIÓN DESPLEGADA (SPRINT 3)
 
-La evaluación anterior se hizo sobre los diseños de la sección 4.4. Al cierre del Sprint 3 se revisó cada problema contra el código de `trazza-webapp` y los endpoints de `trazza-platform`. Los estados **Resuelto**, **Parcial** y **Persiste** se respaldan en el código indicado. **Por verificar** indica que el problema debe comprobarse usando la aplicación desplegada.
+La evaluación anterior se hizo sobre los diseños de la sección 4.4. Al cierre del Sprint 3 se revisó cada problema contra el código de `trazza-webapp` y los endpoints de `trazza-platform`.
 
 | # | Problema | Estado | Evidencia |
 |---|---|:---:|---|
-| 1 | Idioma por defecto en inglés | Persiste | `src/i18n.js` define `locale: 'en'` y `fallbackLocale: 'en'`. Los textos en español existen en `locales/es.json`, pero no se cargan por defecto. |
-| 2 | Etiquetas del sidebar distintas a las pantallas | Resuelto | Las opciones del menú en `locales/es.json` (`option.*`) usan los nombres de las vistas: "Mis rutas de retorno", "Cargas sugeridas", "Viaje activo", "Seguimiento de envíos", entre otras. |
-| 3 | "Subastas de Carga" y "Liquidaciones y Pagos" | Resuelto | No existe la etiqueta "Subastas". "Liquidaciones" corresponde ahora a una función real: `GET /api/v1/freight-settlements` y la vista de liquidaciones. |
-| 4 | No se puede retirar una oferta ni cancelar un match | Parcial | Se pueden cancelar rutas, solicitudes y viajes (`/return-routes/{id}/cancel`, `/shipment-requests/{id}/cancel`, `/trips/{id}/cancel`). La API expone `/match-proposals/{id}/cancel`, pero la Web App todavía no lo llama. |
-| 5 | El mapa es el único medio para entender ruta y desvío | Por verificar | La línea de tiempo del envío muestra eventos en texto ("Alerta de desvío ({distance} km)", "De vuelta en la ruta planificada"). Falta comprobar que toda la información del mapa tenga equivalente en texto. |
-| 6 | El seguimiento depende del navegador del transportista | Por verificar | El seguimiento recibe puntos por `POST /trips/{id}/tracking-points` y se probó con el simulador GPS de `trazza-platform`. Falta comprobar cómo se comparte la ubicación desde el celular en ruta. |
-| 7 | Terminología Carrier / Merchant mezclada | Por verificar | En español los roles se muestran como "Transportista" y "Emprendedor" (`roles.*`). Falta revisar que no queden términos en inglés en las vistas. |
-| 8 | Selector de modo frente al rol del registro | Por verificar | La API permite activar un segundo rol (`POST /users/me/roles`) y existe el texto `menu.switch-to`. Falta comprobar el comportamiento del selector en la aplicación. |
-| 9 | "Delivered" no distingue entrega marcada y confirmada | Resuelto | La API separa `POST /trips/{id}/deliver` y `POST /trips/{id}/confirm`. La línea de tiempo muestra "Marcado como entregado" y "Recepción confirmada por el emprendedor". |
-| 10 | Ofertas cerradas sin aviso a otros transportistas | Por verificar | Falta comprobar qué ve un transportista cuya propuesta queda cerrada tras un match. |
-| 11 | Recuperación de errores en DNI / RUC | Por verificar | La API devuelve errores `ProblemDetails` localizados. Falta comprobar cómo los muestra el formulario de registro. |
-| 12 | Sin ayuda ni onboarding | Persiste | No se encontró una vista de ayuda, tutorial ni onboarding en `trazza-webapp/src`. |
-| 13 | Datos inconsistentes en el diseño | No aplica | Se refería a la documentación del diseño, no a la aplicación. |
+| 1 | Etiquetas del sidebar distintas a las pantallas | Resuelto | El menú usa los mismos nombres que las vistas: "Mis rutas de retorno", "Cargas sugeridas", "Viaje activo", entre otras. |
+| 2 | "Subastas de Carga" y "Liquidaciones y Pagos" | Resuelto | Ya no existe "Subastas", y "Liquidaciones" corresponde a una función real de la API. |
+| 3 | No se puede retirar una oferta ni cancelar un match | Parcial | Se pueden cancelar rutas, solicitudes y viajes. La API permite cancelar propuestas, pero la Web App todavía no lo usa. |
+| 4 | El mapa es el único medio para entender ruta y desvío | Por verificar | La línea de tiempo del envío ya muestra en texto las alertas de desvío y el regreso a la ruta. |
+| 5 | El seguimiento depende del navegador del transportista | Por verificar | El seguimiento se probó con el simulador GPS de la API. |
+| 6 | Terminología Carrier / Merchant mezclada | Por verificar | En español los roles se muestran como "Transportista" y "Emprendedor". |
+| 7 | Selector de modo frente al rol del registro | Por verificar | La API permite activar un segundo rol en la misma cuenta. |
+| 8 | "Delivered" no distingue entrega marcada y confirmada | Resuelto | La entrega marcada y la confirmada son estados distintos en la API y en la línea de tiempo. |
+| 9 | Ofertas cerradas sin aviso a otros transportistas | Por verificar | Falta comprobar qué ve el transportista cuya propuesta se cierra. |
+| 10 | Recuperación de errores en DNI / RUC | Por verificar | La API devuelve mensajes de error en español e inglés. |
+| 11 | Sin ayuda ni onboarding | Persiste | La Web App no tiene todavía una vista de ayuda ni un tutorial. |
+| 12 | Datos inconsistentes en el diseño | No aplica | Se refería a la documentación del diseño, no a la aplicación. |
 
-**Resumen del seguimiento:** 3 resueltos, 1 parcial, 2 persisten, 6 por verificar y 1 que no aplica. Para el siguiente release quedan con prioridad alta el idioma por defecto (#1) y el retiro de ofertas desde la Web App (#4).
+**Resumen del seguimiento:** 3 resueltos, 1 parcial, 1 persiste, 6 por verificar y 1 que no aplica. Para el siguiente release quedan con prioridad alta el retiro de ofertas desde la Web App (#3) y la ayuda para nuevos usuarios (#11).
