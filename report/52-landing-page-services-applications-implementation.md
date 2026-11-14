@@ -255,3 +255,204 @@ Los conteos consideran commits sin merges con fecha entre el 19 de septiembre y 
   <!-- Pendiente: capturas de GitHub Insights (Contributors) de trazza-webapp y trazza-website en el Sprint 2 -->
 
 </div>
+
+### 5.2.3. Sprint 3
+
+En esta sección se registra el avance en producto y en trabajo colaborativo del Sprint 3, cuyo alcance fueron los Web Services de Trazza en ASP.NET Core, su despliegue en AWS y la integración de la Web Application con ellos.
+
+#### 5.2.3.1. Sprint Planning 3
+
+En el Sprint Planning 3 el equipo definió el objetivo del Sprint y seleccionó las User Stories de Web Services y las funcionalidades que dependen de ellos dentro del Product Backlog.
+
+| Sprint # | Sprint 3 |
+| :--- | :--- |
+| **Sprint Planning Background** | |
+| Date | [Pendiente: fecha del Sprint Planning 3] |
+| Time | [Pendiente: hora] |
+| Location | [Pendiente: lugar o plataforma de la reunión] |
+| Prepared By | Peñaranda Caldas, Gabriel Augusto |
+| Attendees (to planning meeting) | [Pendiente: confirmar asistentes] |
+| Sprint 2 Review Summary | [Pendiente: resumen del Sprint 2 Review redactado por el equipo] |
+| Sprint 2 Retrospective Summary | [Pendiente: resumen de la Sprint 2 Retrospective redactado por el equipo] |
+| **Sprint Goal & User Stories** | |
+| Sprint 3 Goal | **Nuestro enfoque está en** implementar y desplegar los Web Services de Trazza para los cinco bounded contexts e integrar la Web Application con ellos, reemplazando la API simulada del Sprint 2. **Creemos que esto entrega** un flujo real de punta a punta, desde la publicación de una ruta o solicitud hasta la entrega, la liquidación y la calificación, **a** transportistas independientes y comerciantes MYPE de Lima. **Esto se confirmará cuando** un usuario pueda registrarse, publicar, emparejarse, seguir un viaje y calificar en la Web Application desplegada, con los datos guardados en la base de datos a través de la API documentada con OpenAPI. |
+| Sprint 3 Velocity | [Pendiente: velocity acordada por el equipo] |
+| Sum of Story Points | 65 Story Points (US06: 5, US07: 5, US14: 5, US18: 5, US22: 5, US26: 8, US28: 8, US29: 8, US30: 8, US31: 8) |
+
+#### 5.2.3.2. Aspect Leaders and Collaborators
+
+Los aspectos del Sprint 3 corresponden a los bounded contexts de los Web Services y de su integración en la Web Application, más el Shared Kernel y el despliegue. Los líderes se asignaron según la participación registrada en los repositorios `trazza-platform` y `trazza-webapp`.
+
+| Team Member (Last Name, First Name) | GitHub Username | IAM & Fleet (L/C) | Matchmaking & Routing (L/C) | Service Execution & Monitoring (L/C) | Payment & Billing (L/C) | Loyalty & Reputation (L/C) | Shared Kernel & Deployment (L/C) |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Checalla Apaza, Emanuel Renato | Emanuelca135 | L | C | C | C | C | C |
+| Lozano Quispe, Fabricio Jofred | FabricioZz15 | C | C | C | L | C | C |
+| Medina Merma, Ingrid Melani | grini913 | C | C | L | C | C | C |
+| Peñaranda Caldas, Gabriel Augusto | gapc2024 | C | L | C | C | C | L |
+| Vite Celis, Rodrigo Matias | rodriznnn | C | C | C | C | L | C |
+
+#### 5.2.3.3. Sprint Backlog 3
+
+El objetivo del Sprint 3 fue implementar y desplegar los Web Services e integrar la Web Application. Cada bounded context se trabajó en su rama `feature/*` de `trazza-platform` y `trazza-webapp`, y se integró a `develop` mediante Pull Requests.
+
+**URL público del Board:** [Pendiente: URL del Board del Sprint 3](URL)
+
+| Sprint # | Sprint 3 | | | | | | |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **User Story** | | **Work-Item / Task** | | | | | |
+| **Id** | **Title** | **Id** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
+| — | Constraint: Shared Kernel | T01 | Shared Kernel de la API | Implementar `AggregateRoot`, `Result<T>`, `Money`, `LimaCalendar`, unit of work, repositorio base, interceptores, convenciones snake_case y kebab-case y `ProblemDetails` localizados. | [Pendiente] | Peñaranda Caldas, Gabriel Augusto | Done |
+| US06, US07 | Autenticación y registro vía API | T02 | IAM & Fleet en la API | Implementar registro, inicio de sesión con JWT y refresh token, y la gestión de vehículos, conductores y direcciones guardadas. | [Pendiente] | Checalla Apaza, Emanuel Renato | Done |
+| US26 | Validación de Identidad (KYC) | T03 | Verificación de identidad simulada | Guardar la identidad cifrada (AES-GCM) y verificarla contra un proveedor RENIEC simulado. | [Pendiente] | Checalla Apaza, Emanuel Renato | Done |
+| US14 | Consulta de Rutas Disponibles vía API | T04 | Matchmaking & Routing en la API | Implementar rutas de retorno, solicitudes de envío, búsqueda, sugerencias por corredor y propuestas de match. | [Pendiente] | Peñaranda Caldas, Gabriel Augusto | Done |
+| US29 | Mensajería Integrada (Chat) | T05 | Mensajes dentro de la propuesta | Exponer el envío, la lectura y el listado de mensajes de cada propuesta de match. | [Pendiente] | Peñaranda Caldas, Gabriel Augusto | Done |
+| US18 | Registro de Ubicación GPS vía API | T06 | Service Execution & Monitoring en la API | Implementar el ciclo de vida del viaje, los puntos de tracking, las incidencias y el listado de dispositivos IoT. | [Pendiente] | Medina Merma, Ingrid Melani | Done |
+| US30 | Alerta de Desvío en Ruta | T07 | Alertas de desvío y simulador GPS | Generar alertas cuando el vehículo sale del corredor de la ruta y añadir un simulador GPS para probar el seguimiento. | [Pendiente] | Peñaranda Caldas, Gabriel Augusto | Done |
+| US28, US31 | Lucro cesante y confirmación de pago | T08 | Payment & Billing en la API | Implementar planes, suscripciones con pago simulado, liquidaciones de flete y compensaciones por cancelación. | [Pendiente] | Lozano Quispe, Fabricio Jofred | Done |
+| US22 | Registro de Calificaciones vía API | T09 | Loyalty & Reputation en la API | Implementar calificaciones mutuas, resumen de reputación y puntos de fidelidad con canjes. | [Pendiente] | Vite Celis, Rodrigo Matias | Done |
+| US06, US07 | Autenticación y registro vía API | T10 | Integración de IAM en la Web App | Reemplazar `json-server` por la API, autenticar con JWT, refrescar la sesión ante un 401 y completar perfil, conductores y direcciones. | [Pendiente] | Peñaranda Caldas, Gabriel Augusto | Done |
+| US14, US29 | Matchmaking en la Web App | T11 | Integración de Matchmaking | Consumir los endpoints de rutas, solicitudes y propuestas desde la Web App. | [Pendiente] | Peñaranda Caldas, Gabriel Augusto | Done |
+| US18, US30 | Seguimiento en la Web App | T12 | Viajes y mapas en vivo | Añadir mapas con Leaflet, la vista de viajes y el seguimiento en vivo. | [Pendiente] | Peñaranda Caldas, Gabriel Augusto | Done |
+| US28, US31 | Billing en la Web App | T13 | Integración de Billing | Añadir las vistas de planes, suscripciones y liquidaciones conectadas a la API. | [Pendiente] | Lozano Quispe, Fabricio Jofred | Done |
+| US22 | Reputación en la Web App | T14 | Integración de Loyalty & Reputation | Rehacer el store, la API, el diálogo de calificación y añadir la vista de puntos de fidelidad. | [Pendiente] | Vite Celis, Rodrigo Matias | Done |
+| — | Constraint: despliegue | T15 | Despliegue de la API y la Web App | Publicar la API detrás de Amazon CloudFront con base de datos MySQL en Amazon RDS, y la Web App en AWS Amplify. | [Pendiente] | Peñaranda Caldas, Gabriel Augusto | Done |
+
+#### 5.2.3.4. Development Evidence for Sprint Review
+
+En el Sprint 3 se creó el repositorio `trazza-platform` con los Web Services en ASP.NET Core (.NET 10), organizados en cinco bounded contexts y un Shared Kernel, y se publicó su versión `v1.0.0`. En `trazza-webapp` se retiró la API simulada y se integraron todas las vistas con los Web Services. La siguiente tabla muestra los commits principales de cada bounded context.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| StackRoot-1ASI0730-2620-8084/trazza-platform | feature/profiles | 8fc7d3d | chore: initial project structure | - | 2026-11-03 |
+| StackRoot-1ASI0730-2620-8084/trazza-platform | feature/reputation | 8f5587e | feat(reputation): add rating aggregate root | - | 2026-11-04 |
+| StackRoot-1ASI0730-2620-8084/trazza-platform | feature/reputation | 127f342 | feat(reputation): add ratings controller | - | 2026-11-05 |
+| StackRoot-1ASI0730-2620-8084/trazza-platform | feature/billing | eb3f18e | feat(billing): implement payment transaction and receipt aggregates with domain events and errors | - | 2026-11-05 |
+| StackRoot-1ASI0730-2620-8084/trazza-platform | develop | 4f702c8 | feat(shared): adding aggregate root base class | - | 2026-11-10 |
+| StackRoot-1ASI0730-2620-8084/trazza-platform | develop | dc25f5a | feat(shared): add application database context | - | 2026-11-11 |
+| StackRoot-1ASI0730-2620-8084/trazza-platform | develop | 2ce177a | feat(shared): add global exception handler | - | 2026-11-11 |
+| StackRoot-1ASI0730-2620-8084/trazza-platform | develop | f681ec4 | feat(shared): add database health check endpoint | - | 2026-11-11 |
+| StackRoot-1ASI0730-2620-8084/trazza-platform | feature/iam | d37aacc | feat(iam): add domain aggregates for users, profiles, fleet and verifications | - | 2026-11-12 |
+| StackRoot-1ASI0730-2620-8084/trazza-platform | feature/iam | dd823bc | feat(infrastructure): implement IAM infrastructure services and persistence | - | 2026-11-12 |
+| StackRoot-1ASI0730-2620-8084/trazza-platform | develop | 7f6e898 | feat(matchmaking): add domain layer | - | 2026-11-12 |
+| StackRoot-1ASI0730-2620-8084/trazza-platform | develop | b76bae5 | feat(matchmaking): add application and infrastructure layers | - | 2026-11-12 |
+| StackRoot-1ASI0730-2620-8084/trazza-platform | develop | df79bfe | feat(matchmaking): add interfaces and integration | - | 2026-11-12 |
+| StackRoot-1ASI0730-2620-8084/trazza-platform | feature/billing | c38ff79 | feat(billing): add subscription aggregate with vehicles and simulated payments | - | 2026-11-12 |
+| StackRoot-1ASI0730-2620-8084/trazza-platform | feature/billing | 951b1d9 | feat(billing): add freight settlement and cancellation compensation aggregates | - | 2026-11-12 |
+| StackRoot-1ASI0730-2620-8084/trazza-platform | feature/reputation | 62cb0f8 | feat(reputation): add rating and loyalty point entry aggregates | - | 2026-11-12 |
+| StackRoot-1ASI0730-2620-8084/trazza-platform | feature/reputation | 6a60b97 | feat(reputation): add ratings and loyalty controllers | - | 2026-11-12 |
+| StackRoot-1ASI0730-2620-8084/trazza-platform | feature/execution | e8d2fcf | feat: implement domain logic for trip execution and monitoring | - | 2026-11-13 |
+| StackRoot-1ASI0730-2620-8084/trazza-platform | feature/execution | 954edc5 | feat: implement execution controllers, resources, and context facades | - | 2026-11-13 |
+| StackRoot-1ASI0730-2620-8084/trazza-platform | develop | 9f925b9 | feat: create trip when proposal is accepted | - | 2026-11-13 |
+| StackRoot-1ASI0730-2620-8084/trazza-platform | feature/matchmaking | e21dc27 | feat: add matchmaking suggestions and listings | - | 2026-11-13 |
+| StackRoot-1ASI0730-2620-8084/trazza-platform | feature/gps-simulator | 60c11ca | feat: add gps simulator | - | 2026-11-13 |
+| StackRoot-1ASI0730-2620-8084/trazza-platform | feature/shared | f9ff868 | feat: expose openapi in all environments | - | 2026-11-13 |
+| StackRoot-1ASI0730-2620-8084/trazza-platform | develop | 8b18a8e | docs: update project documentation and api reference | - | 2026-11-13 |
+| StackRoot-1ASI0730-2620-8084/trazza-platform | develop | 835998b | chore(release): v1.0.0 | - | 2026-11-13 |
+| StackRoot-1ASI0730-2620-8084/trazza-webapp | develop | c05cd36 | feat(reputation): add score value object | - | 2026-10-29 |
+| StackRoot-1ASI0730-2620-8084/trazza-webapp | develop | 70b58f6 | chore: remove json-server mock api | - | 2026-11-03 |
+| StackRoot-1ASI0730-2620-8084/trazza-webapp | develop | d26133c | feat(iam): authenticate against platform api with jwt | - | 2026-11-03 |
+| StackRoot-1ASI0730-2620-8084/trazza-webapp | feature/payment-billing | 027f978 | refactor(billing): call plans, subscriptions and settlements endpoints in billing-api | - | 2026-11-12 |
+| StackRoot-1ASI0730-2620-8084/trazza-webapp | feature/payment-billing | 16c7633 | feat(billing): add subscription-list view | - | 2026-11-12 |
+| StackRoot-1ASI0730-2620-8084/trazza-webapp | feature/loyalty-reputation | 35b05b6 | refactor(reputation): update reputation api for ratings and loyalty | - | 2026-11-12 |
+| StackRoot-1ASI0730-2620-8084/trazza-webapp | feature/loyalty-reputation | d08f960 | feat(reputation): add loyalty points view | - | 2026-11-12 |
+| StackRoot-1ASI0730-2620-8084/trazza-webapp | fix/iam-api-contract | 047b649 | fix: align iam with platform api | - | 2026-11-12 |
+| StackRoot-1ASI0730-2620-8084/trazza-webapp | feature/iam-profiles | 253d6ef | fix: refresh session on 401 | - | 2026-11-13 |
+| StackRoot-1ASI0730-2620-8084/trazza-webapp | feature/iam-profiles | f00b94e | feat: add drivers and saved addresses views | - | 2026-11-13 |
+| StackRoot-1ASI0730-2620-8084/trazza-webapp | feature/matchmaking-routing | 3ab6a7e | feat: use matchmaking api | - | 2026-11-13 |
+| StackRoot-1ASI0730-2620-8084/trazza-webapp | feature/service-execution-monitoring | 36c9ef8 | feat: add leaflet maps | - | 2026-11-13 |
+| StackRoot-1ASI0730-2620-8084/trazza-webapp | feature/service-execution-monitoring | 9a2bc09 | feat: add trips and live tracking | - | 2026-11-13 |
+| StackRoot-1ASI0730-2620-8084/trazza-webapp | fix/i18n-env | a4269b7 | chore: update endpoint env vars | - | 2026-11-13 |
+| StackRoot-1ASI0730-2620-8084/trazza-website | main | 461ca88 | feat: link landing CTAs to web app | - | 2026-11-12 |
+
+#### 5.2.3.5. Execution Evidence for Sprint Review
+
+Al cierre del Sprint 3, la Web Application quedó integrada con los Web Services desplegados. Un usuario puede registrarse, verificar su identidad, publicar rutas o solicitudes, negociar una propuesta, seguir el viaje en un mapa, confirmar la entrega, revisar su liquidación y calificar a su contraparte.
+
+| Evidence | Description | Related User Story | Status |
+| :--- | :--- | :--- | :--- |
+| Registro e inicio de sesión con JWT | La Web App se autentica contra `/api/v1/authentication` y renueva la sesión con el refresh token. | US06, US07 | Done |
+| Verificación de identidad | Registro de DNI cifrado y verificación contra el proveedor RENIEC simulado. | US26 | Done |
+| Rutas, solicitudes y propuestas | Búsqueda de rutas disponibles, sugerencias por corredor y propuestas de match aceptadas o rechazadas. | US14 | Done |
+| Chat de la propuesta | Mensajes entre transportista y comerciante dentro de cada propuesta. | US29 | Done |
+| Viaje y seguimiento en vivo | Mapa con Leaflet, puntos de tracking y simulador GPS. | US18 | Done |
+| Alertas de desvío | Alertas cuando el vehículo sale del corredor de la ruta, con su reconocimiento. | US30 | Done |
+| Liquidación y compensación | Confirmación de la liquidación del flete y compensación por cancelación en ruta. | US28, US31 | Done |
+| Calificaciones y fidelidad | Calificación mutua tras el viaje, resumen de reputación y puntos de fidelidad. | US22 | Done |
+
+<div align="center">
+
+  <!-- Pendiente: capturas de la Web Application del Sprint 3 en assets/images/chapter5/ -->
+
+</div>
+
+**Video de navegación del Sprint 3:** [Pendiente: URL del video del Sprint 3](URL)
+
+#### 5.2.3.6. Services Documentation Evidence for Sprint Review
+
+Los Web Services se documentaron con OpenAPI y se publican de forma interactiva con Scalar. Las rutas siguen el prefijo `/api/v1`, usan nombres en kebab-case y devuelven errores con el formato RFC 9457 `ProblemDetails`, localizados en español o inglés según el encabezado `Accept-Language`. Salvo el registro, el inicio de sesión, la renovación del token y el health check, todos los endpoints requieren el encabezado `Authorization: Bearer <token>`. El catálogo completo está en `docs/endpoints.md` del repositorio `trazza-platform`.
+
+**Documentación interactiva (Scalar):** [https://d3mwl1okiudzcg.cloudfront.net/scalar/v1](https://d3mwl1okiudzcg.cloudfront.net/scalar/v1)
+
+**Especificación OpenAPI:** [https://d3mwl1okiudzcg.cloudfront.net/openapi/v1.json](https://d3mwl1okiudzcg.cloudfront.net/openapi/v1.json)
+
+| Endpoint / Service | Method | Description | Documentation Evidence |
+| :--- | :---: | :--- | :--- |
+| `/api/v1/authentication/sign-up` · `sign-in` · `refresh` · `sign-out` | POST | Registro, inicio de sesión con JWT, renovación y revocación del refresh token. | Scalar · tag Authentication |
+| `/api/v1/users/me` · `/identity` · `/roles` · `/merchant-profile` | GET, PUT, POST | Perfil del usuario autenticado, identidad cifrada, activación de rol y perfil de comerciante. | Scalar · tag Users |
+| `/api/v1/users/me/identity-verifications` | GET, POST | Verificación de identidad contra el proveedor RENIEC simulado. | Scalar · tag Users |
+| `/api/v1/vehicles` · `/drivers` · `/saved-addresses` | GET, POST, PUT, DELETE | Flota del transportista y direcciones guardadas del comerciante. | Scalar · tags Vehicles, Drivers, Saved Addresses |
+| `/api/v1/return-routes` (`/mine`, `/search`, `/{id}/suggested-shipments`, `/{id}/cancel`) | GET, POST | Publicación, búsqueda, sugerencias de envíos y cancelación de rutas de retorno. | Scalar · tag Return Routes |
+| `/api/v1/shipment-requests` (`/open`, `/mine`, `/search`, `/{id}/suggested-routes`, `/{id}/cancel`) | GET, POST | Publicación, búsqueda, sugerencias de rutas y cancelación de solicitudes de envío. | Scalar · tag Shipment Requests |
+| `/api/v1/match-proposals` (`/{id}/accept`, `/reject`, `/cancel`, `/messages`) | GET, POST | Propuestas de match, su respuesta y los mensajes entre las partes. Aceptar una propuesta crea el viaje. | Scalar · tag Match Proposals |
+| `/api/v1/trips` (`/{id}/driver`, `/pick-up`, `/deliver`, `/confirm`, `/cancel`, `/status-history`) | GET, PUT, POST | Ciclo de vida del viaje, desde la asignación del conductor hasta la confirmación de la entrega. | Scalar · tag Trips |
+| `/api/v1/trips/{id}/tracking-points` · `/deviation-alerts` · `/incidents` | GET, POST | Puntos GPS, alertas de desvío con reconocimiento e incidencias con evidencias. | Scalar · tag Trips |
+| `/api/v1/iot-devices` | GET | Listado de dispositivos IoT disponibles. | Scalar · tag IoT Devices |
+| `/api/v1/plans` · `/subscriptions` (`/{id}/renew`, `/{id}/cancel`) | GET, POST | Catálogo de planes y suscripción del transportista con pago simulado. | Scalar · tags Plans, Subscriptions |
+| `/api/v1/freight-settlements` · `/cancellation-compensations` | GET, POST | Liquidación del flete por viaje y compensaciones por cancelación (confirmar, condonar o disputar). | Scalar · tags Freight Settlements, Cancellation Compensations |
+| `/api/v1/ratings` (`/received`, `/given`, `/summary/{userId}`) | GET, POST | Calificaciones mutuas y resumen de reputación. | Scalar · tag Ratings |
+| `/api/v1/loyalty/points` · `/loyalty/redemptions` | GET, POST | Saldo y canje de puntos de fidelidad. | Scalar · tag Loyalty |
+| `/api/v1/health` | GET | Estado de la API y de la conexión con la base de datos. | Scalar · tag Health |
+
+<div align="center">
+
+  <!-- Pendiente: capturas de Scalar (listado de endpoints y una petición de ejemplo) en assets/images/chapter5/ -->
+
+</div>
+
+#### 5.2.3.7. Software Deployment Evidence for Sprint Review
+
+En el Sprint 3 se desplegaron los Web Services y se publicó una nueva versión de la Web Application. La API se ejecuta sobre Kestrel detrás de una distribución de Amazon CloudFront y usa una base de datos MySQL 8 en Amazon RDS. Sus credenciales y el secreto del token se leen de variables de entorno. La Web Application se publica en AWS Amplify Hosting y lee la URL de la API desde la variable `VITE_TRAZZA_PLATFORM_API_URL` de `.env.production`. El Landing Page se actualizó para que sus botones de registro e inicio de sesión lleven a la nueva Web App.
+
+| Software Component | Deployment Platform | Repository / Branch | Deployment URL | Status |
+| :--- | :--- | :--- | :--- | :--- |
+| Web Services (Trazza Platform v1.0.0) | Amazon CloudFront + [Pendiente: servicio de cómputo] + Amazon RDS (MySQL 8) | trazza-platform / main | https://d3mwl1okiudzcg.cloudfront.net/api/v1 | Deployed |
+| Web Application | AWS Amplify Hosting | trazza-webapp / main | https://main.d32sst26l9v5eu.amplifyapp.com | Deployed |
+| Landing Page | AWS Amplify Hosting | trazza-website / main | [Pendiente: confirmar URL vigente del Landing Page] | Deployed |
+
+El endpoint `GET /api/v1/health` de la API desplegada responde `{"status":"healthy","database":"connected"}`, lo que confirma la conexión con la base de datos.
+
+<div align="center">
+
+  <!-- Pendiente: capturas de AWS Amplify, CloudFront y RDS en assets/images/chapter5/ -->
+
+</div>
+
+#### 5.2.3.8. Team Collaboration Insights during Sprint
+
+En el Sprint 3 el equipo trabajó en `trazza-platform` y `trazza-webapp` con GitFlow: cada bounded context se desarrolló en su rama `feature/*`, los ajustes de integración en ramas `fix/*`, y todo se integró a `develop` mediante Pull Requests. En `trazza-platform` la versión `v1.0.0` se integró a `main` con el Pull Request #11. En `trazza-webapp` el Pull Request de release (#11) quedó abierto al cierre del Sprint.
+
+| Team Member | GitHub Username | Repository | Commits | Pull Requests | Main Contribution |
+| :--- | :--- | :--- | :---: | :---: | :--- |
+| Checalla Apaza, Emanuel Renato | Emanuelca135 | trazza-platform | 10 | 1 | Bounded context IAM & Fleet de la API: agregados, servicios, persistencia y controladores. |
+| Lozano Quispe, Fabricio Jofred | FabricioZz15 | trazza-platform, trazza-webapp | 42 | 0 | Bounded context Payment & Billing en la API y en la Web App: planes, suscripciones, liquidaciones y compensaciones. |
+| Medina Merma, Ingrid Melani | grini913 | trazza-platform, trazza-report | 4 | 0 | Bounded context Service Execution & Monitoring de la API y diseño de entrevistas de la sección 5.3. |
+| Peñaranda Caldas, Gabriel Augusto | gapc2024 | trazza-platform, trazza-webapp, trazza-website | 86 | 18 | Shared Kernel, Matchmaking & Routing, simulador GPS, integración de la Web App con la API, release v1.0.0 y despliegue. |
+| Vite Celis, Rodrigo Matias | rodriznnn | trazza-platform, trazza-webapp | 55 | 2 | Bounded context Loyalty & Reputation en la API y en la Web App: calificaciones y puntos de fidelidad. |
+
+Los conteos consideran commits sin merges con fecha entre el 7 de octubre y el 13 de noviembre de 2026. Los Pull Requests figuran a nombre de quien los abrió.
+
+<div align="center">
+
+  <!-- Pendiente: capturas de GitHub Insights (Contributors y Network) de trazza-platform y trazza-webapp en el Sprint 3 -->
+
+</div>
