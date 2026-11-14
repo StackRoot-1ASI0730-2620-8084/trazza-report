@@ -30,7 +30,7 @@
     * [2.5. Ubiquitous Language](#25-ubiquitous-language)
 
 * [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
-    * [3.1. User Stories](#31-user-stories)
+    * [3.1. User Stories y Epics](#31-user-stories-y-epics)
     * [3.2. Impact Mapping](#32-impact-mapping)
     * [3.3. Product Backlog](#33-product-backlog)
 
@@ -61,7 +61,7 @@
     * [4.7. Software Object-Oriented Design](#47-software-object-oriented-design)
         * [4.7.1. Class Diagrams](#471-class-diagrams)
     * [4.8. Database Design](#48-database-design)
-        * [4.8.1. Database Diagrams](#481-database-diagrams)
+        * [4.8.1. Entity-Relationship Diagram (ERD)](#481-entity-relationship-diagram-erd)
 
 * [Capítulo V: Product Implementation, Validation & Deployment](#capítulo-v-product-implementation-validation--deployment)
     * [5.1. Software Configuration Management](#51-software-configuration-management)
