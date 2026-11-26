@@ -23,7 +23,9 @@ A continuación, se listan progresivamente los enlaces a las exposiciones corres
 | Hito | Título del Video | Enlace Microsoft Stream |
 | :--- | :--- | :--- |
 | **AV1** | Exposición Sprint Review AV1 | https://tinyurl.com/mrxzz2yd |
-
+| **TB1** | Exposición Sprint Review TB1 | https://tinyurl.com/457ck4x6 |
+| **AV2** | Exposición Sprint Review AV2 | https://tinyurl.com/2e76c6n3 |
+| **TF1** | Exposición Sprint Review TF1 |  |
 
 <!-- Salto de Pagina -->
 <div style="page-break-after: always;"></div>
@@ -49,7 +51,7 @@ Se ha prestado atención minuciosa para evitar la transliteración y uso de Span
 
 Este anexo contiene el tablero completo de Event Storming realizado para el proyecto Trazza, que incluye tanto el **Big Picture Event Storming** (sección 2.4) como el **Design-Level Event Storming** (sección 4.6.1).
 
-**Enlace al tablero interactivo en Figma:**  https://www.figma.com/board/WxMU6oKF4Vo3Z5UQ5XZrkm/Event-Storming?node-id=0-1&t=aqD0ryVwMf3WdoTD-1
+**Enlace al tablero interactivo en Figma:**  https://tinyurl.com/mt994x4d
 
 > El tablero permite explorar de forma interactiva todos los eventos, comandos, actores, políticas, agregados y bounded contexts identificados durante los talleres.
 
