@@ -267,13 +267,13 @@ En el Sprint Planning 3 el equipo definió el objetivo del Sprint y seleccionó 
 | Sprint # | Sprint 3 |
 | :--- | :--- |
 | **Sprint Planning Background** | |
-| Date | [Pendiente: fecha del Sprint Planning 3] |
-| Time | [Pendiente: hora] |
-| Location | [Pendiente: lugar o plataforma de la reunión] |
+| Date |13/11/26 |
+| Time | 23:47 |
+| Location | Modalidad Remota a través de la plataforma Discord|
 | Prepared By | Peñaranda Caldas, Gabriel Augusto |
-| Attendees (to planning meeting) | [Pendiente: confirmar asistentes] |
-| Sprint 2 Review Summary | [Pendiente: resumen del Sprint 2 Review redactado por el equipo] |
-| Sprint 2 Retrospective Summary | [Pendiente: resumen de la Sprint 2 Retrospective redactado por el equipo] |
+| Attendees (to planning meeting) | Checalla Apaza, Emanuel Renato / Lozano Quispe, Fabricio Jofred / Medina Merma, Ingrid Melani / Peñaranda Caldas, Gabriel Augusto / Vite Celis, Rodrigo Matias |
+| Sprint 2 Review Summary | Durante el Sprint 2 se logró publicar la primera versión de la Web Application de Trazza, permitiendo a los transportistas independientes y comerciantes MYPE acceder a las principales funcionalidades correspondientes a su perfil y explorar las opciones de transporte disponibles mediante datos simulados. Asimismo, se mejoró la Landing Page incorporando contenido bilingüe, fotografías reales y accesos directos a la aplicación web. Como oportunidad de mejora, se identificó la necesidad de permitir que los usuarios realicen operaciones con información real, garantizando la continuidad de sus actividades dentro de la plataforma. |
+| Sprint 2 Retrospective Summary |El equipo valoró positivamente la distribución de responsabilidades por bounded context, el desarrollo paralelo de funcionalidades y las revisiones colaborativas mediante Pull Requests. Sin embargo, se identificaron oportunidades de mejora en la coordinación entre los responsables del frontend y backend, la definición anticipada de los contratos de comunicación y la aplicación uniforme de GitFlow en todos los repositorios. Para la siguiente iteración, se acordó fortalecer estos aspectos con el propósito de reducir conflictos de integración y facilitar el trabajo colaborativo.|
 | **Sprint Goal & User Stories** | |
 | Sprint 3 Goal |**Nuestro enfoque está en** ofrecer a los transportistas independientes y comerciantes MYPE de Lima una experiencia integral de transporte de mercadería que les permita conectar sus ofertas y necesidades de envío, coordinar sus viajes y completar sus operaciones desde la publicación hasta la entrega, liquidación y calificación del servicio. **Creemos que esto entrega** a los transportistas independientes una oportunidad para aprovechar sus viajes de retorno vacíos, generar ingresos adicionales y gestionar sus servicios de transporte, y a los comerciantes MYPE una alternativa accesible y confiable para concretar sus envíos, realizar el seguimiento de su mercadería y evaluar la calidad del servicio recibido, brindando a ambos segmentos mayor confianza y transparencia en sus operaciones. **Esto se confirmará cuando** los transportistas puedan registrarse y publicar sus rutas disponibles, los comerciantes MYPE puedan registrarse y publicar sus solicitudes de envío, y ambos segmentos puedan concretar acuerdos de transporte, realizar el seguimiento del viaje, confirmar la entrega, gestionar la liquidación, calificarse mutuamente y consultar su historial de operaciones dentro de Trazza.|
 | Sprint 3 Velocity | [Pendiente: velocity acordada por el equipo] |
@@ -463,3 +463,59 @@ Los conteos consideran commits sin merges con fecha entre el 7 de octubre y el 1
   <!-- Pendiente: capturas de GitHub Insights (Contributors y Network) de trazza-platform y trazza-webapp en el Sprint 3 -->
 
 </div>
+
+### 5.2.4. Sprint 4
+
+En esta sección se registra el avance en producto y en trabajo colaborativo del Sprint 4, cuyo alcance comprende la consolidación, optimización y presentación final de todos los artefactos desplegados previamente —la Landing Page, la Web Application y los Web Services de Trazza—, incorporando las correcciones y mejoras identificadas en las iteraciones anteriores.
+
+#### 5.2.4.1. Sprint Planning 4
+
+| Sprint # | Sprint 4 |
+| :--- | :--- |
+| **Sprint Planning Background** | |
+| Date | 30/11/2026|
+| Time | [Pendiente: hora] |
+| Location | Modalidad Remota a través de la plataforma Discord |
+| Prepared By | Peñaranda Caldas, Gabriel Augusto |
+| Attendees (to planning meeting) | Checalla Apaza, Emanuel Renato / Lozano Quispe, Fabricio Jofred / Medina Merma, Ingrid Melani / Peñaranda Caldas, Gabriel Augusto / Vite Celis, Rodrigo Matias |
+| Sprint 3 Review Summary | Durante el Sprint 3 se logró implementar y desplegar los Web Services de Trazza e integrarlos con la Web Application, permitiendo a los transportistas independientes y comerciantes MYPE registrarse, publicar rutas o solicitudes de envío, concretar acuerdos de transporte, realizar el seguimiento de los viajes, confirmar entregas, revisar liquidaciones y calificarse mutuamente. Asimismo, se actualizó la Landing Page y se desarrolló la evaluación heurística de la experiencia de usuario. Como oportunidad de mejora, se identificó la necesidad de consolidar las funcionalidades desarrolladas, corregir posibles inconsistencias y optimizar la experiencia de ambos segmentos para la presentación final del producto.|
+| Sprint 3 Retrospective Summary | El trabajo colaborativo, la distribución de responsabilidades por bounded context y el uso de GitFlow con Pull Requests facilitaron el desarrollo paralelo y la integración de los componentes de Trazza. Como oportunidades de mejora, se propone fortalecer la comunicación entre los responsables de cada módulo, realizar pruebas de integración con mayor anticipación y distribuir de manera equilibrada las actividades de corrección y validación, con el propósito de garantizar una entrega final organizada, consistente y de calidad.|
+| **Sprint Goal & User Stories** | |
+| Sprint 4 Goal |**Nuestro enfoque está en** ofrecer a los transportistas independientes y comerciantes MYPE de Lima una experiencia integral, intuitiva y confiable en Trazza, consolidando y mejorando las funcionalidades que les permiten conocer los beneficios del servicio, establecer acuerdos de transporte y completar sus operaciones. **Creemos que esto entrega** a los transportistas independientes una forma más eficiente y confiable de aprovechar sus viajes de retorno vacíos y gestionar sus servicios de transporte, y a los comerciantes MYPE una alternativa más sencilla y segura para concretar sus envíos y realizar el seguimiento de su mercadería, brindando a ambos segmentos mayor confianza y satisfacción durante toda la experiencia. **Esto se confirmará cuando** los usuarios de ambos segmentos puedan conocer la propuesta de valor de Trazza, registrarse, gestionar sus perfiles, publicar rutas o solicitudes de envío, concretar acuerdos de transporte, realizar el seguimiento del viaje, confirmar la entrega, gestionar la liquidación, calificarse mutuamente y consultar su historial de operaciones, sin errores que impidan completar el servicio y con las mejoras identificadas durante las iteraciones anteriores incorporadas.|
+| Sprint 4 Velocity |  |
+| Sum of Story Points |  |
+
+#### 5.2.4.2. Aspect Leaders and Collaborators
+
+| Team Member (Last Name, First Name) | GitHub Username | IAM & Fleet (L/C) | Matchmaking & Routing (L/C) | Service Execution & Monitoring (L/C) | Payment & Billing (L/C) | Loyalty & Reputation (L/C) | Shared Kernel & Deployment (L/C) |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Checalla Apaza, Emanuel Renato | Emanuelca135 | L | C | C | C | C | C |
+| Lozano Quispe, Fabricio Jofred | FabricioZz15 | C | C | C | L | C | C |
+| Medina Merma, Ingrid Melani | grini913 | C | C | L | C | C | C |
+| Peñaranda Caldas, Gabriel Augusto | gapc2024 | C | L | C | C | C | L |
+| Vite Celis, Rodrigo Matias | rodriznnn | C | C | C | C | L | C |
+
+#### 5.2.4.3. Sprint Backlog 4
+
+| Sprint # | Sprint 4 | | | | | | |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **User Story** | | **Work-Item / Task** | | | | | |
+| **Id** | **Title** | **Id** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
+|  |   |    |     |   |     |     |      |
+
+
+#### 5.2.4.4. Development Evidence for Sprint Review
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| |  |  |   |  |  |
+
+#### 5.2.4.5. Execution Evidence for Sprint Review
+
+
+
+#### 5.2.4.6. Services Documentation Evidence for Sprint Review
+
+#### 5.2.4.7. Software Deployment Evidence for Sprint Review
+
+#### 5.2.4.8. Team Collaboration Insights during Sprint

@@ -6,16 +6,16 @@ En esta sección se presenta el video About-the-Product de Trazza. El video mues
 
 <div align="center">
 
-  <!-- Pendiente: captura de portada del video en assets/images/chapter5/ -->
+  ![Foto](../assets/images/chapter5/Captura-About-the-Product.png)
 
 </div>
 
 | Campo | Detalle |
 | :--- | :--- |
-| Duración | [Pendiente] |
+| Duración | 1:38 minutos |
 | Plataforma de publicación | Microsoft Stream |
-| Fecha de publicación | [Pendiente] |
-| Participantes | [Pendiente] |
+| Fecha de publicación | 13/11/2026 |
+| Participantes | Checalla Apaza, Emanuel Renato / Lozano Quispe, Fabricio Jofred / Medina Merma, Ingrid Melani / Peñaranda Caldas, Gabriel Augusto / Vite Celis, Rodrigo Matias |
 
 ### Guion del video
 
