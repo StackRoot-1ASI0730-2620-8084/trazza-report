@@ -34,18 +34,22 @@ La arquitectura de información sigue un modelo lineal que guía al usuario paso
 * **Unhappy path:** correo ya registrado, con el mensaje de error debajo del campo.
 
 **Desktop**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-sign-up-1.png" alt="Wireframe Desktop – wireframe desk sign up 1" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-sign-up-2.png" alt="Wireframe Desktop – wireframe desk sign up 2" width="700">
-</div>
+
+![Wireframe Desktop – wireframe desk sign up 1](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-sign-up-1.jpg){width=88%}\
+
+![Wireframe Desktop – wireframe desk sign up 2](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-sign-up-2.jpg){width=88%}\
+
 
 **Mobile**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-auth-sign-in-1.png" alt="Wireframe Mobile – wireframe mobile auth sign in 1" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-auth-sign-up-1.png" alt="Wireframe Mobile – wireframe mobile auth sign up 1" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-carrier-menu-1.png" alt="Wireframe Mobile – wireframe mobile carrier menu 1" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-merchant-menu-1.png" alt="Wireframe Mobile – wireframe mobile merchant menu 1" width="300">
-</div>
+
+![Wireframe Mobile – wireframe mobile auth sign in 1](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-auth-sign-in-1.png){width=38%}\
+
+![Wireframe Mobile – wireframe mobile auth sign up 1](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-auth-sign-up-1.png){width=38%}\
+
+![Wireframe Mobile – wireframe mobile carrier menu 1](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-carrier-menu-1.png){width=38%}\
+
+![Wireframe Mobile – wireframe mobile merchant menu 1](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-merchant-menu-1.png){width=38%}\
+
 
 #### User Goal 1: Publicar una ruta de retorno y asegurar una carga compatible
 
@@ -64,26 +68,38 @@ El Dashboard del transportista prioriza su próximo viaje de retorno y las nueva
 * **Load Detail - offer sent:** nuevo estado tras aceptar, a la espera de la confirmación del emprendedor.
 
 **Desktop**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-carrier-dashboard.png" alt="Wireframe Desktop – wireframe desk carrier dashboard" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-publish-return-route.png" alt="Wireframe Desktop – wireframe desk publish return route" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-publish-return-route-error.png" alt="Wireframe Desktop – wireframe desk publish return route error" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-load-suggestions.png" alt="Wireframe Desktop – wireframe desk load suggestions" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-load-suggestions-empty.png" alt="Wireframe Desktop – wireframe desk load suggestions empty" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-load-detail-and-offer.png" alt="Wireframe Desktop – wireframe desk load detail and offer" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-load-detail-offer-sent.png" alt="Wireframe Desktop – wireframe desk load detail offer sent" width="700">
-</div>
+
+![Wireframe Desktop – wireframe desk carrier dashboard](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-carrier-dashboard.jpg){width=88%}\
+
+![Wireframe Desktop – wireframe desk publish return route](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-publish-return-route.jpg){width=88%}\
+
+![Wireframe Desktop – wireframe desk publish return route error](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-publish-return-route-error.jpg){width=88%}\
+
+![Wireframe Desktop – wireframe desk load suggestions](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-load-suggestions.jpg){width=88%}\
+
+![Wireframe Desktop – wireframe desk load suggestions empty](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-load-suggestions-empty.jpg){width=88%}\
+
+![Wireframe Desktop – wireframe desk load detail and offer](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-load-detail-and-offer.jpg){width=88%}\
+
+![Wireframe Desktop – wireframe desk load detail offer sent](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-load-detail-offer-sent.jpg){width=88%}\
+
 
 **Mobile**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-carrier-dashboard-1.png" alt="Wireframe Mobile – wireframe mobile carrier dashboard 1" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-return-routes-1.png" alt="Wireframe Mobile – wireframe mobile return routes 1" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-return-routes-2.png" alt="Wireframe Mobile – wireframe mobile return routes 2" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-load-suggestions-1.png" alt="Wireframe Mobile – wireframe mobile load suggestions 1" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-load-suggestions-2.png" alt="Wireframe Mobile – wireframe mobile load suggestions 2" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-load-offers-1.png" alt="Wireframe Mobile – wireframe mobile load offers 1" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-load-offers-2.png" alt="Wireframe Mobile – wireframe mobile load offers 2" width="300">
-</div>
+
+![Wireframe Mobile – wireframe mobile carrier dashboard 1](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-carrier-dashboard-1.png){width=38%}\
+
+![Wireframe Mobile – wireframe mobile return routes 1](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-return-routes-1.png){width=38%}\
+
+![Wireframe Mobile – wireframe mobile return routes 2](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-return-routes-2.png){width=38%}\
+
+![Wireframe Mobile – wireframe mobile load suggestions 1](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-load-suggestions-1.png){width=38%}\
+
+![Wireframe Mobile – wireframe mobile load suggestions 2](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-load-suggestions-2.png){width=38%}\
+
+![Wireframe Mobile – wireframe mobile load offers 1](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-load-offers-1.png){width=38%}\
+
+![Wireframe Mobile – wireframe mobile load offers 2](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-load-offers-2.png){width=38%}\
+
 
 #### User Goal 2: Ejecutar un viaje desde el recojo hasta la entrega
 
@@ -100,22 +116,30 @@ La vista Active Trip se organiza alrededor de un stepper de cuatro estados, y en
 * **Trip History:** historial cronológico de viajes con búsqueda y filtros por fecha y estado.
 
 **Desktop**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-active-trip-matched.png" alt="Wireframe Desktop – wireframe desk active trip matched" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-active-trip-in-transit.png" alt="Wireframe Desktop – wireframe desk active trip in transit" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-active-trip-far-from-destination.png" alt="Wireframe Desktop – wireframe desk active trip far from destination" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-rate-merchant.png" alt="Wireframe Desktop – wireframe desk rate merchant" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-trip-history.png" alt="Wireframe Desktop – wireframe desk trip history" width="700">
-</div>
+
+![Wireframe Desktop – wireframe desk active trip matched](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-active-trip-matched.jpg){width=88%}\
+
+![Wireframe Desktop – wireframe desk active trip in transit](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-active-trip-in-transit.jpg){width=88%}\
+
+![Wireframe Desktop – wireframe desk active trip far from destination](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-active-trip-far-from-destination.jpg){width=88%}\
+
+![Wireframe Desktop – wireframe desk rate merchant](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-rate-merchant.jpg){width=88%}\
+
+![Wireframe Desktop – wireframe desk trip history](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-trip-history.jpg){width=88%}\
+
 
 **Mobile**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-active-trip-1.png" alt="Wireframe Mobile – wireframe mobile active trip 1" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-active-trip-2.png" alt="Wireframe Mobile – wireframe mobile active trip 2" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-active-trip-3.png" alt="Wireframe Mobile – wireframe mobile active trip 3" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-active-trip-4.png" alt="Wireframe Mobile – wireframe mobile active trip 4" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-trip-history-1.png" alt="Wireframe Mobile – wireframe mobile trip history 1" width="300">
-</div>
+
+![Wireframe Mobile – wireframe mobile active trip 1](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-active-trip-1.png){width=38%}\
+
+![Wireframe Mobile – wireframe mobile active trip 2](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-active-trip-2.png){width=38%}\
+
+![Wireframe Mobile – wireframe mobile active trip 3](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-active-trip-3.png){width=38%}\
+
+![Wireframe Mobile – wireframe mobile active trip 4](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-active-trip-4.png){width=38%}\
+
+![Wireframe Mobile – wireframe mobile trip history 1](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-trip-history-1.png){width=38%}\
+
 
 #### User Goal 3: Solicitar un flete y cerrar un acuerdo con un transportista
 
@@ -133,24 +157,34 @@ El Dashboard del emprendedor destaca el envío en tránsito y las solicitudes ab
 * **Offers - match confirmed:** nuevo estado tras confirmar el match; las demás ofertas se cierran.
 
 **Desktop**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-merchant-dashboard.png" alt="Wireframe Desktop – wireframe desk merchant dashboard" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-new-freight-request.png" alt="Wireframe Desktop – wireframe desk new freight request" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-new-freight-request-error.png" alt="Wireframe Desktop – wireframe desk new freight request error" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-find-carriers.png" alt="Wireframe Desktop – wireframe desk find carriers" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-offers.png" alt="Wireframe Desktop – wireframe desk offers" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-offers-match-confirmed.png" alt="Wireframe Desktop – wireframe desk offers match confirmed" width="700">
-</div>
+
+![Wireframe Desktop – wireframe desk merchant dashboard](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-merchant-dashboard.jpg){width=88%}\
+
+![Wireframe Desktop – wireframe desk new freight request](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-new-freight-request.jpg){width=88%}\
+
+![Wireframe Desktop – wireframe desk new freight request error](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-new-freight-request-error.jpg){width=88%}\
+
+![Wireframe Desktop – wireframe desk find carriers](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-find-carriers.jpg){width=88%}\
+
+![Wireframe Desktop – wireframe desk offers](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-offers.jpg){width=88%}\
+
+![Wireframe Desktop – wireframe desk offers match confirmed](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-offers-match-confirmed.jpg){width=88%}\
+
 
 **Mobile**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-merchant-dashboard-1.png" alt="Wireframe Mobile – wireframe mobile merchant dashboard 1" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-freight-requests-1.png" alt="Wireframe Mobile – wireframe mobile freight requests 1" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-freight-requests-2.png" alt="Wireframe Mobile – wireframe mobile freight requests 2" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-find-carriers-1.png" alt="Wireframe Mobile – wireframe mobile find carriers 1" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-freight-offers-1.png" alt="Wireframe Mobile – wireframe mobile freight offers 1" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-freight-offers-2.png" alt="Wireframe Mobile – wireframe mobile freight offers 2" width="300">
-</div>
+
+![Wireframe Mobile – wireframe mobile merchant dashboard 1](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-merchant-dashboard-1.png){width=38%}\
+
+![Wireframe Mobile – wireframe mobile freight requests 1](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-freight-requests-1.png){width=38%}\
+
+![Wireframe Mobile – wireframe mobile freight requests 2](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-freight-requests-2.png){width=38%}\
+
+![Wireframe Mobile – wireframe mobile find carriers 1](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-find-carriers-1.png){width=38%}\
+
+![Wireframe Mobile – wireframe mobile freight offers 1](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-freight-offers-1.png){width=38%}\
+
+![Wireframe Mobile – wireframe mobile freight offers 2](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-freight-offers-2.png){width=38%}\
+
 
 #### User Goal 4: Seguir un envío y confirmar su entrega
 
@@ -167,22 +201,30 @@ En Shipment Tracking, la alerta de desvío aparece fija en la parte superior con
 * **Shipment History:** historial de envíos con búsqueda y filtros.
 
 **Desktop**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-shipment-tracking.png" alt="Wireframe Desktop – wireframe desk shipment tracking" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-confirm-delivery.png" alt="Wireframe Desktop – wireframe desk confirm delivery" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-report-incident.png" alt="Wireframe Desktop – wireframe desk report incident" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-rate-carrier.png" alt="Wireframe Desktop – wireframe desk rate carrier" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-shipment-history.png" alt="Wireframe Desktop – wireframe desk shipment history" width="700">
-</div>
+
+![Wireframe Desktop – wireframe desk shipment tracking](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-shipment-tracking.jpg){width=88%}\
+
+![Wireframe Desktop – wireframe desk confirm delivery](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-confirm-delivery.jpg){width=88%}\
+
+![Wireframe Desktop – wireframe desk report incident](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-report-incident.jpg){width=88%}\
+
+![Wireframe Desktop – wireframe desk rate carrier](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-rate-carrier.jpg){width=88%}\
+
+![Wireframe Desktop – wireframe desk shipment history](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-shipment-history.jpg){width=88%}\
+
 
 **Mobile**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-shipment-tracking-1.png" alt="Wireframe Mobile – wireframe mobile shipment tracking 1" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-shipment-tracking-2.png" alt="Wireframe Mobile – wireframe mobile shipment tracking 2" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-shipment-tracking-3.png" alt="Wireframe Mobile – wireframe mobile shipment tracking 3" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-shipment-tracking-4.png" alt="Wireframe Mobile – wireframe mobile shipment tracking 4" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-shipment-history-1.png" alt="Wireframe Mobile – wireframe mobile shipment history 1" width="300">
-</div>
+
+![Wireframe Mobile – wireframe mobile shipment tracking 1](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-shipment-tracking-1.png){width=38%}\
+
+![Wireframe Mobile – wireframe mobile shipment tracking 2](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-shipment-tracking-2.png){width=38%}\
+
+![Wireframe Mobile – wireframe mobile shipment tracking 3](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-shipment-tracking-3.png){width=38%}\
+
+![Wireframe Mobile – wireframe mobile shipment tracking 4](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-shipment-tracking-4.png){width=38%}\
+
+![Wireframe Mobile – wireframe mobile shipment history 1](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-shipment-history-1.png){width=38%}\
+
 
 #### User Goal 5: Gestionar vehículos y suscripción
 
@@ -196,16 +238,18 @@ My Vehicles presenta cada vehículo en una card con su placa, tipo de carrocerí
 * **Plan & Billing:** plan actual, uso del mes, upgrade a Pro, método de pago e historial de facturación.
 
 **Desktop**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-my-vehicles.png" alt="Wireframe Desktop – wireframe desk my vehicles" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-plan-and-billing.png" alt="Wireframe Desktop – wireframe desk plan and billing" width="700">
-</div>
+
+![Wireframe Desktop – wireframe desk my vehicles](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-my-vehicles.jpg){width=88%}\
+
+![Wireframe Desktop – wireframe desk plan and billing](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-desk-plan-and-billing.jpg){width=88%}\
+
 
 **Mobile**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-vehicles-1.png" alt="Wireframe Mobile – wireframe mobile vehicles 1" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-carrier-plan-billing-1.png" alt="Wireframe Mobile – wireframe mobile carrier plan billing 1" width="300">
-</div>
+
+![Wireframe Mobile – wireframe mobile vehicles 1](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-vehicles-1.png){width=38%}\
+
+![Wireframe Mobile – wireframe mobile carrier plan billing 1](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-mobile-carrier-plan-billing-1.png){width=38%}\
+
 
 ---
 
@@ -220,14 +264,14 @@ El Wireflow combina la estructura de los wireframes con la lógica de un diagram
 Juan David termina una entrega en Lurín y, desde el Dashboard, selecciona "Publish return route". En el formulario ingresa dónde termina su entrega, su base, el horario, el vehículo y la capacidad libre; si la capacidad supera la del vehículo, el formulario muestra un error en línea y él lo corrige. Al publicar, Trazza muestra las cargas sugeridas dentro de su desvío máximo; si no hay ninguna, un estado vacío lo invita a editar la ruta. Abre una carga, revisa la calificación del emprendedor, el desvío (+1.8 km) y la tarifa ofrecida, y la acepta. El panel cambia a "Offer sent" y, cuando el emprendedor confirma, el viaje aparece en Active Trip en estado "Matched".
 
 **Desktop**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-user-flow-desk-ug1-return-route-1.png" alt="Wireflow Desktop UG1 – wireframe user flow desk ug1 return route 1" width="900">
-</div>
+
+![Wireflow Desktop UG1 – wireframe user flow desk ug1 return route 1](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-user-flow-desk-ug1-return-route-1.png){width=100%}\
+
 
 **Mobile**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-user-flow-mobile-ug1-return-route-1.png" alt="Wireflow Mobile UG1 – wireframe user flow mobile ug1 return route 1" width="900">
-</div>
+
+![Wireflow Mobile UG1 – wireframe user flow mobile ug1 return route 1](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-user-flow-mobile-ug1-return-route-1.png){width=100%}\
+
 
 **El happy path**
 
@@ -252,14 +296,14 @@ Fin del flujo => El emprendedor confirma el match y el viaje aparece en Active T
 Al llegar al punto de recojo, Juan David presiona "Confirm pickup" y el viaje pasa a "In transit": el stepper avanza, se notifica al emprendedor y el navegador del celular comienza a enviar la ubicación del vehículo. Al descargar en destino presiona "Confirm delivery"; si se encuentra a más de 1 km del punto de entrega, el sistema le muestra una advertencia antes de registrar la acción. El viaje pasa a "Delivered", un diálogo le pide calificar al emprendedor y, finalmente, el viaje aparece en Trip History.
 
 **Desktop**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-user-flow-desk-ug2-active-trip-1.png" alt="Wireflow Desktop UG2 – wireframe user flow desk ug2 active trip 1" width="900">
-</div>
+
+![Wireflow Desktop UG2 – wireframe user flow desk ug2 active trip 1](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-user-flow-desk-ug2-active-trip-1.png){width=100%}\
+
 
 **Mobile**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-user-flow-mobile-ug2-active-trip-1.png" alt="Wireflow Mobile UG2 – wireframe user flow mobile ug2 active trip 1" width="900">
-</div>
+
+![Wireflow Mobile UG2 – wireframe user flow mobile ug2 active trip 1](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-user-flow-mobile-ug2-active-trip-1.png){width=100%}\
+
 
 **El happy path**
 
@@ -282,14 +326,14 @@ Fin del flujo => El viaje aparece en Trip History con estado "Delivered".
 Valeria parte de su Dashboard y selecciona "New freight request". Completa direcciones, horario, tipo de carga, peso y, opcionalmente, una tarifa; si falta un campo obligatorio, la solicitud no se publica y el campo se resalta. Luego busca transportistas que ya van hacia su destino y le envía una oferta a Juan David. En Offers ve cada respuesta (aceptada, contraoferta o pendiente) y puede aceptar, contraofertar o rechazar sin salir de Trazza. Al confirmar el match, las demás ofertas se cierran y ambas partes pueden ver el contacto del otro.
 
 **Desktop**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-user-flow-desk-ug3-freight-request-1.png" alt="Wireflow Desktop UG3 – wireframe user flow desk ug3 freight request 1" width="900">
-</div>
+
+![Wireflow Desktop UG3 – wireframe user flow desk ug3 freight request 1](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-user-flow-desk-ug3-freight-request-1.png){width=100%}\
+
 
 **Mobile**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-user-flow-mobile-ug3-freight-request-1.png" alt="Wireflow Mobile UG3 – wireframe user flow mobile ug3 freight request 1" width="900">
-</div>
+
+![Wireflow Mobile UG3 – wireframe user flow mobile ug3 freight request 1](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-user-flow-mobile-ug3-freight-request-1.png){width=100%}\
+
 
 **El happy path**
 
@@ -314,14 +358,14 @@ Fin del flujo => El match queda confirmado, las demás ofertas se cierran y se h
 Mientras el envío está en tránsito, Valeria lo sigue en Shipment Tracking y puede compartir un enlace de solo lectura con su cliente. Si el vehículo se aleja más de 2 km de la ruta planificada, aparece una alerta en la parte superior y se le notifica. Cuando el transportista marca el envío como entregado, un diálogo le pregunta si la mercadería llegó completa. Si llegó bien, confirma y califica al transportista, y el envío pasa a Shipment History. Si algo salió mal, elige "No, report an incident" y completa el formulario de incidencia.
 
 **Desktop**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-user-flow-desk-ug4-shipment-tracking-1.png" alt="Wireflow Desktop UG4 – wireframe user flow desk ug4 shipment tracking 1" width="900">
-</div>
+
+![Wireflow Desktop UG4 – wireframe user flow desk ug4 shipment tracking 1](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-user-flow-desk-ug4-shipment-tracking-1.png){width=100%}\
+
 
 **Mobile**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/wireframe-user-flow-mobile-ug4-shipment-tracking-1.png" alt="Wireflow Mobile UG4 – wireframe user flow mobile ug4 shipment tracking 1" width="900">
-</div>
+
+![Wireflow Mobile UG4 – wireframe user flow mobile ug4 shipment tracking 1](../assets/images/chapter4/web-applications-ux-ui-design/wireframe-user-flow-mobile-ug4-shipment-tracking-1.png){width=100%}\
+
 
 **El happy path**
 
@@ -346,64 +390,84 @@ Los mock-ups reflejan la identidad visual final de Trazza en alta fidelidad y ap
 #### Mock-ups Desktop
 
 **Acceso (Sign in / Sign up)**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-auth-sign-in-1.png" alt="Mockup Desktop – mockup desk auth sign in 1" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-auth-sign-in-2.png" alt="Mockup Desktop – mockup desk auth sign in 2" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-auth-sign-up-1.png" alt="Mockup Desktop – mockup desk auth sign up 1" width="700">
-</div>
+
+![Mockup Desktop – mockup desk auth sign in 1](../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-auth-sign-in-1.png){width=88%}\
+
+![Mockup Desktop – mockup desk auth sign in 2](../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-auth-sign-in-2.png){width=88%}\
+
+![Mockup Desktop – mockup desk auth sign up 1](../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-auth-sign-up-1.png){width=88%}\
+
 
 **Carrier - Dashboard y rutas de retorno**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-carrier-dashboard-1.png" alt="Mockup Desktop – mockup desk carrier dashboard 1" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-return-routes-1.png" alt="Mockup Desktop – mockup desk return routes 1" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-return-routes-2.png" alt="Mockup Desktop – mockup desk return routes 2" width="700">
-</div>
+
+![Mockup Desktop – mockup desk carrier dashboard 1](../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-carrier-dashboard-1.png){width=88%}\
+
+![Mockup Desktop – mockup desk return routes 1](../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-return-routes-1.png){width=88%}\
+
+![Mockup Desktop – mockup desk return routes 2](../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-return-routes-2.png){width=88%}\
+
 
 **Carrier - Sugerencias de carga y ofertas**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-load-suggestions-1.png" alt="Mockup Desktop – mockup desk load suggestions 1" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-load-suggestions-2.png" alt="Mockup Desktop – mockup desk load suggestions 2" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-load-offers-1.png" alt="Mockup Desktop – mockup desk load offers 1" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-load-offers-2.png" alt="Mockup Desktop – mockup desk load offers 2" width="700">
-</div>
+
+![Mockup Desktop – mockup desk load suggestions 1](../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-load-suggestions-1.png){width=88%}\
+
+![Mockup Desktop – mockup desk load suggestions 2](../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-load-suggestions-2.png){width=88%}\
+
+![Mockup Desktop – mockup desk load offers 1](../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-load-offers-1.png){width=88%}\
+
+![Mockup Desktop – mockup desk load offers 2](../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-load-offers-2.png){width=88%}\
+
 
 **Carrier - Viaje activo, historial y vehículos**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-active-trip-1.png" alt="Mockup Desktop – mockup desk active trip 1" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-active-trip-2.png" alt="Mockup Desktop – mockup desk active trip 2" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-active-trip-3.png" alt="Mockup Desktop – mockup desk active trip 3" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-active-trip-4.png" alt="Mockup Desktop – mockup desk active trip 4" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-trip-history-1.png" alt="Mockup Desktop – mockup desk trip history 1" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-vehicles-1.png" alt="Mockup Desktop – mockup desk vehicles 1" width="700">
-</div>
+
+![Mockup Desktop – mockup desk active trip 1](../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-active-trip-1.png){width=88%}\
+
+![Mockup Desktop – mockup desk active trip 2](../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-active-trip-2.png){width=88%}\
+
+![Mockup Desktop – mockup desk active trip 3](../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-active-trip-3.png){width=88%}\
+
+![Mockup Desktop – mockup desk active trip 4](../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-active-trip-4.png){width=88%}\
+
+![Mockup Desktop – mockup desk trip history 1](../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-trip-history-1.png){width=88%}\
+
+![Mockup Desktop – mockup desk vehicles 1](../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-vehicles-1.png){width=88%}\
+
 
 **Merchant - Dashboard, solicitudes de flete y búsqueda de transportistas**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-merchant-dashboard-1.png" alt="Mockup Desktop – mockup desk merchant dashboard 1" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-freight-requests-1.png" alt="Mockup Desktop – mockup desk freight requests 1" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-freight-requests-2.png" alt="Mockup Desktop – mockup desk freight requests 2" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-find-carriers-1.png" alt="Mockup Desktop – mockup desk find carriers 1" width="700">
-</div>
+
+![Mockup Desktop – mockup desk merchant dashboard 1](../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-merchant-dashboard-1.png){width=88%}\
+
+![Mockup Desktop – mockup desk freight requests 1](../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-freight-requests-1.png){width=88%}\
+
+![Mockup Desktop – mockup desk freight requests 2](../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-freight-requests-2.png){width=88%}\
+
+![Mockup Desktop – mockup desk find carriers 1](../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-find-carriers-1.png){width=88%}\
+
 
 **Merchant - Ofertas**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-freight-offers-1.png" alt="Mockup Desktop – mockup desk freight offers 1" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-freight-offers-2.png" alt="Mockup Desktop – mockup desk freight offers 2" width="700">
-</div>
+
+![Mockup Desktop – mockup desk freight offers 1](../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-freight-offers-1.png){width=88%}\
+
+![Mockup Desktop – mockup desk freight offers 2](../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-freight-offers-2.png){width=88%}\
+
 
 **Merchant - Seguimiento del envío e historial**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-shipment-tracking-1.png" alt="Mockup Desktop – mockup desk shipment tracking 1" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-shipment-tracking-2.png" alt="Mockup Desktop – mockup desk shipment tracking 2" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-shipment-tracking-3.png" alt="Mockup Desktop – mockup desk shipment tracking 3" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-shipment-tracking-4.png" alt="Mockup Desktop – mockup desk shipment tracking 4" width="700"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-shipment-history-1.png" alt="Mockup Desktop – mockup desk shipment history 1" width="700">
-</div>
+
+![Mockup Desktop – mockup desk shipment tracking 1](../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-shipment-tracking-1.png){width=88%}\
+
+![Mockup Desktop – mockup desk shipment tracking 2](../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-shipment-tracking-2.png){width=88%}\
+
+![Mockup Desktop – mockup desk shipment tracking 3](../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-shipment-tracking-3.png){width=88%}\
+
+![Mockup Desktop – mockup desk shipment tracking 4](../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-shipment-tracking-4.png){width=88%}\
+
+![Mockup Desktop – mockup desk shipment history 1](../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-shipment-history-1.png){width=88%}\
+
 
 **Plan & Billing**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-carrier-plan-billing-1.png" alt="Mockup Desktop – mockup desk carrier plan billing 1" width="700">
-</div>
+
+![Mockup Desktop – mockup desk carrier plan billing 1](../assets/images/chapter4/web-applications-ux-ui-design/mockup-desk-carrier-plan-billing-1.png){width=88%}\
+
 
 Los mock-ups de escritorio presentan un sistema visual limpio y consistente: fondo claro `#F7F8FF`, cards blancas con sombra sutil, títulos en Plus Jakarta Sans Bold con `#131B2E` y acciones primarias en azul `#0037B0`. La arquitectura de información se organiza mediante un sidebar persistente con los módulos de cada rol, donde el ítem activo se resalta con fondo azul claro y un indicador lateral, y un topbar con breadcrumb, selector de idioma EN | ES, notificaciones y usuario. Las tarifas se muestran en verde `#006C4A`, los desvíos en chips ámbar y los estados (Accepted, Pending, Delivered, Cancelled) en chips que combinan texto y color.
 
@@ -412,71 +476,98 @@ En cuanto a usabilidad e inclusión, la interfaz prioriza la prevención de erro
 #### Mock-ups Mobile
 
 **Acceso y menús de navegación**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-auth-sign-in-1.png" alt="Mockup Mobile – mockup mobile auth sign in 1" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-auth-sign-up-1.png" alt="Mockup Mobile – mockup mobile auth sign up 1" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-carrier-menu-1.png" alt="Mockup Mobile – mockup mobile carrier menu 1" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-merchant-menu-1.png" alt="Mockup Mobile – mockup mobile merchant menu 1" width="300">
-</div>
+
+![Mockup Mobile – mockup mobile auth sign in 1](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-auth-sign-in-1.png){width=38%}\
+
+![Mockup Mobile – mockup mobile auth sign up 1](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-auth-sign-up-1.png){width=38%}\
+
+![Mockup Mobile – mockup mobile carrier menu 1](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-carrier-menu-1.png){width=38%}\
+
+![Mockup Mobile – mockup mobile merchant menu 1](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-merchant-menu-1.png){width=38%}\
+
 
 **Carrier - Dashboard y rutas de retorno**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-carrier-dashboard-1.png" alt="Mockup Mobile – mockup mobile carrier dashboard 1" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-return-routes-1.png" alt="Mockup Mobile – mockup mobile return routes 1" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-return-routes-2.png" alt="Mockup Mobile – mockup mobile return routes 2" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-return-routes-3.png" alt="Mockup Mobile – mockup mobile return routes 3" width="300">
-</div>
+
+![Mockup Mobile – mockup mobile carrier dashboard 1](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-carrier-dashboard-1.png){width=38%}\
+
+![Mockup Mobile – mockup mobile return routes 1](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-return-routes-1.png){width=38%}\
+
+![Mockup Mobile – mockup mobile return routes 2](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-return-routes-2.png){width=38%}\
+
+![Mockup Mobile – mockup mobile return routes 3](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-return-routes-3.png){width=38%}\
+
 
 **Carrier - Sugerencias de carga y ofertas**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-load-suggestions-1.png" alt="Mockup Mobile – mockup mobile load suggestions 1" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-load-suggestions-2.png" alt="Mockup Mobile – mockup mobile load suggestions 2" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-load-suggestions-3.png" alt="Mockup Mobile – mockup mobile load suggestions 3" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-load-offers-1.png" alt="Mockup Mobile – mockup mobile load offers 1" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-load-offers-2.png" alt="Mockup Mobile – mockup mobile load offers 2" width="300">
-</div>
+
+![Mockup Mobile – mockup mobile load suggestions 1](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-load-suggestions-1.png){width=38%}\
+
+![Mockup Mobile – mockup mobile load suggestions 2](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-load-suggestions-2.png){width=38%}\
+
+![Mockup Mobile – mockup mobile load suggestions 3](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-load-suggestions-3.png){width=38%}\
+
+![Mockup Mobile – mockup mobile load offers 1](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-load-offers-1.png){width=38%}\
+
+![Mockup Mobile – mockup mobile load offers 2](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-load-offers-2.png){width=38%}\
+
 
 **Carrier - Viaje activo, historial y vehículos**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-active-trip-1.png" alt="Mockup Mobile – mockup mobile active trip 1" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-active-trip-2.png" alt="Mockup Mobile – mockup mobile active trip 2" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-active-trip-3.png" alt="Mockup Mobile – mockup mobile active trip 3" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-active-trip-4.png" alt="Mockup Mobile – mockup mobile active trip 4" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-active-trip-5.png" alt="Mockup Mobile – mockup mobile active trip 5" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-trip-history-1.png" alt="Mockup Mobile – mockup mobile trip history 1" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-vehicles-1.png" alt="Mockup Mobile – mockup mobile vehicles 1" width="300">
-</div>
+
+![Mockup Mobile – mockup mobile active trip 1](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-active-trip-1.png){width=38%}\
+
+![Mockup Mobile – mockup mobile active trip 2](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-active-trip-2.png){width=38%}\
+
+![Mockup Mobile – mockup mobile active trip 3](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-active-trip-3.png){width=38%}\
+
+![Mockup Mobile – mockup mobile active trip 4](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-active-trip-4.png){width=38%}\
+
+![Mockup Mobile – mockup mobile active trip 5](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-active-trip-5.png){width=38%}\
+
+![Mockup Mobile – mockup mobile trip history 1](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-trip-history-1.png){width=38%}\
+
+![Mockup Mobile – mockup mobile vehicles 1](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-vehicles-1.png){width=38%}\
+
 
 **Merchant - Dashboard, solicitudes de flete y búsqueda de transportistas**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-merchant-dashboard-1.png" alt="Mockup Mobile – mockup mobile merchant dashboard 1" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-freight-requests-1.png" alt="Mockup Mobile – mockup mobile freight requests 1" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-freight-requests-2.png" alt="Mockup Mobile – mockup mobile freight requests 2" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-freight-requests-3.png" alt="Mockup Mobile – mockup mobile freight requests 3" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-find-carriers-1.png" alt="Mockup Mobile – mockup mobile find carriers 1" width="300">
-</div>
+
+![Mockup Mobile – mockup mobile merchant dashboard 1](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-merchant-dashboard-1.png){width=38%}\
+
+![Mockup Mobile – mockup mobile freight requests 1](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-freight-requests-1.png){width=38%}\
+
+![Mockup Mobile – mockup mobile freight requests 2](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-freight-requests-2.png){width=38%}\
+
+![Mockup Mobile – mockup mobile freight requests 3](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-freight-requests-3.png){width=38%}\
+
+![Mockup Mobile – mockup mobile find carriers 1](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-find-carriers-1.png){width=38%}\
+
 
 **Merchant - Ofertas**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-freight-offers-1.png" alt="Mockup Mobile – mockup mobile freight offers 1" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-freight-offers-2.png" alt="Mockup Mobile – mockup mobile freight offers 2" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-freight-offers-3.png" alt="Mockup Mobile – mockup mobile freight offers 3" width="300">
-</div>
+
+![Mockup Mobile – mockup mobile freight offers 1](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-freight-offers-1.png){width=38%}\
+
+![Mockup Mobile – mockup mobile freight offers 2](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-freight-offers-2.png){width=38%}\
+
+![Mockup Mobile – mockup mobile freight offers 3](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-freight-offers-3.png){width=38%}\
+
 
 **Merchant - Seguimiento del envío e historial**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-shipment-tracking-1.png" alt="Mockup Mobile – mockup mobile shipment tracking 1" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-shipment-tracking-2.png" alt="Mockup Mobile – mockup mobile shipment tracking 2" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-shipment-tracking-3.png" alt="Mockup Mobile – mockup mobile shipment tracking 3" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-shipment-tracking-4.png" alt="Mockup Mobile – mockup mobile shipment tracking 4" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-shipment-tracking-5.png" alt="Mockup Mobile – mockup mobile shipment tracking 5" width="300"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-shipment-history-1.png" alt="Mockup Mobile – mockup mobile shipment history 1" width="300">
-</div>
+
+![Mockup Mobile – mockup mobile shipment tracking 1](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-shipment-tracking-1.png){width=38%}\
+
+![Mockup Mobile – mockup mobile shipment tracking 2](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-shipment-tracking-2.png){width=38%}\
+
+![Mockup Mobile – mockup mobile shipment tracking 3](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-shipment-tracking-3.png){width=38%}\
+
+![Mockup Mobile – mockup mobile shipment tracking 4](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-shipment-tracking-4.png){width=38%}\
+
+![Mockup Mobile – mockup mobile shipment tracking 5](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-shipment-tracking-5.png){width=38%}\
+
+![Mockup Mobile – mockup mobile shipment history 1](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-shipment-history-1.png){width=38%}\
+
 
 **Plan & Billing**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-carrier-plan-billing-1.png" alt="Mockup Mobile – mockup mobile carrier plan billing 1" width="300">
-</div>
+
+![Mockup Mobile – mockup mobile carrier plan billing 1](../assets/images/chapter4/web-applications-ux-ui-design/mockup-mobile-carrier-plan-billing-1.png){width=38%}\
+
 
 La versión mobile mantiene la coherencia con el diseño de escritorio y usa los mismos tokens de color, tipografía y componentes. La arquitectura de información se adapta a pantallas pequeñas reemplazando el sidebar por un menú tipo drawer, accesible desde el app bar, y ordenando el contenido en una sola columna: el mapa se ubica sobre la lista, los KPIs se organizan en una grilla de 2 × 2 y las tablas se convierten en cards. Las acciones principales ocupan todo el ancho de la pantalla, con un área táctil mínima de 44 px, lo que facilita la interacción con una sola mano, por ejemplo cuando el transportista está junto a su vehículo.
 
@@ -495,15 +586,16 @@ Como transportista independiente, Juan David Ramos quiere publicar su ruta de re
 En este escenario, Juan David publica su ruta desde el Dashboard. El flujo valida que la capacidad ingresada no supere la del vehículo y, después de publicar, muestra solo las cargas que están dentro de su desvío máximo. En el detalle de la carga decide si acepta la tarifa, envía una contraoferta o la rechaza; el viaje se crea cuando el emprendedor confirma el match.
 
 **Desktop**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/user-flow-desk-ug1-return-route-1.jpeg" alt="User Flow Desktop UG1 – user flow desk ug1 return route 1" width="900"><br><br>
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/user-flow-desk-ug1-return-route-2.jpeg" alt="User Flow Desktop UG1 – user flow desk ug1 return route 2" width="900">
-</div>
+
+![User Flow Desktop UG1 – user flow desk ug1 return route 1](../assets/images/chapter4/web-applications-ux-ui-design/user-flow-desk-ug1-return-route-1.jpeg){width=100%}\
+
+![User Flow Desktop UG1 – user flow desk ug1 return route 2](../assets/images/chapter4/web-applications-ux-ui-design/user-flow-desk-ug1-return-route-2.jpeg){width=100%}\
+
 
 **Mobile**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/user-flow-mobile-ug1-return-route-1.jpeg" alt="User Flow Mobile UG1 – user flow mobile ug1 return route 1" width="900">
-</div>
+
+![User Flow Mobile UG1 – user flow mobile ug1 return route 1](../assets/images/chapter4/web-applications-ux-ui-design/user-flow-mobile-ug1-return-route-1.jpeg){width=100%}\
+
 
 **El happy path:** Carga asegurada
 
@@ -546,14 +638,14 @@ Como transportista, Juan David Ramos quiere confirmar el recojo y la entrega des
 En este escenario, Juan David avanza el viaje con una sola acción por estado. Al confirmar la entrega, el sistema verifica su ubicación respecto al punto de entrega y, si está lejos, le pide confirmar antes de registrar la acción. Al terminar, califica al emprendedor.
 
 **Desktop**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/user-flow-desk-ug2-active-trip-1.jpeg" alt="User Flow Desktop UG2 – user flow desk ug2 active trip 1" width="900">
-</div>
+
+![User Flow Desktop UG2 – user flow desk ug2 active trip 1](../assets/images/chapter4/web-applications-ux-ui-design/user-flow-desk-ug2-active-trip-1.jpeg){width=100%}\
+
 
 **Mobile**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/user-flow-mobile-ug2-active-trip-1.jpeg" alt="User Flow Mobile UG2 – user flow mobile ug2 active trip 1" width="900">
-</div>
+
+![User Flow Mobile UG2 – user flow mobile ug2 active trip 1](../assets/images/chapter4/web-applications-ux-ui-design/user-flow-mobile-ug2-active-trip-1.jpeg){width=100%}\
+
 
 **El happy path:** Viaje completado
 
@@ -586,14 +678,14 @@ Como emprendedora MYPE, Valeria Torres quiere solicitar un flete y acordar la ta
 En este escenario, Valeria crea una solicitud de flete, busca transportistas que ya van hacia su destino y gestiona sus respuestas en Offers. Puede aceptar, contraofertar o rechazar cada oferta, y al confirmar un match las demás se cierran automáticamente.
 
 **Desktop**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/user-flow-desk-ug3-freight-request-1.jpeg" alt="User Flow Desktop UG3 – user flow desk ug3 freight request 1" width="900">
-</div>
+
+![User Flow Desktop UG3 – user flow desk ug3 freight request 1](../assets/images/chapter4/web-applications-ux-ui-design/user-flow-desk-ug3-freight-request-1.jpeg){width=100%}\
+
 
 **Mobile**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/user-flow-mobile-ug3-freight-request-1.jpeg" alt="User Flow Mobile UG3 – user flow mobile ug3 freight request 1" width="900">
-</div>
+
+![User Flow Mobile UG3 – user flow mobile ug3 freight request 1](../assets/images/chapter4/web-applications-ux-ui-design/user-flow-mobile-ug3-freight-request-1.jpeg){width=100%}\
+
 
 **El happy path:** Match confirmado
 
@@ -636,14 +728,14 @@ Como emprendedora MYPE, Valeria Torres quiere seguir su envío en tiempo real y 
 En este escenario, Valeria sigue el envío en el mapa y recibe una alerta si el vehículo se aleja más de 2 km de la ruta planificada. Cuando el transportista marca la entrega, decide si confirma la recepción o reporta una incidencia.
 
 **Desktop**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/user-flow-desk-ug4-shipment-tracking-1.jpeg" alt="User Flow Desktop UG4 – user flow desk ug4 shipment tracking 1" width="900">
-</div>
+
+![User Flow Desktop UG4 – user flow desk ug4 shipment tracking 1](../assets/images/chapter4/web-applications-ux-ui-design/user-flow-desk-ug4-shipment-tracking-1.jpeg){width=100%}\
+
 
 **Mobile**
-<div align="center">
-  <img src="../assets/images/chapter4/web-applications-ux-ui-design/user-flow-mobile-ug4-shipment-tracking-1.jpeg" alt="User Flow Mobile UG4 – user flow mobile ug4 shipment tracking 1" width="900">
-</div>
+
+![User Flow Mobile UG4 – user flow mobile ug4 shipment tracking 1](../assets/images/chapter4/web-applications-ux-ui-design/user-flow-mobile-ug4-shipment-tracking-1.jpeg){width=100%}\
+
 
 **El happy path:** Entrega confirmada
 

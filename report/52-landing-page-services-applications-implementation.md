@@ -73,13 +73,13 @@ En el Sprint 1 se creó el repositorio del Landing Page y se implementó su prim
  
 Al cierre del Sprint 1, el Landing Page quedó publicado en una URL pública. Presentaba la propuesta de valor para ambos segmentos, la comparativa frente al flete tradicional, los testimonios y los accesos al registro por rol.
  
-<div align="center">
-  <img src="../assets/images/landingimplementada1.jpeg" alt="Landing Page v1 - Hero section" width="800">
-  <br><br>
-  <img src="../assets/images/landingimplementada2.jpeg" alt="Landing Page v1 - Value proposition sections" width="800">
-  <br><br>
-  <img src="../assets/images/landingimplementada3.jpeg" alt="Landing Page v1 - Testimonials and footer" width="800">
-</div>
+
+![Landing Page v1 - Hero section](../assets/images/landingimplementada1.jpeg){width=100%}\
+
+![Landing Page v1 - Value proposition sections](../assets/images/landingimplementada2.jpeg){width=100%}\
+
+![Landing Page v1 - Testimonials and footer](../assets/images/landingimplementada3.jpeg){width=100%}\
+
 
 **Video de navegación del Sprint 1:** [upc-pre-202620-1asi0730-8084-StackRoot-productnavigation-sprint-1.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202414356_upc_edu_pe/IQAHwNmBh-BrSIywebxTh1XRAXSQ67CxwXjsw4F17WnJ3nQ?e=dc5eL3&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
  
@@ -93,9 +93,9 @@ En el Sprint 1 se creó la aplicación en AWS Amplify Hosting y se conectó con 
  
 **URL del Landing Page:** [https://main.d2c543oob0ogxp.amplifyapp.com](https://main.d2c543oob0ogxp.amplifyapp.com)
  
-<div align="center">
-  <img src="../assets/images/trazzalandingpagedesplegada.jpeg" alt="Landing Page v1 deployed on AWS Amplify" width="800">
-</div>
+
+![Landing Page v1 deployed on AWS Amplify](../assets/images/trazzalandingpagedesplegada.jpeg){width=100%}\
+
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
  
@@ -103,15 +103,15 @@ En el Sprint 1 el equipo trabajó en dos repositorios. En `Trazza-LandingPage` s
  
 Los gráficos de Contributors muestran las contribuciones semanales de cada integrante. Las barras de las semanas del 7 y 14 de septiembre corresponden al Sprint 1.
  
-<div align="center">
-  <img src="../assets/images/chapter5/insights-landing-contributors.png" alt="GitHub Insights - Trazza-LandingPage contributors" width="800">
-  <br><br>
-  <img src="../assets/images/chapter5/insights-report-contributors.png" alt="GitHub Insights - Trazza-report contributors" width="800">
-  <br><br>
-  <img src="../assets/images/chapter5/sprint1-commits-landing.png" alt="Trazza-LandingPage commits during Sprint 1" width="800">
-  <br><br>
-  <img src="../assets/images/chapter5/sprint1-commits-report.png" alt="Trazza-report commits during Sprint 1" width="800">
-</div>
+
+![GitHub Insights - Trazza-LandingPage contributors](../assets/images/chapter5/insights-landing-contributors.png){width=100%}\
+
+![GitHub Insights - Trazza-report contributors](../assets/images/chapter5/insights-report-contributors.png){width=100%}\
+
+![Trazza-LandingPage commits during Sprint 1](../assets/images/chapter5/sprint1-commits-landing.png){width=100%}\
+
+![Trazza-report commits during Sprint 1](../assets/images/chapter5/sprint1-commits-report.png){width=100%}\
+
 
 ### 5.2.2. Sprint 2
 
@@ -205,11 +205,9 @@ Al cierre del Sprint 2, la Web Application quedó publicada con sus vistas princ
 | Planes y calificaciones | Vistas `plan-billing` y `rating-list`. | US19, US20 | Done |
 | Landing Page v2 | Sitio traducido EN / ES con fotos reales y botones enlazados a la Web App. | US04, US05, US25 | Done |
 
-<div align="center">
 
-  <!-- Pendiente: capturas de la Web Application del Sprint 2 en assets/images/chapter5/ -->
+<!-- Pendiente: capturas de la Web Application del Sprint 2 en assets/images/chapter5/ -->
 
-</div>
 
 **Video de navegación del Sprint 2:** [Pendiente: URL del video del Sprint 2](URL)
 
@@ -231,11 +229,9 @@ En el Sprint 2 se publicó la Web Application en AWS Amplify Hosting. La API sim
 | Web Application v1 | AWS Amplify Hosting | trazza-webapp / main | https://main.d1h7l9z3r6ucz4.amplifyapp.com | Deployed (reemplazada en el Sprint 3) |
 | Fake API (json-server) | Amazon EC2 + DuckDNS | trazza-webapp / main (`server/`) | https://trazza-api.duckdns.org/api/v1 | Deployed (retirada en el Sprint 3) |
 
-<div align="center">
 
-  <!-- Pendiente: captura del despliegue del Sprint 2 en AWS Amplify, en assets/images/chapter5/ -->
+<!-- Pendiente: captura del despliegue del Sprint 2 en AWS Amplify, en assets/images/chapter5/ -->
 
-</div>
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint
 
@@ -251,11 +247,9 @@ En el Sprint 2 el equipo trabajó en tres repositorios. En `trazza-webapp` el bo
 
 Los conteos consideran commits sin merges con fecha entre el 19 de septiembre y el 6 de octubre de 2026. Los Pull Requests de `trazza-report` (#7 a #12) y de `trazza-webapp` (#1) figuran a nombre de quien los abrió.
 
-<div align="center">
 
-  <!-- Pendiente: capturas de GitHub Insights (Contributors) de trazza-webapp y trazza-website en el Sprint 2 -->
+<!-- Pendiente: capturas de GitHub Insights (Contributors) de trazza-webapp y trazza-website en el Sprint 2 -->
 
-</div>
 
 ### 5.2.3. Sprint 3
 
@@ -380,11 +374,9 @@ Al cierre del Sprint 3, la Web Application quedó integrada con los Web Services
 | Liquidación y compensación | Confirmación de la liquidación del flete y compensación por cancelación en ruta. | US28, US31 | Done |
 | Calificaciones y fidelidad | Calificación mutua tras el viaje, resumen de reputación y puntos de fidelidad. | US22 | Done |
 
-<div align="center">
 
-  <!-- Pendiente: capturas de la Web Application del Sprint 3 en assets/images/chapter5/ -->
+<!-- Pendiente: capturas de la Web Application del Sprint 3 en assets/images/chapter5/ -->
 
-</div>
 
 **Video de navegación del Sprint 3:** [Pendiente: URL del video del Sprint 3](URL)
 
@@ -414,11 +406,9 @@ Los Web Services se documentaron con OpenAPI y se publican de forma interactiva 
 | `/api/v1/loyalty/points` · `/loyalty/redemptions` | GET, POST | Saldo y canje de puntos de fidelidad. | Scalar · tag Loyalty |
 | `/api/v1/health` | GET | Estado de la API y de la conexión con la base de datos. | Scalar · tag Health |
 
-<div align="center">
 
-  <!-- Pendiente: capturas de Scalar (listado de endpoints y una petición de ejemplo) en assets/images/chapter5/ -->
+<!-- Pendiente: capturas de Scalar (listado de endpoints y una petición de ejemplo) en assets/images/chapter5/ -->
 
-</div>
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
@@ -439,11 +429,9 @@ Para revisar la Web Application desplegada se crearon dos cuentas de prueba, una
 
 El endpoint `GET /api/v1/health` de la API desplegada responde `{"status":"healthy","database":"connected"}`, lo que confirma la conexión con la base de datos.
 
-<div align="center">
 
-  <!-- Pendiente: capturas de AWS Amplify, CloudFront y RDS en assets/images/chapter5/ -->
+<!-- Pendiente: capturas de AWS Amplify, CloudFront y RDS en assets/images/chapter5/ -->
 
-</div>
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 
@@ -459,8 +447,6 @@ En el Sprint 3 el equipo trabajó en `trazza-platform` y `trazza-webapp` con Git
 
 Los conteos consideran commits sin merges con fecha entre el 7 de octubre y el 13 de noviembre de 2026. Los Pull Requests figuran a nombre de quien los abrió.
 
-<div align="center">
 
-  <!-- Pendiente: capturas de GitHub Insights (Contributors y Network) de trazza-platform y trazza-webapp en el Sprint 3 -->
+<!-- Pendiente: capturas de GitHub Insights (Contributors y Network) de trazza-platform y trazza-webapp en el Sprint 3 -->
 
-</div>
