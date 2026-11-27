@@ -74,11 +74,11 @@ En el Sprint 1 se creó el repositorio del Landing Page y se implementó su prim
 Al cierre del Sprint 1, el Landing Page quedó publicado en una URL pública. Presentaba la propuesta de valor para ambos segmentos, la comparativa frente al flete tradicional, los testimonios y los accesos al registro por rol.
  
 
-![Landing Page v1 - Hero section](../assets/images/landingimplementada1.jpeg){width=100%}\
+![Landing Page v1 - Hero section](../assets/images/landingimplementada1.jpeg)
 
-![Landing Page v1 - Value proposition sections](../assets/images/landingimplementada2.jpeg){width=100%}\
+![Landing Page v1 - Value proposition sections](../assets/images/landingimplementada2.jpeg)
 
-![Landing Page v1 - Testimonials and footer](../assets/images/landingimplementada3.jpeg){width=100%}\
+![Landing Page v1 - Testimonials and footer](../assets/images/landingimplementada3.jpeg)
 
 
 **Video de navegación del Sprint 1:** [upc-pre-202620-1asi0730-8084-StackRoot-productnavigation-sprint-1.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202414356_upc_edu_pe/IQAHwNmBh-BrSIywebxTh1XRAXSQ67CxwXjsw4F17WnJ3nQ?e=dc5eL3&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
@@ -94,7 +94,7 @@ En el Sprint 1 se creó la aplicación en AWS Amplify Hosting y se conectó con 
 **URL del Landing Page:** [https://main.d2c543oob0ogxp.amplifyapp.com](https://main.d2c543oob0ogxp.amplifyapp.com)
  
 
-![Landing Page v1 deployed on AWS Amplify](../assets/images/trazzalandingpagedesplegada.jpeg){width=100%}\
+![Landing Page v1 deployed on AWS Amplify](../assets/images/trazzalandingpagedesplegada.jpeg)
 
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
@@ -104,13 +104,13 @@ En el Sprint 1 el equipo trabajó en dos repositorios. En `Trazza-LandingPage` s
 Los gráficos de Contributors muestran las contribuciones semanales de cada integrante. Las barras de las semanas del 7 y 14 de septiembre corresponden al Sprint 1.
  
 
-![GitHub Insights - Trazza-LandingPage contributors](../assets/images/chapter5/insights-landing-contributors.png){width=100%}\
+![GitHub Insights - Trazza-LandingPage contributors](../assets/images/chapter5/insights-landing-contributors.png)
 
-![GitHub Insights - Trazza-report contributors](../assets/images/chapter5/insights-report-contributors.png){width=100%}\
+![GitHub Insights - Trazza-report contributors](../assets/images/chapter5/insights-report-contributors.png)
 
-![Trazza-LandingPage commits during Sprint 1](../assets/images/chapter5/sprint1-commits-landing.png){width=100%}\
+![Trazza-LandingPage commits during Sprint 1](../assets/images/chapter5/sprint1-commits-landing.png)
 
-![Trazza-report commits during Sprint 1](../assets/images/chapter5/sprint1-commits-report.png){width=100%}\
+![Trazza-report commits during Sprint 1](../assets/images/chapter5/sprint1-commits-report.png)
 
 
 ### 5.2.2. Sprint 2

@@ -55,19 +55,19 @@ A continuación, explicamos y detallamos las analíticas de colaboración en bas
 
 #### 1. Pulse
 
-![GitHub Pulse](../../assets/images/github-pulse.jpeg){width=88%}\
+![GitHub Pulse](../../assets/images/github-pulse.jpeg)
 
 #### 2. Contributors
 
-![GitHub Contributors](../../assets/images/github-contributors.jpeg){width=88%}\
+![GitHub Contributors](../../assets/images/github-contributors.jpeg)
 
 #### 3. Traffic
 
-![GitHub Traffic](../../assets/images/github-traffic.jpeg){width=88%}\
+![GitHub Traffic](../../assets/images/github-traffic.jpeg)
 
 #### 4. Network Graph
 
-![GitHub Network Graph](../../assets/images/github-network-graph.jpeg){width=88%}\
+![GitHub Network Graph](../../assets/images/github-network-graph.jpeg)
 
 
 ### Entrega 3 - AV2 (Sprint 3)
@@ -84,7 +84,7 @@ Durante la elaboración del avance AV2 correspondiente al Sprint 3, el equipo St
 
 #### Contribuciones acumuladas en Trazza-report y Trazza-LandingPage
 
-![GitHub Insights - Trazza-report contributors](../../assets/images/chapter5/insights-report-contributors.png){width=88%}\
+![GitHub Insights - Trazza-report contributors](../../assets/images/chapter5/insights-report-contributors.png)
 
-![Commits recientes en Trazza-report](../../assets/images/chapter5/sprint2-commits-report.png){width=88%}\
+![Commits recientes en Trazza-report](../../assets/images/chapter5/sprint2-commits-report.png)
 

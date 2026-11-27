@@ -1,6 +1,4 @@
-::: portada
-
-![Logo de la UPC](../../assets/images/introduction/UPC_logo.png){width=80px}\
+![Logo de la UPC](../../assets/images/introduction/UPC_logo.png)
 
 Universidad Peruana de Ciencias Aplicadas  
 Carrera de Ingeniería de Software
@@ -36,4 +34,3 @@ Proyecto
 
 **Noviembre 2026**
 
-:::

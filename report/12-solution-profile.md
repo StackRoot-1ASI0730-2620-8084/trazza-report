@@ -118,7 +118,9 @@ Creemos que lograremos **una tasa de retención de usuarios superior al 60% mens
 En el siguiente gráfico se consolida el proceso estratégico a través del Lean UX Canvas de Trazza. Este lienzo resume visualmente el problema central, los beneficios esperados para nuestros segmentos objetivo (transportistas y emprendedores), las soluciones propuestas y las hipótesis fundamentales del proyecto.
 
 
-![Figura: Lean UX Canvas de Trazza. Elaboración propia.](../assets/images/chapter1/TrazzaLeanUXCanvas.png){fig-alt="Lean UX Canvas de Trazza"}
+![Lean UX Canvas de Trazza](../assets/images/chapter1/TrazzaLeanUXCanvas.png)
+
+*Figura: Lean UX Canvas de Trazza. Elaboración propia.*
 
 
 > Lean UX Canvas: [https://canva.link/41xql8grxyjm2m8](https://canva.link/41xql8grxyjm2m8)
