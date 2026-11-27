@@ -1,0 +1,6 @@
+# pandoc -d config/docx.yaml
+defaults:
+  - ${.}/inputs.yaml
+to: docx
+output-file: ${.}/../dist/upc-pre-202620-1asi0730-8084-StackRoot-report.docx
+reference-doc: ${.}/reference.docx
