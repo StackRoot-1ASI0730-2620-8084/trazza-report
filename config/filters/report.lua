@@ -70,12 +70,167 @@ local function toc_block()
   return pandoc.Null()
 end
 
+-- Portada --------------------------------------------------------------------
+-- Se extrae la estructura de 01-front-page.md (logo, líneas, tabla de
+-- integrantes, cierre) y se maqueta con el molde UPC: en PDF con la función
+-- #portada de config/typst/portada.typ; en DOCX con párrafos de posición fija.
+
+local function split_lines(inlines)
+  local lines, cur = {}, {}
+  for _, il in ipairs(inlines) do
+    if il.t == "LineBreak" then
+      lines[#lines + 1] = cur; cur = {}
+    else
+      cur[#cur + 1] = il
+    end
+  end
+  lines[#lines + 1] = cur
+  local out = {}
+  for _, l in ipairs(lines) do
+    local text = stringify(l):gsub("^%s+", ""):gsub("%s+$", "")
+    if text ~= "" then out[#out + 1] = text end
+  end
+  return out
+end
+
+local function extract_cover(blocks)
+  local c = { logo = nil, lines = {}, rows = {}, closing = {} }
+  local after_table = false
+  for _, b in ipairs(blocks) do
+    if (b.t == "Para" or b.t == "Plain") and image_only(b) then
+      b.content:walk({ Image = function(img) c.logo = c.logo or img end })
+    elseif b.t == "Para" or b.t == "Plain" or b.t == "Header" then
+      local target = after_table and c.closing or c.lines
+      for _, l in ipairs(split_lines(b.content)) do target[#target + 1] = l end
+    elseif b.t == "Table" then
+      after_table = true
+      local function add_row(row)
+        local cells = {}
+        for _, cell in ipairs(row.cells) do cells[#cells + 1] = stringify(cell.contents) end
+        c.rows[#c.rows + 1] = cells
+      end
+      for _, row in ipairs(b.head.rows) do add_row(row) end
+      for _, body in ipairs(b.bodies) do
+        for _, row in ipairs(body.body) do add_row(row) end
+      end
+    end
+  end
+  return c
+end
+
+local function typst_str(s)
+  return '"' .. s:gsub('\\', '\\\\'):gsub('"', '\\"') .. '"'
+end
+
+local function cover_typst(c)
+  local parts = {}
+  local function list(items)
+    local xs = {}
+    for _, x in ipairs(items) do xs[#xs + 1] = typst_str(x) end
+    return "(" .. table.concat(xs, ", ") .. (#xs == 1 and ",)" or ")")
+  end
+  local rows = {}
+  for _, r in ipairs(c.rows) do rows[#rows + 1] = list({ r[1] or "", r[2] or "" }) end
+  local args = "lineas: " .. list(c.lines) .. ", integrantes: (" .. table.concat(rows, ", ")
+    .. (#rows == 1 and ",)" or ")") .. ", cierre: " .. list(c.closing) .. ")"
+  if c.logo then
+    c.logo.attributes.width = logo_width
+    return {
+      pandoc.RawBlock("typst", "#portada(logo: ["),
+      pandoc.Plain({ c.logo }),
+      pandoc.RawBlock("typst", "], " .. args),
+    }
+  end
+  return { pandoc.RawBlock("typst", "#portada(" .. args) }
+end
+
+-- Molde para DOCX: mismas medidas que config/typst/portada.typ (pt desde el borde superior).
+local docx_lines = {
+  { 142.57, 12, false }, { 164.65, 12, false }, { 208.69, 14, true }, { 234.37, 14, true },
+  { 259.93, 12, false }, { 281.89, 14, true }, { 307.46, 16, true }, { 336.73, 12, false },
+  { 358.93, 14, true }, { 406.33, 12, false }, { 428.53, 14, true }, { 453.85, 12, false },
+  { 476.05, 14, true }, { 523.45, 12, true },
+}
+local docx_closing = { { 710.41, 12, true }, { 754.33, 12, true } }
+local docx_top_margin = 70.9    -- margen superior de reference.docx (1418 twips)
+local docx_logo = { y = 73.6, h = 62 }
+local docx_table = { y = 545.53, x = 184.32, col2 = 254.16, head = 21.78, step = 20.16, left_margin = 70.9 }
+
+local function line_h(size) return size * 1.221 end
+local function tw(pt) return string.format("%d", math.floor(pt * 20 + 0.5)) end
+
+local function xml_escape(s)
+  return (s:gsub("&", "&amp;"):gsub("<", "&lt;"):gsub(">", "&gt;"))
+end
+
+local function run(text, size, bold)
+  return string.format(
+    '<w:r><w:rPr><w:rFonts w:ascii="Aptos" w:hAnsi="Aptos" w:cs="Aptos"/>%s<w:sz w:val="%d"/><w:szCs w:val="%d"/></w:rPr><w:t xml:space="preserve">%s</w:t></w:r>',
+    bold and "<w:b/><w:bCs/>" or "", size * 2, size * 2, xml_escape(text))
+end
+
+local function docx_para(text, y, size, bold, prev_bottom)
+  local before = math.max(0, y - prev_bottom)
+  return string.format(
+    '<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="%s" w:after="0" w:line="%s" w:lineRule="exact"/></w:pPr>%s</w:p>',
+    tw(before), tw(line_h(size)), run(text, size, bold)), y + line_h(size)
+end
+
+local function cover_docx(c)
+  local out, bottom = {}, docx_top_margin
+  if c.logo then
+    c.logo.attributes.width = tostring(docx_logo.h) .. "pt"
+    out[#out + 1] = pandoc.RawBlock("openxml", string.format(
+      '<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="%s" w:after="0"/></w:pPr></w:p>',
+      tw(math.max(0, docx_logo.y - docx_top_margin - 12))))
+    out[#out + 1] = pandoc.Div({ pandoc.Para({ c.logo }) },
+      pandoc.Attr("", {}, { ["custom-style"] = "Centrado" }))
+    bottom = docx_logo.y + docx_logo.h
+  end
+  local xml = {}
+  for i, text in ipairs(c.lines) do
+    local spec = docx_lines[i] or { bottom + 8, 12, false }
+    local p; p, bottom = docx_para(text, spec[1], spec[2], spec[3], bottom)
+    xml[#xml + 1] = p
+  end
+  if #c.rows > 0 then
+    local t = docx_table
+    local w1, w2 = t.col2 - t.x, 595.2 - 2 * t.x - (t.col2 - t.x) + 40
+    local rows = {}
+    for j, r in ipairs(c.rows) do
+      local h = (j == 1) and t.head or t.step
+      local size, bold = (j == 1) and 12 or 11, j == 1
+      local cells = {}
+      for k, w in ipairs({ w1, w2 }) do
+        cells[#cells + 1] = string.format(
+          '<w:tc><w:tcPr><w:tcW w:w="%s" w:type="dxa"/></w:tcPr><w:p><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr>%s</w:p></w:tc>',
+          tw(w), run(r[k] or "", size, bold))
+      end
+      rows[#rows + 1] = string.format('<w:tr><w:trPr><w:trHeight w:val="%s" w:hRule="exact"/></w:trPr>%s</w:tr>',
+        tw(h), table.concat(cells))
+    end
+    local before = math.max(0, t.y - bottom)
+    xml[#xml + 1] = string.format(
+      '<w:p><w:pPr><w:spacing w:before="0" w:after="0" w:line="%s" w:lineRule="exact"/></w:pPr></w:p>', tw(before))
+    xml[#xml + 1] = string.format(
+      '<w:tbl><w:tblPr><w:tblInd w:w="%s" w:type="dxa"/><w:tblBorders><w:top w:val="nil"/><w:left w:val="nil"/><w:bottom w:val="nil"/><w:right w:val="nil"/><w:insideH w:val="nil"/><w:insideV w:val="nil"/></w:tblBorders><w:tblLayout w:type="fixed"/><w:tblCellMar><w:left w:w="0" w:type="dxa"/><w:right w:w="0" w:type="dxa"/></w:tblCellMar></w:tblPr><w:tblGrid><w:gridCol w:w="%s"/><w:gridCol w:w="%s"/></w:tblGrid>%s</w:tbl>',
+      tw(t.x - t.left_margin), tw(w1), tw(w2), table.concat(rows))
+    bottom = t.y + t.head + t.step * (#c.rows - 1)
+  end
+  for k, text in ipairs(c.closing) do
+    local spec = docx_closing[k] or { bottom + 8, 12, true }
+    local p; p, bottom = docx_para(text, spec[1], spec[2], spec[3], bottom)
+    xml[#xml + 1] = p
+  end
+  out[#out + 1] = pandoc.RawBlock("openxml", table.concat(xml, "\n"))
+  return out
+end
+
 local function portada(div)
-  local blocks = div.content:walk({
-    Header = function(h) return pandoc.Para({ pandoc.Strong(h.content) }) end,
-  })
-  if is_typst() then return centered(blocks) end
-  return { pandoc.Div(blocks, pandoc.Attr("", {}, { ["custom-style"] = "Portada" })) }
+  local c = extract_cover(div.content)
+  if is_typst() then return cover_typst(c) end
+  if is_docx() then return cover_docx(c) end
+  return div.content
 end
 
 local function needs_break(h, in_front_matter)
@@ -148,7 +303,6 @@ local function transform(blocks)
     local cover = {}
     for i = 1, first - 1 do
       local b = blocks[i]
-      if b.t == "Para" and image_only(b) then b = size_images(b, logo_width) end
       cover[#cover + 1] = b
     end
     for _, x in ipairs(portada(pandoc.Div(cover))) do out[#out + 1] = x end

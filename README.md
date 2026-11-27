@@ -22,6 +22,7 @@ Los archivos se generan en `dist/` (ignorada por git). En el DOCX, el índice se
 - `config/metadata.yaml`: metadatos y opciones de diseño.
 - `config/filters/report.lua`: saltos de página, índice, portada e imágenes centradas.
 - `config/typst/header.typ` y `config/reference.docx`: estilos del PDF y del Word.
+- `config/typst/portada.typ`: molde de la portada UPC (posiciones, tamaños y fuente Aptos). El DOCX usa las mismas medidas en el filtro.
 
 Los `.md` se escriben en Markdown estándar (sin HTML ni atributos de Pandoc), así se ven igual en el preview de WebStorm o GitHub. El diseño se controla desde `config/metadata.yaml`:
 

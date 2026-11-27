@@ -14,3 +14,7 @@ variables:
   page-numbering: "1"
 include-in-header:
   - ${.}/typst/header.typ
+  - ${.}/typst/portada.typ
+pdf-engine-opts:
+  # Aptos (fuente del molde UPC) viene con Microsoft Word; si no está, se usa Arial
+  - "--font-path=/Applications/Microsoft Word.app/Contents/Resources/DFonts"
