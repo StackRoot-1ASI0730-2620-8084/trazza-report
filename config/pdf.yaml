@@ -1,0 +1,16 @@
+# pandoc -d config/pdf.yaml
+defaults:
+  - ${.}/inputs.yaml
+to: typst
+output-file: ${.}/../dist/upc-pre-202620-1asi0730-8084-StackRoot-report.pdf
+pdf-engine: typst
+variables:
+  papersize: a4
+  margin:
+    x: 2.5cm
+    y: 2.5cm
+  mainfont: "Arial"
+  fontsize: 11pt
+  page-numbering: "1"
+include-in-header:
+  - ${.}/typst/header.typ

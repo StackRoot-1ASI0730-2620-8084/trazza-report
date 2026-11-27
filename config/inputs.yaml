@@ -1,0 +1,43 @@
+# Orden de los capítulos del informe (compartido por pdf.yaml y docx.yaml)
+from: markdown+rebase_relative_paths
+file-scope: true
+input-files:
+  - ${.}/../report/front-matter/01-front-page.md
+  - ${.}/../report/front-matter/02-version-register.md
+  - ${.}/../report/front-matter/03-collaboration-insights.md
+  - ${.}/toc.md
+  - ${.}/../report/front-matter/05-student-outcome.md
+  - ${.}/../report/11-startup-profile.md
+  - ${.}/../report/12-solution-profile.md
+  - ${.}/../report/13-segmentos-objetivo.md
+  - ${.}/../report/21-competidores.md
+  - ${.}/../report/22-entrevistas.md
+  - ${.}/../report/23-needfinding.md
+  - ${.}/../report/24-event-storming.md
+  - ${.}/../report/25-ubiquitous-language.md
+  - ${.}/../report/31-user-stories.md
+  - ${.}/../report/32-impact-mapping.md
+  - ${.}/../report/33-product-backlog.md
+  - ${.}/../report/41-style-guidelines.md
+  - ${.}/../report/42-information-architecture.md
+  - ${.}/../report/43-landing-page-ui-design.md
+  - ${.}/../report/44-web-applications-ux-ui-design.md
+  - ${.}/../report/45-web-applications-prototyping.md
+  - ${.}/../report/46-domain-driven-software-architecture.md
+  - ${.}/../report/47-software-object-oriented-design.md
+  - ${.}/../report/48-database-design.md
+  - ${.}/../report/51-software-configuration-management.md
+  - ${.}/../report/52-landing-page-services-applications-implementation.md
+  - ${.}/../report/53-Validation Interviews.md
+  - ${.}/../report/54-video-about-the-product.md
+  - ${.}/../report/61-conclusiones.md
+  - ${.}/../report/62-bibliografia.md
+  - ${.}/../report/63-anexos.md
+resource-path:
+  - ${.}/..
+metadata-files:
+  - ${.}/metadata.yaml
+filters:
+  - ${.}/filters/report.lua
+standalone: true
+number-sections: false   # los títulos ya vienen numerados a mano (1.1., 2.3.1., ...)
