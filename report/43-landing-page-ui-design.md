@@ -8,17 +8,9 @@ A través de este diseño, se busca captar la atención de nuestros segmentos ob
 
 Explicación para Desktop
 
-<div align="center">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-wireframe-desk-hero.png" alt="hero" width="600">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-wireframe-desk-how-work.png" alt="how it works" width="600">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-wireframe-desk-carriers.png" alt="carriers" width="600">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-wireframe-desk-merchants.png" alt="merchants" width="600">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-wireframe-desk-comparison.png" alt="comparison" width="600">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-wireframe-desk-plans.png" alt="plans" width="600">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-wireframe-desk-testimonials.png" alt="testimonials" width="600">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-wireframe-desk-video.png" alt="video" width="600">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-wireframe-desk-footer.png" alt="footer" width="600">
-</div>
+
+![hero](../assets/images/chapter4/landing-page-ui-design/landing-wireframe-desk-hero.jpg) ![how it works](../assets/images/chapter4/landing-page-ui-design/landing-wireframe-desk-how-work.jpg) ![carriers](../assets/images/chapter4/landing-page-ui-design/landing-wireframe-desk-carriers.jpg) ![merchants](../assets/images/chapter4/landing-page-ui-design/landing-wireframe-desk-merchants.jpg) ![comparison](../assets/images/chapter4/landing-page-ui-design/landing-wireframe-desk-comparison.jpg) ![plans](../assets/images/chapter4/landing-page-ui-design/landing-wireframe-desk-plans.jpg) ![testimonials](../assets/images/chapter4/landing-page-ui-design/landing-wireframe-desk-testimonials.jpg) ![video](../assets/images/chapter4/landing-page-ui-design/landing-wireframe-desk-video.jpg) ![footer](../assets/images/chapter4/landing-page-ui-design/landing-wireframe-desk-footer.jpg)
+
 
 El diseño esquemático de la versión de escritorio está estructurado para guiar al usuario a través de un recorrido ordenado y persuasivo. Al abrir la página, se muestra una barra superior con el logotipo de Trazza, enlaces directos a las secciones principales y dos botones de llamada a la acción segmentados para transportistas y emprendedores. En el bloque principal se ubica el título enfocado en la logística inversa y la reducción de pérdidas operativas, junto con un espacio reservado para visualizar la ruta y el mapa.
 
@@ -26,17 +18,9 @@ A medida que el usuario baja en la página, encuentra la sección de funcionamie
 
 Explicación para Mobile
 
-<div align="center">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-wireframe-mob-hero.png" alt="hero mobile" width="350">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-wireframe-mob-how-work.png" alt="how it works mobile" width="350">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-wireframe-mob-carriers.png" alt="carriers mobile" width="350">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-wireframe-mob-merchants.png" alt="merchants mobile" width="350">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-wireframe-mob-comparison.png" alt="comparison mobile" width="350">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-wireframe-mob-plans.png" alt="plans mobile" width="350">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-wireframe-mob-testimonials.png" alt="testimonials mobile" width="350">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-wireframe-mob-video.png" alt="video mobile" width="350">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-wireframe-mob-footer.png" alt="footer mobile" width="350">
-</div>
+
+![hero mobile](../assets/images/chapter4/landing-page-ui-design/landing-wireframe-mob-hero.jpg) ![how it works mobile](../assets/images/chapter4/landing-page-ui-design/landing-wireframe-mob-how-work.jpg) ![carriers mobile](../assets/images/chapter4/landing-page-ui-design/landing-wireframe-mob-carriers.jpg) ![merchants mobile](../assets/images/chapter4/landing-page-ui-design/landing-wireframe-mob-merchants.jpg) ![comparison mobile](../assets/images/chapter4/landing-page-ui-design/landing-wireframe-mob-comparison.jpg) ![plans mobile](../assets/images/chapter4/landing-page-ui-design/landing-wireframe-mob-plans.jpg) ![testimonials mobile](../assets/images/chapter4/landing-page-ui-design/landing-wireframe-mob-testimonials.jpg) ![video mobile](../assets/images/chapter4/landing-page-ui-design/landing-wireframe-mob-video.jpg) ![footer mobile](../assets/images/chapter4/landing-page-ui-design/landing-wireframe-mob-footer.jpg)
+
 
 El wireframe de la versión móvil conserva el mismo orden de contenidos que la versión de escritorio, pero lo reorganiza en un layout de una sola columna pensado para pantallas de 390px. La barra de navegación se resume en el logotipo y un menú colapsable, mientras que los botones de llamada a la acción para transportistas y emprendedores se apilan verticalmente para facilitar su pulsación. Los pasos de funcionamiento, los bloques de beneficios para merchants y carriers, la tabla comparativa, los planes y los testimonios se transforman en tarjetas apiladas que se recorren con un desplazamiento vertical continuo, terminando con el espacio del video y un pie de página compacto.
 
@@ -46,17 +30,9 @@ El wireframe de la versión móvil conserva el mismo orden de contenidos que la 
 
 Explicación para Desktop
 
-<div align="center">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-mockup-desk-hero.png" alt="hero" width="600">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-mockup-desk-how-work.png" alt="how it works" width="600">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-mockup-desk-carriers.png" alt="carriers" width="600">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-mockup-desk-merchants.png" alt="merchants" width="600">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-mockup-desk-comparison.png" alt="comparison" width="600">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-mockup-desk-plans.png" alt="plans" width="600">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-mockup-desk-testimonials.png" alt="testimonials" width="600">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-mockup-desk-video.png" alt="video" width="600">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-mockup-desk-footer.png" alt="footer" width="600">
-</div>
+
+![hero](../assets/images/chapter4/landing-page-ui-design/landing-mockup-desk-hero.jpg) ![how it works](../assets/images/chapter4/landing-page-ui-design/landing-mockup-desk-how-work.jpg) ![carriers](../assets/images/chapter4/landing-page-ui-design/landing-mockup-desk-carriers.jpg) ![merchants](../assets/images/chapter4/landing-page-ui-design/landing-mockup-desk-merchants.jpg) ![comparison](../assets/images/chapter4/landing-page-ui-design/landing-mockup-desk-comparison.jpg) ![plans](../assets/images/chapter4/landing-page-ui-design/landing-mockup-desk-plans.jpg) ![testimonials](../assets/images/chapter4/landing-page-ui-design/landing-mockup-desk-testimonials.jpg) ![video](../assets/images/chapter4/landing-page-ui-design/landing-mockup-desk-video.jpg) ![footer](../assets/images/chapter4/landing-page-ui-design/landing-mockup-desk-footer.jpg)
+
 
 El diseño visual de la landing page aplica los lineamientos del Design System de Trazza, utilizando la paleta de colores corporativa y una tipografía limpia y legible. La interfaz inicia con el bloque principal que integra un panel interactivo de rastreo en tiempo real, acompañado de los accesos rápidos y métricas de confianza que respaldan la propuesta de valor de la plataforma.
 
@@ -64,16 +40,8 @@ En las siguientes secciones se muestran de forma visual el flujo operativo en tr
 
 Explicación para Mobile
 
-<div align="center">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-mockup-mob-hero.png" alt="hero mobile" width="350">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-mockup-mob-how-work.png" alt="how it works mobile" width="350">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-mockup-mob-carriers.png" alt="carriers mobile" width="350">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-mockup-mob-merchants.png" alt="merchants mobile" width="350">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-mockup-mob-comparison.png" alt="comparison mobile" width="350">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-mockup-mob-plans.png" alt="plans mobile" width="350">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-mockup-mob-testimonials.png" alt="testimonials mobile" width="350">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-mockup-mob-video.png" alt="video mobile" width="350">
-  <img src="../assets/images/chapter4/landing-page-ui-design/landing-mockup-mob-footer.png" alt="footer mobile" width="350">
-</div>
+
+![hero mobile](../assets/images/chapter4/landing-page-ui-design/landing-mockup-mob-hero.jpg) ![how it works mobile](../assets/images/chapter4/landing-page-ui-design/landing-mockup-mob-how-work.jpg) ![carriers mobile](../assets/images/chapter4/landing-page-ui-design/landing-mockup-mob-carriers.jpg) ![merchants mobile](../assets/images/chapter4/landing-page-ui-design/landing-mockup-mob-merchants.jpg) ![comparison mobile](../assets/images/chapter4/landing-page-ui-design/landing-mockup-mob-comparison.jpg) ![plans mobile](../assets/images/chapter4/landing-page-ui-design/landing-mockup-mob-plans.jpg) ![testimonials mobile](../assets/images/chapter4/landing-page-ui-design/landing-mockup-mob-testimonials.jpg) ![video mobile](../assets/images/chapter4/landing-page-ui-design/landing-mockup-mob-video.jpg) ![footer mobile](../assets/images/chapter4/landing-page-ui-design/landing-mockup-mob-footer.jpg)
+
 
 La adaptación móvil de los mockups reorganiza la estructura en una interfaz fluida a una sola columna, priorizando elementos táctiles de fácil acceso, menús desplegables optimizados y tarjetas compactas que garantizan una lectura ágil para transportistas y emprendedores directamente desde sus smartphones. Los bloques de beneficios por rol, la tabla comparativa y los planes se presentan en tarjetas verticales que mantienen la jerarquía visual de la versión de escritorio sin sacrificar legibilidad.

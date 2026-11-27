@@ -29,17 +29,11 @@ Los colores seleccionados reflejan nuestra misión tecnológica: el azul profund
 
 Nuestra tipografía principal es **Plus Jakarta Sans**. Es una fuente geométrica, moderna y extremadamente nítida, ideal para facilitar el escaneo rápido de datos críticos como coordenadas GPS, dimensiones de camiones, placas y montos de dinero.
 
-<div style="border-left: 6px solid #0037B0; margin: 20px 0; background-color: #F2F3FF; padding: 20px; border-radius: 0 12px 12px 0;">
-  <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 48px; line-height: 60px; letter-spacing: -1.2px; margin: 0; color: #131B2E;">
-    Plus Jakarta Sans
-  </div>
-  <p style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 500; font-size: 16px; margin-top: 12px; color: #434655;">
-    <strong>Títulos y Encabezados (H1):</strong> ExtraBold (800) | Tamaño: 48px | Line-height: 60px | Letter-spacing: -1.2px
-  </p>
-  <p style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 400; font-size: 14px; margin-top: 8px; color: #747686;">
-    <strong>Cuerpo de texto:</strong> Regular (400) | Tamaño: 16px | Interlineado relajado para legibilidad en listas de requerimientos y chats de coordinación.
-  </p>
-</div>
+> **Plus Jakarta Sans**
+>
+> **Títulos y Encabezados (H1):** ExtraBold (800) | Tamaño: 48px | Line-height: 60px | Letter-spacing: -1.2px
+>
+> **Cuerpo de texto:** Regular (400) | Tamaño: 16px | Interlineado relajado para legibilidad en listas de requerimientos y chats de coordinación.
 
 #### D. Spacing y Geometría
 

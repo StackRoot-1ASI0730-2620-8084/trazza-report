@@ -52,22 +52,23 @@ Durante la primera entrega, el equipo se centró en la elaboración y culminaci�
 
 A continuación, explicamos y detallamos las analíticas de colaboración en base a lo obtenido de GitHub Insights para la entrega del Trabajo Parcial (TB1). Hemos colocado en el siguiente orden las imágenes correspondientes a: **Pulse**, **Contributors**, **Traffic** y **Network Graph**.
 
-<div align="center">
-  <h4>1. Pulse</h4>
-  <img src="../../assets/images/github-pulse.jpeg" alt="GitHub Pulse" width="700">
-  <br><br>
 
-  <h4>2. Contributors</h4>
-  <img src="../../assets/images/github-contributors.jpeg" alt="GitHub Contributors" width="700">
-  <br><br>
+#### 1. Pulse
 
-  <h4>3. Traffic</h4>
-  <img src="../../assets/images/github-traffic.jpeg" alt="GitHub Traffic" width="700">
-  <br><br>
+![GitHub Pulse](../../assets/images/github-pulse.jpeg)
 
-  <h4>4. Network Graph</h4>
-  <img src="../../assets/images/github-network-graph.jpeg" alt="GitHub Network Graph" width="700">
-</div>
+#### 2. Contributors
+
+![GitHub Contributors](../../assets/images/github-contributors.jpeg)
+
+#### 3. Traffic
+
+![GitHub Traffic](../../assets/images/github-traffic.jpeg)
+
+#### 4. Network Graph
+
+![GitHub Network Graph](../../assets/images/github-network-graph.jpeg)
+
 
 ### Entrega 3 - AV2 (Sprint 3)
 #### Versiones 3.0 a 3.3 (10/11/2026 – 13/11/2026)
@@ -80,9 +81,10 @@ Durante la elaboración del avance AV2 correspondiente al Sprint 3, el equipo St
 * **Gabriel Augusto Peñaranda Caldas (`gapc2024`):** Consolidación del Sprint Planning 3, Sprint Backlog 3, evidencias de desarrollo, ejecución, documentación OpenAPI/Scalar y despliegue en AWS (Amplify, EC2, RDS y CloudFront) en la sección 5.2.3, además de la actualización del *Student Outcome* y las conclusiones del informe.
 * **Rodrigo Matias Vite Celis (`rodriznnn`):** Documentación del registro de entrevistas de validación (sección 5.3.2), redacción de las secciones *Video About-the-Product* (5.4) y *Video About-the-Team*, y documentación del Bounded Context *Loyalty & Reputation* (calificaciones mutuas y puntos de fidelidad).
 
-<div align="center">
-  <h4>Contribuciones acumuladas en Trazza-report y Trazza-LandingPage</h4>
-  <img src="../../assets/images/chapter5/insights-report-contributors.png" alt="GitHub Insights - Trazza-report contributors" width="700">
-  <br><br>
-  <img src="../../assets/images/chapter5/sprint2-commits-report.png" alt="Commits recientes en Trazza-report" width="700">
-</div>
+
+#### Contribuciones acumuladas en Trazza-report y Trazza-LandingPage
+
+![GitHub Insights - Trazza-report contributors](../../assets/images/chapter5/insights-report-contributors.png)
+
+![Commits recientes en Trazza-report](../../assets/images/chapter5/sprint2-commits-report.png)
+
