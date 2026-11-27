@@ -2,3 +2,13 @@
 lang: es-PE
 toc-title: "Contenido"
 toc-depth: 3
+
+# Diseño (lo usa config/filters/report.lua). Los .md no llevan atributos de Pandoc.
+anchos-imagen:
+  default: "85%"        # imágenes solas en un párrafo
+  logo: "80px"          # imágenes de la portada
+  reglas:               # primera regla cuyo patrón Lua coincide con la ruta
+    - patron: "mob"
+      ancho: "38%"
+salto-antes-de:         # patrones Lua de títulos que empiezan en página nueva
+  - "^Anexo %u%."

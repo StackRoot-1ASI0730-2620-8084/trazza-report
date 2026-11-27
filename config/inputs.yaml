@@ -1,5 +1,5 @@
 # Orden de los capítulos del informe (compartido por pdf.yaml y docx.yaml)
-from: markdown+rebase_relative_paths
+from: markdown+rebase_relative_paths-implicit_figures
 file-scope: true
 input-files:
   - ${.}/../report/front-matter/01-front-page.md

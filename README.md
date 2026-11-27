@@ -19,7 +19,12 @@ Los archivos se generan en `dist/` (ignorada por git). En el DOCX, el índice se
 
 - `config/inputs.yaml`: orden de los capítulos y opciones comunes.
 - `config/pdf.yaml` y `config/docx.yaml`: opciones de cada formato.
+- `config/metadata.yaml`: metadatos y opciones de diseño.
 - `config/filters/report.lua`: saltos de página, índice, portada e imágenes centradas.
 - `config/typst/header.typ` y `config/reference.docx`: estilos del PDF y del Word.
 
-En los `.md` usa sintaxis de Pandoc en lugar de HTML: `![alt](ruta){width=80%}` para el tamaño de una imagen (con `\` al final si no debe llevar leyenda) y `\newpage` para forzar un salto de página.
+Los `.md` se escriben en Markdown estándar (sin HTML ni atributos de Pandoc), así se ven igual en el preview de WebStorm o GitHub. El diseño se controla desde `config/metadata.yaml`:
+
+- `anchos-imagen`: ancho por defecto de las imágenes, el del logo de la portada y reglas por nombre de archivo (por ejemplo, `mob` para capturas móviles).
+- `salto-antes-de`: títulos que empiezan en página nueva, además de cada capítulo y del front matter.
+- Todo lo que va antes del primer título `##` del informe se arma como portada centrada.
