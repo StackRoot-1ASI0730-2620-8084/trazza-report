@@ -4,18 +4,12 @@ En esta sección se presenta el video About-the-Product de Trazza. El video mues
 
 **Video About-the-Product:** [upc-pre-202620-1asi0730-8084-StackRoot-about-the-product.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210836_upc_edu_pe/IQD1-IK_epZGTZKrEFRst6qDAU6rktjplwp50qp62ap0yL8?e=8TN8xq&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
-<div align="center">
-
-  <!-- Pendiente: captura de portada del video en assets/images/chapter5/ -->
-
-</div>
-
 | Campo | Detalle |
 | :--- | :--- |
-| Duración | [Pendiente] |
+| Duración | 10 minutos |
 | Plataforma de publicación | Microsoft Stream |
-| Fecha de publicación | [Pendiente] |
-| Participantes | [Pendiente] |
+| Fecha de publicación | 13/11/2026 |
+| Participantes | Checalla Apaza, Emanuel Renato; Lozano Quispe, Fabricio Jofred; Medina Merma, Ingrid Melani; Peñaranda Caldas, Gabriel Augusto; Vite Celis, Rodrigo Matias |
 
 ### Guion del video
 

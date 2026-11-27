@@ -24,7 +24,4 @@ El siguiente video documenta de manera interactiva el esfuerzo, colaboración y 
 | 02:30 - 03:45 | Proceso de desarrollo técnico, Arquitectura (C4) y GitHub |
 | 03:45 - 05:00 | Reflexión final, logros del equipo y conclusiones generales |
 
-*Enlace al video en Microsoft Stream:* [URL pendiente]
-*Enlace al video en YouTube:* [URL pendiente]
-
-*(Insertar captura de pantalla representativa del equipo y el video aquí)*
+*Enlace al video en Microsoft Stream:* [upc-pre-202620-1asi0730-8084-StackRoot-about-the-team.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202213185_upc_edu_pe/IQB6N4cfb2MTRY7UUYn7G_SWAZzQoXAMy3E8hwFEIRluZ6Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=bdgT4Z)

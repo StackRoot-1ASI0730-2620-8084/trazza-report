@@ -96,6 +96,7 @@ En el Sprint 1 se creó la aplicación en AWS Amplify Hosting y se conectó con 
 <div align="center">
   <img src="../assets/images/trazzalandingpagedesplegada.jpeg" alt="Landing Page v1 deployed on AWS Amplify" width="800">
 </div>
+
 #### 5.2.1.8. Team Collaboration Insights during Sprint
  
 En el Sprint 1 el equipo trabajó en dos repositorios. En `Trazza-LandingPage` se registraron 2 commits: Medina Merma, Ingrid Melani (estructura inicial) y Peñaranda Caldas, Gabriel Augusto (primera versión completa), ambos directamente en `main`. En `Trazza-report` cada sección del informe se trabajó en su rama `feature/*` y se integró a `develop` mediante Pull Requests, con commits de los cinco integrantes.
@@ -267,16 +268,16 @@ En el Sprint Planning 3 el equipo definió el objetivo del Sprint y seleccionó 
 | Sprint # | Sprint 3 |
 | :--- | :--- |
 | **Sprint Planning Background** | |
-| Date | [Pendiente: fecha del Sprint Planning 3] |
-| Time | [Pendiente: hora] |
-| Location | [Pendiente: lugar o plataforma de la reunión] |
+| Date | 13/11/2026 |
+| Time | 11:00 p.m. |
+| Location | Reunión virtual vía Google Meet |
 | Prepared By | Peñaranda Caldas, Gabriel Augusto |
-| Attendees (to planning meeting) | [Pendiente: confirmar asistentes] |
-| Sprint 2 Review Summary | [Pendiente: resumen del Sprint 2 Review redactado por el equipo] |
-| Sprint 2 Retrospective Summary | [Pendiente: resumen de la Sprint 2 Retrospective redactado por el equipo] |
+| Attendees (to planning meeting) | Checalla Apaza, Emanuel Renato / Lozano Quispe, Fabricio Jofred / Medina Merma, Ingrid Melani / Peñaranda Caldas, Gabriel Augusto / Vite Celis, Rodrigo Matias |
+| Sprint 2 Review Summary | En el Sprint 2 se publicó la primera versión de la Web Application en AWS Amplify, con las vistas principales de los cinco bounded contexts conectadas a una API simulada con json-server. También se publicó una nueva versión del Landing Page traducida al inglés y al español, con fotos reales y botones enlazados a la Web App. Como pendiente quedó reemplazar la API simulada por Web Services reales con base de datos. |
+| Sprint 2 Retrospective Summary | El reparto del trabajo por bounded context permitió avanzar en paralelo y el uso de ramas `feature/*` con Pull Requests ordenó la integración del informe. Como mejora, el equipo acordó definir primero los contratos de la API para evitar diferencias entre el frontend y el backend, y trabajar todos los repositorios con GitFlow y Pull Requests en lugar de subir cambios directamente a `main`. |
 | **Sprint Goal & User Stories** | |
 | Sprint 3 Goal |**Nuestro enfoque está en** ofrecer a los transportistas independientes y comerciantes MYPE de Lima una experiencia integral de transporte de mercadería que les permita conectar sus ofertas y necesidades de envío, coordinar sus viajes y completar sus operaciones desde la publicación hasta la entrega, liquidación y calificación del servicio. **Creemos que esto entrega** a los transportistas independientes una oportunidad para aprovechar sus viajes de retorno vacíos, generar ingresos adicionales y gestionar sus servicios de transporte, y a los comerciantes MYPE una alternativa accesible y confiable para concretar sus envíos, realizar el seguimiento de su mercadería y evaluar la calidad del servicio recibido, brindando a ambos segmentos mayor confianza y transparencia en sus operaciones. **Esto se confirmará cuando** los transportistas puedan registrarse y publicar sus rutas disponibles, los comerciantes MYPE puedan registrarse y publicar sus solicitudes de envío, y ambos segmentos puedan concretar acuerdos de transporte, realizar el seguimiento del viaje, confirmar la entrega, gestionar la liquidación, calificarse mutuamente y consultar su historial de operaciones dentro de Trazza.|
-| Sprint 3 Velocity | [Pendiente: velocity acordada por el equipo] |
+| Sprint 3 Velocity | 65 Story Points |
 | Sum of Story Points | 65 Story Points (US06: 5, US07: 5, US14: 5, US18: 5, US22: 5, US26: 8, US28: 8, US29: 8, US30: 8, US31: 8) |
 
 #### 5.2.3.2. Aspect Leaders and Collaborators
