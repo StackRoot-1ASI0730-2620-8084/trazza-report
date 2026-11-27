@@ -6,7 +6,7 @@ En esta sección se presenta el video About-the-Product de Trazza. El video mues
 
 <div align="center">
 
-  ![Foto](../assets/images/chapter5/Captura-About-the-Product.png)
+    ![Foto](../assets/images/chapter5/Captura-About-the-Product.png)
 
 </div>
 

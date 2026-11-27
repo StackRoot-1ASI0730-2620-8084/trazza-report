@@ -73,13 +73,13 @@ En el Sprint 1 se creó el repositorio del Landing Page y se implementó su prim
  
 Al cierre del Sprint 1, el Landing Page quedó publicado en una URL pública. Presentaba la propuesta de valor para ambos segmentos, la comparativa frente al flete tradicional, los testimonios y los accesos al registro por rol.
  
-<div align="center">
-  <img src="../assets/images/landingimplementada1.jpeg" alt="Landing Page v1 - Hero section" width="800">
-  <br><br>
-  <img src="../assets/images/landingimplementada2.jpeg" alt="Landing Page v1 - Value proposition sections" width="800">
-  <br><br>
-  <img src="../assets/images/landingimplementada3.jpeg" alt="Landing Page v1 - Testimonials and footer" width="800">
-</div>
+
+![Landing Page v1 - Hero section](../assets/images/landingimplementada1.jpeg)
+
+![Landing Page v1 - Value proposition sections](../assets/images/landingimplementada2.jpeg)
+
+![Landing Page v1 - Testimonials and footer](../assets/images/landingimplementada3.jpeg)
+
 
 **Video de navegación del Sprint 1:** [upc-pre-202620-1asi0730-8084-StackRoot-productnavigation-sprint-1.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202414356_upc_edu_pe/IQAHwNmBh-BrSIywebxTh1XRAXSQ67CxwXjsw4F17WnJ3nQ?e=dc5eL3&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
  
@@ -93,24 +93,25 @@ En el Sprint 1 se creó la aplicación en AWS Amplify Hosting y se conectó con 
  
 **URL del Landing Page:** [https://main.d2c543oob0ogxp.amplifyapp.com](https://main.d2c543oob0ogxp.amplifyapp.com)
  
-<div align="center">
-  <img src="../assets/images/trazzalandingpagedesplegada.jpeg" alt="Landing Page v1 deployed on AWS Amplify" width="800">
-</div>
+
+![Landing Page v1 deployed on AWS Amplify](../assets/images/trazzalandingpagedesplegada.jpeg)
+
+
 #### 5.2.1.8. Team Collaboration Insights during Sprint
  
 En el Sprint 1 el equipo trabajó en dos repositorios. En `Trazza-LandingPage` se registraron 2 commits: Medina Merma, Ingrid Melani (estructura inicial) y Peñaranda Caldas, Gabriel Augusto (primera versión completa), ambos directamente en `main`. En `Trazza-report` cada sección del informe se trabajó en su rama `feature/*` y se integró a `develop` mediante Pull Requests, con commits de los cinco integrantes.
  
 Los gráficos de Contributors muestran las contribuciones semanales de cada integrante. Las barras de las semanas del 7 y 14 de septiembre corresponden al Sprint 1.
  
-<div align="center">
-  <img src="../assets/images/chapter5/insights-landing-contributors.png" alt="GitHub Insights - Trazza-LandingPage contributors" width="800">
-  <br><br>
-  <img src="../assets/images/chapter5/insights-report-contributors.png" alt="GitHub Insights - Trazza-report contributors" width="800">
-  <br><br>
-  <img src="../assets/images/chapter5/sprint1-commits-landing.png" alt="Trazza-LandingPage commits during Sprint 1" width="800">
-  <br><br>
-  <img src="../assets/images/chapter5/sprint1-commits-report.png" alt="Trazza-report commits during Sprint 1" width="800">
-</div>
+
+![GitHub Insights - Trazza-LandingPage contributors](../assets/images/chapter5/insights-landing-contributors.png)
+
+![GitHub Insights - Trazza-report contributors](../assets/images/chapter5/insights-report-contributors.png)
+
+![Trazza-LandingPage commits during Sprint 1](../assets/images/chapter5/sprint1-commits-landing.png)
+
+![Trazza-report commits during Sprint 1](../assets/images/chapter5/sprint1-commits-report.png)
+
 
 ### 5.2.2. Sprint 2
 
@@ -204,11 +205,9 @@ Al cierre del Sprint 2, la Web Application quedó publicada con sus vistas princ
 | Planes y calificaciones | Vistas `plan-billing` y `rating-list`. | US19, US20 | Done |
 | Landing Page v2 | Sitio traducido EN / ES con fotos reales y botones enlazados a la Web App. | US04, US05, US25 | Done |
 
-<div align="center">
 
-  <!-- Pendiente: capturas de la Web Application del Sprint 2 en assets/images/chapter5/ -->
+<!-- Pendiente: capturas de la Web Application del Sprint 2 en assets/images/chapter5/ -->
 
-</div>
 
 **Video de navegación del Sprint 2:** [Pendiente: URL del video del Sprint 2](URL)
 
@@ -230,11 +229,9 @@ En el Sprint 2 se publicó la Web Application en AWS Amplify Hosting. La API sim
 | Web Application v1 | AWS Amplify Hosting | trazza-webapp / main | https://main.d1h7l9z3r6ucz4.amplifyapp.com | Deployed (reemplazada en el Sprint 3) |
 | Fake API (json-server) | Amazon EC2 + DuckDNS | trazza-webapp / main (`server/`) | https://trazza-api.duckdns.org/api/v1 | Deployed (retirada en el Sprint 3) |
 
-<div align="center">
 
-  <!-- Pendiente: captura del despliegue del Sprint 2 en AWS Amplify, en assets/images/chapter5/ -->
+<!-- Pendiente: captura del despliegue del Sprint 2 en AWS Amplify, en assets/images/chapter5/ -->
 
-</div>
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint
 
@@ -250,11 +247,9 @@ En el Sprint 2 el equipo trabajó en tres repositorios. En `trazza-webapp` el bo
 
 Los conteos consideran commits sin merges con fecha entre el 19 de septiembre y el 6 de octubre de 2026. Los Pull Requests de `trazza-report` (#7 a #12) y de `trazza-webapp` (#1) figuran a nombre de quien los abrió.
 
-<div align="center">
 
-  <!-- Pendiente: capturas de GitHub Insights (Contributors) de trazza-webapp y trazza-website en el Sprint 2 -->
+<!-- Pendiente: capturas de GitHub Insights (Contributors) de trazza-webapp y trazza-website en el Sprint 2 -->
 
-</div>
 
 ### 5.2.3. Sprint 3
 
@@ -267,16 +262,16 @@ En el Sprint Planning 3 el equipo definió el objetivo del Sprint y seleccionó 
 | Sprint # | Sprint 3 |
 | :--- | :--- |
 | **Sprint Planning Background** | |
-| Date |13/11/26 |
-| Time | 23:47 |
-| Location | Modalidad Remota a través de la plataforma Discord|
+| Date | 13/11/2026 |
+| Time | 11:00 p.m. |
+| Location | Reunión virtual vía Google Meet |
 | Prepared By | Peñaranda Caldas, Gabriel Augusto |
 | Attendees (to planning meeting) | Checalla Apaza, Emanuel Renato / Lozano Quispe, Fabricio Jofred / Medina Merma, Ingrid Melani / Peñaranda Caldas, Gabriel Augusto / Vite Celis, Rodrigo Matias |
-| Sprint 2 Review Summary | Durante el Sprint 2 se logró publicar la primera versión de la Web Application de Trazza, permitiendo a los transportistas independientes y comerciantes MYPE acceder a las principales funcionalidades correspondientes a su perfil y explorar las opciones de transporte disponibles mediante datos simulados. Asimismo, se mejoró la Landing Page incorporando contenido bilingüe, fotografías reales y accesos directos a la aplicación web. Como oportunidad de mejora, se identificó la necesidad de permitir que los usuarios realicen operaciones con información real, garantizando la continuidad de sus actividades dentro de la plataforma. |
-| Sprint 2 Retrospective Summary |El equipo valoró positivamente la distribución de responsabilidades por bounded context, el desarrollo paralelo de funcionalidades y las revisiones colaborativas mediante Pull Requests. Sin embargo, se identificaron oportunidades de mejora en la coordinación entre los responsables del frontend y backend, la definición anticipada de los contratos de comunicación y la aplicación uniforme de GitFlow en todos los repositorios. Para la siguiente iteración, se acordó fortalecer estos aspectos con el propósito de reducir conflictos de integración y facilitar el trabajo colaborativo.|
+| Sprint 2 Review Summary | En el Sprint 2 se publicó la primera versión de la Web Application en AWS Amplify, con las vistas principales de los cinco bounded contexts conectadas a una API simulada con json-server. También se publicó una nueva versión del Landing Page traducida al inglés y al español, con fotos reales y botones enlazados a la Web App. Como pendiente quedó reemplazar la API simulada por Web Services reales con base de datos. |
+| Sprint 2 Retrospective Summary | El reparto del trabajo por bounded context permitió avanzar en paralelo y el uso de ramas `feature/*` con Pull Requests ordenó la integración del informe. Como mejora, el equipo acordó definir primero los contratos de la API para evitar diferencias entre el frontend y el backend, y trabajar todos los repositorios con GitFlow y Pull Requests en lugar de subir cambios directamente a `main`. |
 | **Sprint Goal & User Stories** | |
 | Sprint 3 Goal |**Nuestro enfoque está en** ofrecer a los transportistas independientes y comerciantes MYPE de Lima una experiencia integral de transporte de mercadería que les permita conectar sus ofertas y necesidades de envío, coordinar sus viajes y completar sus operaciones desde la publicación hasta la entrega, liquidación y calificación del servicio. **Creemos que esto entrega** a los transportistas independientes una oportunidad para aprovechar sus viajes de retorno vacíos, generar ingresos adicionales y gestionar sus servicios de transporte, y a los comerciantes MYPE una alternativa accesible y confiable para concretar sus envíos, realizar el seguimiento de su mercadería y evaluar la calidad del servicio recibido, brindando a ambos segmentos mayor confianza y transparencia en sus operaciones. **Esto se confirmará cuando** los transportistas puedan registrarse y publicar sus rutas disponibles, los comerciantes MYPE puedan registrarse y publicar sus solicitudes de envío, y ambos segmentos puedan concretar acuerdos de transporte, realizar el seguimiento del viaje, confirmar la entrega, gestionar la liquidación, calificarse mutuamente y consultar su historial de operaciones dentro de Trazza.|
-| Sprint 3 Velocity | [Pendiente: velocity acordada por el equipo] |
+| Sprint 3 Velocity | 65 Story Points |
 | Sum of Story Points | 65 Story Points (US06: 5, US07: 5, US14: 5, US18: 5, US22: 5, US26: 8, US28: 8, US29: 8, US30: 8, US31: 8) |
 
 #### 5.2.3.2. Aspect Leaders and Collaborators
@@ -379,11 +374,9 @@ Al cierre del Sprint 3, la Web Application quedó integrada con los Web Services
 | Liquidación y compensación | Confirmación de la liquidación del flete y compensación por cancelación en ruta. | US28, US31 | Done |
 | Calificaciones y fidelidad | Calificación mutua tras el viaje, resumen de reputación y puntos de fidelidad. | US22 | Done |
 
-<div align="center">
 
-  <!-- Pendiente: capturas de la Web Application del Sprint 3 en assets/images/chapter5/ -->
+<!-- Pendiente: capturas de la Web Application del Sprint 3 en assets/images/chapter5/ -->
 
-</div>
 
 **Video de navegación del Sprint 3:** [Pendiente: URL del video del Sprint 3](URL)
 
@@ -413,11 +406,9 @@ Los Web Services se documentaron con OpenAPI y se publican de forma interactiva 
 | `/api/v1/loyalty/points` · `/loyalty/redemptions` | GET, POST | Saldo y canje de puntos de fidelidad. | Scalar · tag Loyalty |
 | `/api/v1/health` | GET | Estado de la API y de la conexión con la base de datos. | Scalar · tag Health |
 
-<div align="center">
 
-  <!-- Pendiente: capturas de Scalar (listado de endpoints y una petición de ejemplo) en assets/images/chapter5/ -->
+<!-- Pendiente: capturas de Scalar (listado de endpoints y una petición de ejemplo) en assets/images/chapter5/ -->
 
-</div>
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
@@ -438,11 +429,9 @@ Para revisar la Web Application desplegada se crearon dos cuentas de prueba, una
 
 El endpoint `GET /api/v1/health` de la API desplegada responde `{"status":"healthy","database":"connected"}`, lo que confirma la conexión con la base de datos.
 
-<div align="center">
 
-  <!-- Pendiente: capturas de AWS Amplify, CloudFront y RDS en assets/images/chapter5/ -->
+<!-- Pendiente: capturas de AWS Amplify, CloudFront y RDS en assets/images/chapter5/ -->
 
-</div>
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 
@@ -458,11 +447,10 @@ En el Sprint 3 el equipo trabajó en `trazza-platform` y `trazza-webapp` con Git
 
 Los conteos consideran commits sin merges con fecha entre el 7 de octubre y el 13 de noviembre de 2026. Los Pull Requests figuran a nombre de quien los abrió.
 
-<div align="center">
 
-  <!-- Pendiente: capturas de GitHub Insights (Contributors y Network) de trazza-platform y trazza-webapp en el Sprint 3 -->
+<!-- Pendiente: capturas de GitHub Insights (Contributors y Network) de trazza-platform y trazza-webapp en el Sprint 3 -->
 
-</div>
+
 
 ### 5.2.4. Sprint 4
 

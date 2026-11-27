@@ -5,9 +5,7 @@ El Big Picture Event Storming es un taller de diseño colaborativo orientado a e
 A continuación, se presenta el esquema visual del Big Picture Event Storming:
 
 ![Event Storming - Parte 1](../assets/images/chapter2/big-picture-event-storming/event-storming-1.png)
-<br>
 ![Event Storming - Parte 2](../assets/images/chapter2/big-picture-event-storming/event-storming-2.png)
-<br>
 ![Event Storming - Parte 3](../assets/images/chapter2/big-picture-event-storming/event-storming-3.png)
 
 > Big Picture Event Storming: [https://www.figma.com/board/WxMU6oKF4Vo3Z5UQ5XZrkm/Sin-t%C3%ADtulo?node-id=0-1&t=yjmq4uC9nUQyFJMh-1](https://www.figma.com/board/WxMU6oKF4Vo3Z5UQ5XZrkm/Sin-t%C3%ADtulo?node-id=0-1&t=yjmq4uC9nUQyFJMh-1)
